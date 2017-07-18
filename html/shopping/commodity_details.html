@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="renderer" content="webkit">
+		<title>商品详情</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+		<link rel="stylesheet" type="text/css" href="../css/principal_part.css" />
+		<link rel="stylesheet" type="text/css" href="../css/swiper-3.4.2.min.css"/>
+		
+		<script src="../js/jquery-1.8.3.min.js"></script>
+		<script src="../js/swiper-3.4.2.min.js"></script>
+		<script src="../js/public.js"></script>
+		<script src="../js/public_classify.js"></script>
+	</head>
+	<body>
+		<!--顶部-->
+		<iframe src="../publicHtml/public_head.html" width="100%" height="160"></iframe>
+		
+		<!--classification 产品分类-->
+		<div class="classification clearfix">
+			<div class="min_1200">
+				<div class="con_text">
+					<h3><i></i>商品分类</h3>
+					<ul class="prosul" id="proinfo" style="display: none;">
+						<li>
+							<img src="../images/yifu.png" alt="" />
+							<a href="">男装</a>/
+							<a href="">户外</a>
+							<div class="prosmore">
+								<div class="list_nav">
+									<h5>美妆   ></h5>
+									<div>
+										<a href="">官方直售</a>
+										<a href="">面膜</a>
+										<a href="">护肤套装</a>
+										<a href="">乳液面霜</a>
+										<a href="">精华液</a>
+										<a href="">护手霜</a>
+										<a href="">爽肤水</a>
+										<a href="">洁面眼霜</a>
+										<a href="">身体乳</a>
+										<a href="">卸妆</a>
+										<a href="">身体护理</a>
+										<a href="">男士护理</a>
+										<a href="">精油芳疗</a>
+										<a href="">丰胸</a>
+										<a href="">面部喷雾</a>
+										<a href="">T区护理</a>
+										<a href="">去角质</a>
+										<a href="">补水</a>
+										<a href="">祛痘</a>
+										<a href="">敏感修复</a>
+										<a href="">线上专柜</a>
+										<a href="">洁面眼霜</a>
+										<a href="">身体乳</a>
+										<a href="">卸妆</a>
+										<a href="">身体护理</a>
+										<a href="">男士护理</a>
+										<a href="">精油芳疗</a>
+									</div>
+								</div>
+
+								<div class="rightbar">
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									
+								</div>
+							</div>
+
+						</li>
+						<li>
+							<img src="../images/nvzhuang.png" alt="" />
+							<a href="">女装</a>/
+							<a href="">内衣</a>
+							<div class="prosmore">
+								<div class="list_nav">
+									<h5>护肤品   ></h5>
+									<div>
+										<a href="">官方直售</a>
+										<a href="">面膜</a>
+										<a href="">护肤套装</a>
+										<a href="">乳液面霜</a>
+										<a href="">精华液</a>
+										<a href="">护手霜</a>
+										<a href="">爽肤水</a>
+										<a href="">洁面眼霜</a>
+										<a href="">身体乳</a>
+										<a href="">卸妆</a>
+										<a href="">身体护理</a>
+										<a href="">男士护理</a>
+										<a href="">精油芳疗</a>
+										<a href="">丰胸</a>
+										<a href="">面部喷雾</a>
+										<a href="">T区护理</a>
+										<a href="">去角质</a>
+										<a href="">补水</a>
+										<a href="">祛痘</a>
+										<a href="">敏感修复</a>
+										<a href="">线上专柜</a>
+										<a href="">洁面眼霜</a>
+										<a href="">身体乳</a>
+										<a href="">卸妆</a>
+										<a href="">身体护理</a>
+										<a href="">男士护理</a>
+										<a href="">精油芳疗</a>
+									</div>
+								</div>
+
+								<div class="rightbar">
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									
+								</div>
+							</div>
+
+						</li>
+						<li>
+							<img src="../images/xiangbao.png" alt="" />
+							<a href="">女鞋</a>/
+							<a href="">男鞋</a>/
+							<a href="">箱包</a>
+							<div class="prosmore">
+								<div class="list_nav">
+									<h5>爽肤水   ></h5>
+									<div>
+										<a href="">官方直售</a>
+										<a href="">面膜</a>
+										<a href="">护肤套装</a>
+										<a href="">乳液面霜</a>
+										<a href="">精华液</a>
+										<a href="">护手霜</a>
+										<a href="">爽肤水</a>
+										<a href="">洁面眼霜</a>
+										<a href="">身体乳</a>
+										<a href="">卸妆</a>
+										<a href="">身体护理</a>
+										<a href="">男士护理</a>
+										<a href="">精油芳疗</a>
+										<a href="">丰胸</a>
+										<a href="">面部喷雾</a>
+										<a href="">T区护理</a>
+										<a href="">去角质</a>
+										<a href="">补水</a>
+										<a href="">祛痘</a>
+										<a href="">敏感修复</a>
+										<a href="">线上专柜</a>
+										<a href="">洁面眼霜</a>
+										<a href="">身体乳</a>
+										<a href="">卸妆</a>
+										<a href="">身体护理</a>
+										<a href="">男士护理</a>
+										<a href="">精油芳疗</a>
+									</div>
+								</div>
+
+								<div class="rightbar">
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									
+								</div>
+							</div>
+
+						</li>
+						<li>
+							<img src="../images/huazhuangp.png" alt="" />
+							<a href="">化妆品</a>/
+							<a href="">个人护理</a>
+							<div class="prosmore">
+								<div class="list_nav">
+									<h5>爽肤水   ></h5>
+									<div>
+										<a href="">官方直售</a>
+										<a href="">面膜</a>
+										<a href="">护肤套装</a>
+										<a href="">乳液面霜</a>
+										<a href="">精华液</a>
+										<a href="">护手霜</a>
+										<a href="">爽肤水</a>
+										<a href="">洁面眼霜</a>
+										<a href="">身体乳</a>
+										<a href="">卸妆</a>
+										<a href="">身体护理</a>
+										<a href="">男士护理</a>
+										<a href="">精油芳疗</a>
+										<a href="">丰胸</a>
+										<a href="">面部喷雾</a>
+										<a href="">T区护理</a>
+										<a href="">去角质</a>
+										<a href="">补水</a>
+										<a href="">祛痘</a>
+										<a href="">敏感修复</a>
+										<a href="">线上专柜</a>
+										<a href="">洁面眼霜</a>
+										<a href="">身体乳</a>
+										<a href="">卸妆</a>
+										<a href="">身体护理</a>
+										<a href="">男士护理</a>
+										<a href="">精油芳疗</a>
+									</div>
+								</div>
+
+								<div class="rightbar">
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									
+								</div>
+							</div>
+
+						</li>
+						<li>
+							<img src="../images/zhubao.png" alt="" />
+							<a href="">眼镜</a>/
+							<a href="">钟表</a>/
+							<a href="">珠宝</a>
+							<div class="prosmore">
+								<div class="list_nav">
+									<h5>爽肤水   ></h5>
+									<div>
+										<a href="">官方直售</a>
+										<a href="">面膜</a>
+										<a href="">护肤套装</a>
+										<a href="">乳液面霜</a>
+										<a href="">精华液</a>
+										<a href="">护手霜</a>
+										<a href="">爽肤水</a>
+										<a href="">洁面眼霜</a>
+										<a href="">身体乳</a>
+										<a href="">卸妆</a>
+										<a href="">身体护理</a>
+										<a href="">男士护理</a>
+										<a href="">精油芳疗</a>
+										<a href="">丰胸</a>
+										<a href="">面部喷雾</a>
+										<a href="">T区护理</a>
+										<a href="">去角质</a>
+										<a href="">补水</a>
+										<a href="">祛痘</a>
+										<a href="">敏感修复</a>
+										<a href="">线上专柜</a>
+										<a href="">洁面眼霜</a>
+										<a href="">身体乳</a>
+										<a href="">卸妆</a>
+										<a href="">身体护理</a>
+										<a href="">男士护理</a>
+										<a href="">精油芳疗</a>
+									</div>
+								</div>
+
+								<div class="rightbar">
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									
+								</div>
+							</div>
+
+						</li>
+						<li>
+							<img src="../images/diannao.png" alt="" />
+							<a href="">手机数码</a>/
+							<a href="">电脑</a>/
+							<a href="">办公</a>
+							<div class="prosmore">
+								<div class="list_nav">
+									<h5>爽肤水   ></h5>
+									<div>
+										<a href="">官方直售</a>
+										<a href="">面膜</a>
+										<a href="">护肤套装</a>
+										<a href="">乳液面霜</a>
+										<a href="">精华液</a>
+										<a href="">护手霜</a>
+										<a href="">爽肤水</a>
+										<a href="">洁面眼霜</a>
+										<a href="">身体乳</a>
+										<a href="">卸妆</a>
+										<a href="">身体护理</a>
+										<a href="">男士护理</a>
+										<a href="">精油芳疗</a>
+										<a href="">丰胸</a>
+										<a href="">面部喷雾</a>
+										<a href="">T区护理</a>
+										<a href="">去角质</a>
+										<a href="">补水</a>
+										<a href="">祛痘</a>
+										<a href="">敏感修复</a>
+										<a href="">线上专柜</a>
+										<a href="">洁面眼霜</a>
+										<a href="">身体乳</a>
+										<a href="">卸妆</a>
+										<a href="">身体护理</a>
+										<a href="">男士护理</a>
+										<a href="">精油芳疗</a>
+									</div>
+								</div>
+
+								<div class="rightbar">
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									
+								</div>
+							</div>
+
+						</li>
+						<li>
+							<img src="../images/muying.png" alt="" />
+							<a href="">母婴</a>/
+							<a href="">玩具乐器</a>
+							<div class="prosmore">
+								<div class="list_nav">
+									<h5>爽肤水   ></h5>
+									<div>
+										<a href="">官方直售</a>
+										<a href="">面膜</a>
+										<a href="">护肤套装</a>
+										<a href="">乳液面霜</a>
+										<a href="">精华液</a>
+										<a href="">护手霜</a>
+										<a href="">爽肤水</a>
+										<a href="">洁面眼霜</a>
+										<a href="">身体乳</a>
+										<a href="">卸妆</a>
+										<a href="">身体护理</a>
+										<a href="">男士护理</a>
+										<a href="">精油芳疗</a>
+										<a href="">丰胸</a>
+										<a href="">面部喷雾</a>
+										<a href="">T区护理</a>
+										<a href="">去角质</a>
+										<a href="">补水</a>
+										<a href="">祛痘</a>
+										<a href="">敏感修复</a>
+										<a href="">线上专柜</a>
+										<a href="">洁面眼霜</a>
+										<a href="">身体乳</a>
+										<a href="">卸妆</a>
+										<a href="">身体护理</a>
+										<a href="">男士护理</a>
+										<a href="">精油芳疗</a>
+									</div>
+								</div>
+
+								<div class="rightbar">
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									
+								</div>
+							</div>
+
+						</li>
+						<li>
+							<img src="../images/jiadian.png" alt="" />
+							<a href="">家电</a>/
+							<a href="">生活电器</a>
+							<div class="prosmore">
+								<div class="list_nav">
+									<h5>爽肤水   ></h5>
+									<div>
+										<a href="">官方直售</a>
+										<a href="">面膜</a>
+										<a href="">护肤套装</a>
+										<a href="">乳液面霜</a>
+										<a href="">精华液</a>
+										<a href="">护手霜</a>
+										<a href="">爽肤水</a>
+										<a href="">洁面眼霜</a>
+										<a href="">身体乳</a>
+										<a href="">卸妆</a>
+										<a href="">身体护理</a>
+										<a href="">男士护理</a>
+										<a href="">精油芳疗</a>
+										<a href="">丰胸</a>
+										<a href="">面部喷雾</a>
+										<a href="">T区护理</a>
+										<a href="">去角质</a>
+										<a href="">补水</a>
+										<a href="">祛痘</a>
+										<a href="">敏感修复</a>
+										<a href="">线上专柜</a>
+										<a href="">洁面眼霜</a>
+										<a href="">身体乳</a>
+										<a href="">卸妆</a>
+										<a href="">身体护理</a>
+										<a href="">男士护理</a>
+										<a href="">精油芳疗</a>
+									</div>
+								</div>
+
+								<div class="rightbar">
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									
+								</div>
+							</div>
+
+						</li>
+						<li>
+							<img src="../images/jiaju.png" alt="" />
+							<a href="">家居</a>/
+							<a href="">家居</a>/
+							<a href="">家装</a>/
+							<a href="">厨具</a>
+							<div class="prosmore">
+								<div class="list_nav">
+									<h5>爽肤水   ></h5>
+									<div>
+										<a href="">官方直售</a>
+										<a href="">面膜</a>
+										<a href="">护肤套装</a>
+										<a href="">乳液面霜</a>
+										<a href="">精华液</a>
+										<a href="">护手霜</a>
+										<a href="">爽肤水</a>
+										<a href="">洁面眼霜</a>
+										<a href="">身体乳</a>
+										<a href="">卸妆</a>
+										<a href="">身体护理</a>
+										<a href="">男士护理</a>
+										<a href="">精油芳疗</a>
+										<a href="">丰胸</a>
+										<a href="">面部喷雾</a>
+										<a href="">T区护理</a>
+										<a href="">去角质</a>
+										<a href="">补水</a>
+										<a href="">祛痘</a>
+										<a href="">敏感修复</a>
+										<a href="">线上专柜</a>
+										<a href="">洁面眼霜</a>
+										<a href="">身体乳</a>
+										<a href="">卸妆</a>
+										<a href="">身体护理</a>
+										<a href="">男士护理</a>
+										<a href="">精油芳疗</a>
+									</div>
+								</div>
+
+								<div class="rightbar">
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									
+								</div>
+							</div>
+
+						</li>
+						<li>
+							<img src="../images/qiche.png" alt="" />
+							<a href="">汽车</a>/
+							<a href="">配件</a>/
+							<a href="">用品</a>
+							<div class="prosmore">
+								<div class="list_nav">
+									<h5>爽肤水   ></h5>
+									<div>
+										<a href="">官方直售</a>
+										<a href="">面膜</a>
+										<a href="">护肤套装</a>
+										<a href="">乳液面霜</a>
+										<a href="">精华液</a>
+										<a href="">护手霜</a>
+										<a href="">爽肤水</a>
+										<a href="">洁面眼霜</a>
+										<a href="">身体乳</a>
+										<a href="">卸妆</a>
+										<a href="">身体护理</a>
+										<a href="">男士护理</a>
+										<a href="">精油芳疗</a>
+										<a href="">丰胸</a>
+										<a href="">面部喷雾</a>
+										<a href="">T区护理</a>
+										<a href="">去角质</a>
+										<a href="">补水</a>
+										<a href="">祛痘</a>
+										<a href="">敏感修复</a>
+										<a href="">线上专柜</a>
+										<a href="">洁面眼霜</a>
+										<a href="">身体乳</a>
+										<a href="">卸妆</a>
+										<a href="">身体护理</a>
+										<a href="">男士护理</a>
+										<a href="">精油芳疗</a>
+									</div>
+								</div>
+
+								<div class="rightbar">
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									
+								</div>
+							</div>
+
+						</li>
+						<li>
+							<img src="../images/tushu.png" alt="" />
+							<a href="">图书</a>/
+							<a href="">音像</a>/
+							<a href="">电子书</a>
+							<div class="prosmore">
+								<div class="list_nav">
+									<h5>爽肤水   ></h5>
+									<div>
+										<a href="">官方直售</a>
+										<a href="">面膜</a>
+										<a href="">护肤套装</a>
+										<a href="">乳液面霜</a>
+										<a href="">精华液</a>
+										<a href="">护手霜</a>
+										<a href="">爽肤水</a>
+										<a href="">洁面眼霜</a>
+										<a href="">身体乳</a>
+										<a href="">卸妆</a>
+										<a href="">身体护理</a>
+										<a href="">男士护理</a>
+										<a href="">精油芳疗</a>
+										<a href="">丰胸</a>
+										<a href="">面部喷雾</a>
+										<a href="">T区护理</a>
+										<a href="">去角质</a>
+										<a href="">补水</a>
+										<a href="">祛痘</a>
+										<a href="">敏感修复</a>
+										<a href="">线上专柜</a>
+										<a href="">洁面眼霜</a>
+										<a href="">身体乳</a>
+										<a href="">卸妆</a>
+										<a href="">身体护理</a>
+										<a href="">男士护理</a>
+										<a href="">精油芳疗</a>
+									</div>
+								</div>
+
+								<div class="rightbar">
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									
+								</div>
+							</div>
+
+						</li>
+						<li>
+							<img src="../images/xianhua.png" alt="" />
+							<a href="">家访</a>/
+							<a href="">鲜花</a>
+							<div class="prosmore">
+								<div class="list_nav">
+									<h5>爽肤水   ></h5>
+									<div>
+										<a href="">官方直售</a>
+										<a href="">面膜</a>
+										<a href="">护肤套装</a>
+										<a href="">乳液面霜</a>
+										<a href="">精华液</a>
+										<a href="">护手霜</a>
+										<a href="">爽肤水</a>
+										<a href="">洁面眼霜</a>
+										<a href="">身体乳</a>
+										<a href="">卸妆</a>
+										<a href="">身体护理</a>
+										<a href="">男士护理</a>
+										<a href="">精油芳疗</a>
+										<a href="">丰胸</a>
+										<a href="">面部喷雾</a>
+										<a href="">T区护理</a>
+										<a href="">去角质</a>
+										<a href="">补水</a>
+										<a href="">祛痘</a>
+										<a href="">敏感修复</a>
+										<a href="">线上专柜</a>
+										<a href="">洁面眼霜</a>
+										<a href="">身体乳</a>
+										<a href="">卸妆</a>
+										<a href="">身体护理</a>
+										<a href="">男士护理</a>
+										<a href="">精油芳疗</a>
+									</div>
+								</div>
+
+								<div class="rightbar">
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+									<a href=""><img src="../images/banner_img.jpg" /></a>
+								</div>
+							</div>
+
+						</li>
+					</ul>
+				</div>
+				<div class="con_nav">
+					<ul>
+						<li>
+							<a href="javascript:;" style="margin-left: 10px;">一元抽奖</a>
+						</li>
+						<li>
+							<a href="javascript:;">拼团专区</a>
+						</li>
+						<li>
+							<a href="javascript:;">积分专区</a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="details_main">
+			<div class="detail_list_top">
+				<div class="leftbar_img">
+					<ul class="det_img">
+						<li class="show"><img src="../images/detail_b.jpg"/></li>
+						<li><img src="../images/detail_b.jpg"/></li>
+						<li><img src="../images/20170607001.png"/></li>
+						<li><img src="../images/detail_b.jpg"/></li>
+						<li><img src="../images/detail_b.jpg"/></li>
+					</ul>
+					<ul class="list_img">
+						<li class="actice"><img src="../images/detail_s.jpg"/></li>
+						<li><img src="../images/detail_s.jpg"/></li>
+						<li><img src="../images/detail_s.jpg"/></li>
+						<li><img src="../images/detail_s.jpg"/></li>
+						<li><img src="../images/detail_s.jpg"/></li>
+					</ul>
+					<p><img src="../images/fenxiang.jpg"/><a href="">分享</a>
+						<img src="../images/shoucang.jpg" alt="" class="shoucang"/><a href="">收藏商品  （ 5535人气 ）</a>
+						<a href="" class="jubao">举报</a></p>
+				</div>
+				<div class="center_text_list">
+					<h3>玛克邦纳儿童机能鞋2017夏季新品男女宝宝软底学步鞋包头凉鞋9219 <br />
+						<span>您的选择 改变孩子的一生</span>
+					</h3>
+					<div class="price">
+						<p>原售价：￥<del>1368</del></p>
+						<p>现售价：<i>&yen;668</i></p>
+						<p>其他信息</p>
+					</div>
+					<p class="yunfei">运费：    广东深圳  到  北京 <img src="../images/xiajiantou.jpg" alt="" />快递：<span>0.00</span></p>
+					<div class="duihuan">
+						<p>已兑换：<span>164132</span></p>
+						<p>评价：<span>164132</span></p>
+					</div>
+					<div class="detail_chima">
+						<p>尺码：</p>
+						<ul class="detail_list_chima">
+							<li class="show">XXL</li>
+							<li>M</li>
+							<li>S</li>
+							<li>L</li>
+							<li>XL</li>
+							<li>XXL</li>
+							<li>XXXL</li>
+							<li>XXXXL</li>
+							
+							
+						</ul>
+					</div>
+					<div class="detail_color">
+						<p>颜色：</p>
+						<ul class="detail_list_color">
+							<li class="show"></li>
+							<li style="background: #007AFF;"></li>
+							<li style="background: #009646;"></li>
+							<li style="background: #5270E1;"></li>
+							<li style="background: #64C333;"></li>
+							<li style="background: #EE4444;"></li>
+							<li style="background: #E7391C;"></li>
+							<li style="background: #007AFF;"></li>
+							<li style="background: #009646;"></li>
+							<li style="background: #5270E1;"></li>
+							<li style="background: #64C333;"></li>
+							<li style="background: #EE4444;"></li>
+						</ul>
+						
+					</div>
+					<div class="kucun">
+						<p>库存：451件</p>
+						<p>数量：<input type="number" min="1"/></p>
+					</div>
+					<div class="detail_btn">
+						<button>立即购买</button>
+						<button><img src="../images/gouwuche.jpg"/>加入购物车</bottom>
+					</div>
+					<div class="detail_service">
+						<a href="">服务承诺</a>
+						<a href="">正品保证</a>
+						<a href="">极速退款</a>
+						<a href="">赠运费险</a>
+						<a href="">七天无理退货</a>
+						<a href="">支付方式<img src="../images/xiajiantou.jpg" alt="" /></a>
+					</div>
+				</div>
+				<div class="detail_rightbar">
+					<img src="../images/right_s.jpg" class="arrows_top">
+					<div class="rightbar_list">
+						<div class="rightbar_cont">
+							<img src="../images/shoubiao.jpg"/>
+							<p>物流还可以，不算慢。鞋子</br>爱上都不卡都不卡的</p>
+							<span>￥5222</span>
+						</div>
+						<div class="rightbar_cont">
+							<img src="../images/shoubiao.jpg"/>
+							<p>物流还可以，不算慢。鞋子</br>爱上都不卡都不卡的</p>
+							<span>￥5222</span>
+						</div>
+					</div>
+					
+						
+					
+					<img src="../images/right_x.jpg" class="arrows_bottom">
+				</div>
+			</div>
+			<div class="detail_bottom">
+				<div class="left_bar">
+					<h4>热销产品</h4>
+					<div class="rightbar_list">
+						<div class="rightbar_cont">
+							<img src="../images/shoubiao.jpg"/>
+							<p>物流还可以，不算慢。鞋子爱上都不卡都不卡的</p>
+							<span>￥5222</span>
+						</div>
+						<div class="rightbar_cont">
+							<img src="../images/shoubiao.jpg"/>
+							<p>物流还可以，不算慢。鞋子爱上都不卡都不卡的</p>
+							<span>￥5222</span>
+						</div>
+					</div>
+				</div>
+				<div class="right_cont">
+					<div class="right_cont_nav">
+						<p class="active">商品详情</p>
+						<p>累计评价<span>522</span></p>
+					</div>
+					<div class="commodity_content">
+						<div class="detail_t" style="display: none;">
+							<div class="right_cont_section">
+								<ul>
+									<h6>品牌名称：POSTBULL/驿站公牛</h6>
+									<h6>产品参数：</h6>
+									<li>上市年份季节: 2017年夏季</li>
+									<li>货号: 5699   </li>
+									<li>销售渠道类型: 纯电商(只在线上销售)</li>
+									<li>鞋跟高: 低跟(1-3cm)</li>
+									<li>品牌: POSTBULL/驿站公牛  </li>
+									<li>鞋头款式: 圆头</li>
+									<li>颜色分类: 5699黑色 5699灰色 5699  </li>
+									<li>红色尺码: 38 39 40 41 42 43 44   </li>
+									<li>款式: 运动休闲鞋</li>
+									<li>颜色分类: 5699黑色 5699灰色 5699  </li>
+									<li>红色尺码: 38 39 40 41 42 43 44   </li>
+									<li>款式: 运动休闲鞋</li>
+									<li>颜色分类: 5699黑色 5699灰色 5699  </li>
+									<li>红色尺码: 38 39 40 41 42 43 44   </li>
+									<li>款式: 运动休闲鞋</li>
+									<li>颜色分类: 5699黑色 5699灰色 5699  </li>
+									<li>红色尺码: 38 39 40 41 42 43 44   </li>
+								</ul>
+								
+							</div>
+							<div class="product_details">
+								产品详情介绍
+							</div>
+						</div>
+						<div class="detail_pl">
+							<div class="detail_pl_top">
+								<div class="pingfen">
+									<p>与描述相似</p>
+									<span>5.0</span>
+									<div>
+										<img src="../images/icon_xing.jpg" alt="" />
+										<img src="../images/icon_xing.jpg" alt="" />
+										<img src="../images/icon_xing.jpg" alt="" />
+										<img src="../images/icon_xing.jpg" alt="" />
+										<img src="../images/icon_xing.jpg" alt="" />
+									</div>
+								</div>
+								<div class="pingfen_class">
+									<a href="">质量好（<span>288</span>）</a>
+									<a href="">质量好（<span>288</span>）</a>
+									<a href="">质量好（<span>288</span>）</a>
+									<a href="">质量好（<span>288</span>）</a>
+									<a href="">质量好（<span>288</span>）</a>
+									<a href="">质量好（<span>288</span>）</a>
+									<a href="" class="inferior">一般般（<span>288</span>）</a>
+								</div>
+							</div>
+							<div class="discuss_list">
+								<div class="discuss_list_top">
+									<form>
+										<input type="radio" name="category" value="" checked="true"/><span>全部</span>
+										<input type="radio" name="category" value=""/><span>有图</span>
+									</form>
+								</div>
+								<ul class="discuss_list_main">
+									<li>
+										<div id="discuss">
+											<p>物流还可以，不算慢。鞋子和描述的也差不多，反正六七十块钱的鞋子应该是这样的质量的？
+皮还蛮软的呢。就是不知道透不透气了，现在天气这么热了，太热了脚气就尴尬了。整体还
+是不错的。好评好评。还送了袜子和鞋垫。额外的惊喜。</p>
+											<div class="remark">
+												<img src="../images/TB2dwJUrHJmpuFjSZFwXXaE4VXa-196993935.png_400x400q60.png" alt="" class="active_img"/>
+												<img src="../images/TB2dwJUrHJmpuFjSZFwXXaE4VXa-196993935.png_400x400q60.png" alt="" />
+												<img src="../images/TB2dwJUrHJmpuFjSZFwXXaE4VXa-196993935.png_400x400q60.png" alt="" />
+												<img src="../images/TB2dwJUrHJmpuFjSZFwXXaE4VXa-196993935.png_400x400q60.png" alt="" />
+											</div>
+											<div class="pingl_tan">
+												<ol>
+													<img src="../images/58df552cdce46.png" alt="" class="show"/>
+													<img src="../images/201706071125.png" alt="" />
+													<img src="../images/58df552cdce46.png" alt="" />
+													<img src="../images/201706071125.png" alt="" />
+													
+												</ol>
+														
+											</div>
+										</div>
+										<div>
+											<p>颜色分类：<span>2019白鞋红跟</span></p>
+											<p>尺码：<span>43</span></p>
+										</div>
+										<div>
+											<p>赵**某（匿名）</p>
+										</div>
+									</li>
+									
+								</ul>
+							</div>	
+								
+						</div>
+							
+					</div>
+					
+				</div>
+			</div>	
+			<!--猜你喜欢-->
+			<div class="gw_like">
+				<div class="gw_like_header">
+					<div></div>
+					<p>猜你喜欢</p>
+				</div>
+				<ul class="commodity_footer">
+					<li>
+						<img src="../images/list_icon.jpg" class="icon_foot"/>
+						<span>￥99.00</span>
+						<p>已售464131件</p>
+						<p>Amil[极简主义]2017新春大码休闲字母织带口袋拉链连衣裙</p>
+						<p><img src="../images/shoucang_io.jpg"/>收藏</p>
+						<button>加入购物车</button>
+					</li>
+					<li>
+						<img src="../images/list_icon.jpg" class="icon_foot"/>
+						<span>￥99.00</span>
+						<p>已售464131件</p>
+						<p>Amil[极简主义]2017新春大码休闲字母织带口袋拉链连衣裙</p>
+						<p><img src="../images/shoucang_io.jpg"/>收藏</p>
+						<button>加入购物车</button>
+					</li>
+					<li>
+						<img src="../images/list_icon.jpg" class="icon_foot"/>
+						<span>￥99.00</span>
+						<p>已售464131件</p>
+						<p>Amil[极简主义]2017新春大码休闲字母织带口袋拉链连衣裙</p>
+						<p><img src="../images/shoucang_io.jpg"/>收藏</p>
+						<button>加入购物车</button>
+					</li>
+					<li>
+						<img src="../images/list_icon.jpg" class="icon_foot"/>
+						<span>￥99.00</span>
+						<p>已售464131件</p>
+						<p>Amil[极简主义]2017新春大码休闲字母织带口袋拉链连衣裙</p>
+						<p><img src="../images/shoucang_io.jpg"/>收藏</p>
+						<button>加入购物车</button>
+					</li>
+					<li>
+						<img src="../images/list_icon.jpg" class="icon_foot"/>
+						<span>￥99.00</span>
+						<p>已售464131件</p>
+						<p>Amil[极简主义]2017新春大码休闲字母织带口袋拉链连衣裙</p>
+						<p><img src="../images/shoucang_io.jpg"/>收藏</p>
+						<button>加入购物车</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--底部-->
+		<iframe src="../publicHtml/public_footer.html" width="100%" height="330px"></iframe>
+        
+	</body>
+	<script>
+		$(document).ready(function(){
+			$(".remark img").click(function(){
+				$("#discuss .pingl_tan").css("display","block");
+				$(".remark img").eq($(this).index()).addClass("active_img").siblings().removeClass("active_img");
+				$(".pingl_tan ol img").hide().eq($(this).index()).show();
+			})
+		})
+	</script>
+</html>
