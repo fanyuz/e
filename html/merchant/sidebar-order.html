@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>订单管理</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="renderer" content="webkit">
+		<script src="../js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/alert.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<iframe src="../publicHtml/public_head.html" width="100%" height="160"></iframe>
+		<div class="w-1200 conment clearfix">
+			<iframe src="sidebar.html" width="200" height="500"></iframe>
+			<div class="order fr">
+				<div class="order-itme">
+					<div class="order-header clearfix">
+						<div class="order-nav fl">
+							<a href="javascript:;" class="hover">全部订单</a>
+							<a href="javascript:;">待付款</a>
+							<a href="javascript:;">待发货</a>
+							<a href="javascript:;">待确认</a>
+							<a href="javascript:;">待评价</a>
+							<a href="javascript:;">待处理催单</a>
+						</div>
+						<div class="fr">
+							<form action="" method="post">
+								<input type="text" name="" id="" class="order-input"/>
+								<input type="submit" value="搜索" />
+							</form>
+						</div>
+					</div>
+					<div class="order-crumbs clearfix">
+						<div class="order-mbsl fl">
+							<label for=""><input type="checkbox" name="" id="checkbox" value="" />全选</label>
+							<a href="javascript:;" class="order-itmebox">批量发货</a>
+							<a href="javascript:;" class="order-itmebox">批量标记</a>
+							<a href="javascript:;" class="order-itmebox">批量免运费</a>
+						</div>
+						<div class="order-page fr">
+							<a href="javascript:;" class="order-itmepage" title="上一页">上一页</a>
+							<a href="javascript:;" class="order-itmepage" title="下一页">下一页</a>
+						</div>
+					</div>
+					<div class="order-table">
+						<table border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td width="360">订单详情</td>
+								<td>单价</td>
+								<td>买家</td>
+								<td>总额</td>
+								<td>状态</td>
+								<td>操作</td>
+							</tr>
+						</table>
+					</div>
+					<div class="order-tables">
+						<div class="order-itab">
+							<table border="" cellspacing="" cellpadding="">
+								<tr>
+									<td class="order-td">
+										<input type="checkbox" name="" id="" class="no-checkbox"/>
+										<span>2017-07-18</span>
+										<em>订单编号：<i>123456789</i></em>
+									</td>
+								</tr>
+							</table>
+							<table border="" cellspacing="0" cellpadding="0">
+								<tr class="order-tr">
+									<td class="itme-td clearfix">
+										<div class="td-img">
+											<img src="../images/detail_s.jpg" alt="产品展示" />
+										</div>
+										<div class="td-parameter">
+											<a href="javascript:;">
+												<span class="order-referral">史迪奇公仔史迪仔超大号毛绒玩具情侣布娃娃结婚生日礼物男生女生</span>
+											</a>
+											<p class="order-canshu">
+												<span>
+													<span>颜色</span>
+													<span>：</span>
+													<span>白色</span>
+												</span>
+												<span>
+													<span>鞋码</span>
+													<span>：</span>
+													<span>42</span>
+												</span>
+											</p>
+										</div>
+										<span class="td-number">x <em>2</em></span>
+									</td>
+									<td width="116">
+										<span>¥90</span>
+									</td>
+									<td width="116">
+										<span>张三</span>
+									</td>
+									<td width="116">
+										<div>¥99</div>
+										<div style="color: #ccc;">(含快递：<span>¥9.00</span>)</div>
+									</td>
+									<td width="116">
+										待收货
+									</td>
+									<td width="114">
+										<a href="javascript:;" class="order-subbox order-submit">更改价格</a>
+										<a href="sidebar-orderpage.html" class="order-subbox">查看订单</a>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="order-itab">
+							<table border="" cellspacing="" cellpadding="">
+								<tr>
+									<td class="order-td">
+										<input type="checkbox" name="" id="" class="no-checkbox"/>
+										<span>2017-07-18</span>
+										<em>订单编号：<i>123456789</i></em>
+									</td>
+								</tr>
+							</table>
+							<table border="" cellspacing="0" cellpadding="0">
+								<tr class="order-tr">
+									<td class="itme-td clearfix">
+										<div class="td-img">
+											<img src="../images/detail_s.jpg" alt="产品展示" />
+										</div>
+										<div class="td-parameter">
+											<a href="javascript:;">
+												<span class="order-referral">史迪奇公仔史迪仔超大号毛绒玩具情侣布娃娃结婚生日礼物男生女生</span>
+											</a>
+											<p class="order-canshu">
+												<span>
+													<span>颜色</span>
+													<span>：</span>
+													<span>白色</span>
+												</span>
+												<span>
+													<span>鞋码</span>
+													<span>：</span>
+													<span>42</span>
+												</span>
+											</p>
+										</div>
+										<span class="td-number">x <em>2</em></span>
+									</td>
+									<td width="116">
+										<span>¥90</span>
+									</td>
+									<td width="116">
+										<span>张三</span>
+									</td>
+									<td width="116">
+										<div>¥99</div>
+										<div style="color: #ccc;">(含快递：<span>¥9.00</span>)</div>
+									</td>
+									<td width="116">
+										待收货
+									</td>
+									<td width="114">
+										<a href="javascript:;" class="order-subbox order-submit">更改价格</a>
+										<a href="javascript:;" class="order-subbox">查看订单</a>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="order-itab">
+							<table border="" cellspacing="" cellpadding="">
+								<tr>
+									<td class="order-td">
+										<input type="checkbox" name="" id="" class="no-checkbox"/>
+										<span>2017-07-18</span>
+										<em>订单编号：<i>123456789</i></em>
+									</td>
+								</tr>
+							</table>
+							<table border="" cellspacing="0" cellpadding="0">
+								<tr class="order-tr">
+									<td class="itme-td clearfix">
+										<div class="td-img">
+											<img src="../images/detail_s.jpg" alt="产品展示" />
+										</div>
+										<div class="td-parameter">
+											<a href="javascript:;">
+												<span class="order-referral">史迪奇公仔史迪仔超大号毛绒玩具情侣布娃娃结婚生日礼物男生女生</span>
+											</a>
+											<p class="order-canshu">
+												<span>
+													<span>颜色</span>
+													<span>：</span>
+													<span>白色</span>
+												</span>
+												<span>
+													<span>鞋码</span>
+													<span>：</span>
+													<span>42</span>
+												</span>
+											</p>
+										</div>
+										<span class="td-number">x <em>2</em></span>
+									</td>
+									<td width="116">
+										<span data-rmb=50>¥50</span>
+									</td>
+									<td width="116">
+										<span>张三</span>
+									</td>
+									<td width="116">
+										<div data-yf="50">¥99</div>
+										<div style="color: #ccc;">(含快递：<span>¥9.00</span>)</div>
+									</td>
+									<td width="116">
+										待收货
+									</td>
+									<td width="114">
+										<a href="javascript:;" class="order-subbox order-submit" data-rmb=50 data-yf="10">更改价格</a>
+										<a href="javascript:;" class="order-subbox">查看订单</a>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="rate-page">
+						<div class="rate-paginator">
+							<span class="rate-page-prev">&lt;&lt;上一页</span>
+							<a href="javascript:;" class="hover">1</a>
+							<a href="javascript:;">2</a>
+							<a href="javascript:;">3</a>
+							<span class="rate-page-break">...</span>
+							<a data-page="2" href="javascript:;">下一页&gt;&gt;</a>
+							<em>共<i>1000</i>页</em>
+							<em>到第<input type="text" name="" id="" />页</em>
+							<a href="javascript:;" class="rate-submit">确定</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="alert">
+				<div class="alert-box">
+					<h3>更改价格<i class="itmeclose"></i></h3>
+					<div class="bgbox">
+						<div class="bgboxitme">
+							<p>买家：<span>大眼萌的小黄人</span></p>
+							<p class="m-t-10">订单号：<span>123456789</span></p>
+						</div>
+						<div class="bgboxrng">
+							<div class="rng-it">
+								<label for="">商品总价：<span class="cf18f03">¥<i>99</i>.00</span></label><input type="text" name="" id="" />
+								<span class="rng-it-r">输入要修改的金额。<br />只填数字即可。</span>
+							</div>
+							<div class="rng-it"><label for="">配送费用：<span class="cf18f03">¥<i>5</i>.00</span></label><input type="text" name="" id="" /></div>
+							<p class="font-14">订单总价：<span class="cf18f03">¥<i>99</i>.00</span></p>
+						</div>
+						<a href="javascript:;" class="ogb-submit">保存</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

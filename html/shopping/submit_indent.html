@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
-
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="renderer" content="webkit">
-		<title>首页</title>
+		<title>提交订单</title>
 		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="../css/public.css" />
 		<link rel="stylesheet" type="text/css" href="../css/principal_part.css" />
@@ -14,20 +13,18 @@
 		<script src="../js/jquery-1.8.3.min.js"></script>
 		<script src="../js/swiper-3.4.2.min.js"></script>
 		<script src="../js/public.js"></script>
-		
+		<script src="../js/public_classify.js"></script>
 	</head>
-
-	<body style="background: #F5F5F5;">
-		<!--商城侧边栏-->
-		<iframe src="../publicHtml/public_sidebar.html" style="width: 310px;height: 100vh;position: fixed;top: 0;right: 0px;z-index: 99999;"></iframe>
-		<!--头部-->
+	<body>
+		<!--头部 logo 搜索框-->
 		<iframe src="../publicHtml/public_head.html" width="100%" height="160"></iframe>
+		
 		<!--classification 产品分类-->
-		<div class="classification clearfix">
+		<div class="classification clearfix" style="margin-bottom: 30px;border-bottom: 2px solid #009646;">
 			<div class="min_1200">
 				<div class="con_text">
 					<h3><i></i>商品分类</h3>
-					<ul class="prosul" id="proinfo" style="display: block;">
+					<ul class="prosul" id="proinfo" style="display: none;">
 						<li>
 							<img src="../images/yifu.png" alt="" />
 							<a href="">男装</a>/
@@ -681,517 +678,208 @@
 				</div>
 			</div>
 		</div>
-		<!--banner-->
-		<div class="home_banner">
-			
-			<div class="swiper-container">
-
-				<div class="swiper-wrapper">
-				
-					<div class="swiper-slide">
-						<a href="http://www.baidu.com">
-							<img src="../images/20170704plrnmw.jpg"/>
-						</a>
-					</div>
-					<div class="swiper-slide">
-						<a href="homepage.html">
-							<img src="../images/20170630xtwcqi.jpg"/>
-						</a>
-					</div>
+		
+		
+		<!--提交订单内容部分-->
+	    <div class="main_order_form">
+	    	<!--收货地址-->
+	    	<div class="address">
+	    		<h4>选择收货地址</h4>
+	    		<div class="add_lise">
+	    			<a href="" class="btn_left"><img src="../images/dd_left.jpg"/></a>
+	    			<div class="add_cont">
+	    				<ul class="add_ction">
+	    					<li class="show">
+	    						<div class="background"></div>
+	    						<div class="add_content">
+	    							<p>北京        啦啦啦啦（收）</p>
+	    							<p>北京    北京市    大兴区</p>
+	    							<p>北京市大兴区九龙山庄xxxxxxxxxxxxxxxxxx大厦6-A</p>
+	    							<p>手机：182xxxxxxxx</p>
+	    						</div>
+	    					</li>
+	    					<li>
+	    						<div class="background"></div>
+	    						<div class="add_content">
+	    							<p>北京        啦啦啦啦（收）</p>
+	    							<p>北京    北京市    大兴区</p>
+	    							<p>北京市大兴区九龙山庄xxxxxxxxxxxxxxxxxx大厦6-A</p>
+	    							<p>手机：182xxxxxxxx</p>
+	    						</div>
+	    					</li>
+	    					<li>
+	    						<div class="background"></div>
+	    						<div class="add_content">
+	    							<p>北京        啦啦啦啦（收）</p>
+	    							<p>北京    北京市    大兴区</p>
+	    							<p>北京市大兴区九龙山庄xxxxxxxxxxxxxxxxxx大厦6-A</p>
+	    							<p>手机：182xxxxxxxx</p>
+	    						</div>
+	    					</li>
+	    					<li>
+	    						<div class="background"></div>
+	    						<div class="add_content" id="address_add">
+	    							<h6><img src="../images/icon_add.png"/>增加新的收获地址</h6>
+									
+	    						</div>
+	    					</li>
+	    				</ul>
+	    			</div>
+	    			<a href="" class="btn_right"><img src="../images/dd_right.jpg"/></a>
+	    		</div>
+	    	</div>
+	    	<div class="payment_way">
+	    		<h4>选择支付方式</h4>
+	    		<form method="post">
+	    			<p>
+	    				<input type="radio" name="payment" value=""/>
+	    				<img src="../images/icon_zhifub.jpg"/>
+	    				<span>
+	    					支付宝支付
+	    				</span>
+	    			</p>
+	    			<p>
+	    				<input type="radio" name="payment" value=""/>
+	    				<img src="../images/icon_weixin.jpg"/>
+	    				<span>
+	    					微信支付
+	    				</span>
+	    			</p>
+	    		</form>
+	    	</div>
+	    	<!--确认订单-->
+	    	<div class="order_form">
+	    		<h4>确认订单信息</h4>
+	    		<div class="order_form_cont">
+	    			<ul>
+	    				<li>全选</li>
+	    				<li class="order_form_messoge">商品信息</li>
+	    				<li>单价</li>
+	    				<li>数量</li>
+	    				<li>金额</li>
+	    				<li>操作</li>
+	    				<li>小计</li>
+	    			</ul>
+		    			
+	    			<ol>
+	    				<div class="store_name">
+		    				<input type="checkbox" id="" value="" />
+		    				<p>店铺: 驿站公牛旗舰店</p>
+		    				<p>选择快递方式：</p>
+		    				<select>
+								<option value="1" selected="selected">顺丰快递，邮费￥15</option>
+								<option value="2">顺丰快递</option>
+							</select>
+		    			</div>
+	    				<li><input type="checkbox" class="checkbox" value="" /></li>
+	    				<li class="order_form_messoge">
+	    					<img src="../images/dd_list.jpg"/>
+	    					<a href="">期刊论文发表降低重复率代发论文修改格式改重省级教育评职称发表</a>
+	    				</li>
+	    				<li><p>688积分</p></li>
+	    				<li class="commodity_num"><i class="minus">-</i><input type="text" value="1" class="num"/><i class="num_add">+</i></li>
+	    				<li><span>688积分</span></li>
+	    				<li><a href="" class="yr_scj">移入收藏夹</a></li>
+	    				<li><span>688积分</span></li>
+	    			</ol>
+	    			<div class="liuyan">
+	    				<div>
+	    					<p>给卖家留言：<input type="text" /></p>
+	    				</div>
+	    				<div>
+	    					<p>运送方式:  普通配送快递 免邮</p>
+	    				</div>
+	    				<div class="">
+	    					<p><span>运费：      </span><i>￥10.00</i></p>	
+	    					<p><span>已用积分：      </span><i>688</i></p>
+	    					<p>店铺合计（含运费）：<i>￥10.00</i></p>
+	    				</div>
+	    			</div>
+	    			<div class="order_submin">
+	    				<div>
+	    					<p>实付款：￥10.00</p>
+	    					<span>寄送至：北京北京大兴西红门北京市大兴区西红门耀艳大厦6-A收货人：张魏康  183xxxxxxxx</span>
+	    				</div>
+	    				<button>提交订单</button>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+	    
+	    <!--新增收货地址-->
+	    <div class="shade_address_box">
+	    	<div class="shade_address">
+	    		<div class="shade_head">
+					<p>新增收货地址</p>
+					<span id="shade_span_end"><img src="../images/icon_end.png"/></span>
 				</div>
-				<!-- 分页器 -->
-				<div class="swiper-pagination"></div>
-	
-			</div>
-		</div>
-		<!--内容部分-->
-		<div class="home_main">
-			<!--一元抽奖区-->
-	        <div class="luckdraw common clearfix">
-	        	<h3><i class="icon_draw"></i>一元抽奖区</h3>
-	        	<div class="drar_lt">
-	        		<img src="../images/draw.png"/ alt="转盘抽奖图片">
-	        	</div>
-	        	<div class="drar_rt">
-	        		<div class="drar_top clearfix">
-	        			<div class="drar_top_lt">
-	        				<img src="../images/grab.png"/ alt="一元抢购显示图片">
-	        				<div class="drar_Mask"></div>
-	        				<div class="drar_goin">
-	        					<h4>1元开抢</h4>
-	        					<a href="javascript:;">前去抽奖</a>
-	        				</div>
-	        			</div>
-	        			<div class="drar_top_rt">
-	        				<ul>
-	        					<li>
-	        						<a href="javascript:;"><img src="../images/lunbo1.png"/></a>
-	        					</li>
-	        				</ul>
-	        				<div class="drar_img">
-	        					<img src="../images/lunbo2.png"/>
-	        				</div>
-	        			</div>
-	        		</div>
-	        		<div class="drar_bottom clearfix">
-	        			<ul>
-	        				<li><a href="javascript:;"><img src="../images/201706071125.png"/></a></li>
-	        				<li><a href="javascript:;"><img src="../images/201706071125.png"/></a></li>
-	        				<li><a href="javascript:;"><img src="../images/201706071125.png"/></a></li>
-	        				<li><a href="javascript:;"><img src="../images/201706071125.png"/></a></li>
-	        			</ul>
-	        			<div class="w133h140">
-	        				<a href="javascript:;"><img src="../images/201706071136.png"/></a>
-	        			</div>
-	        		</div>
-	        	</div>
-	        </div>
-	        
-	        <!--爱上团购-->
-		        <div class="sing">
-		        	<div class="sing_tg">
-		        		<div class="sing_tg_box"></div>
-		        		<div class="sing_tg_text"></div>
-		        	</div>
-		        	<!--限时团购时间-->
-		        	<div class="sing_group common clearfix">
-		        		<h3><i class="icon_tg"></i>团购</h3>
-		        		
-		        	</div>
-		        	<!--团购列表-->
-		        	<div class="sing_list">
-		        		<ul>
-		        			<li>
-		        				<div class="sing_singbox">
-			        				<a href="javascript:;">
-			        					<div class="sing_list_og1">
-			        						<div class="sing_og1_img">
-			        							<img src="../images/20170607001.png" alt="图片展示" />
-			        						</div>
-			        						<p class="p1">西铁城(CITIZEN)手表皮带夜光时尚潮流男士骚橙光动潮流男士骚橙光动</p>
-			        					</div>		        					
-			        				</a>
-			        				<p class="p2"><em>¥55.00</em><span>¥168.00</span></p>
-		        				</div>
-		        				<span class="sing_box"></span>
-		        				<div class="sing_singbox">
-			        				<a href="javascript:;">
-			        					<div class="sing_list_og1">
-			        						<div class="sing_og1_img">
-			        							<img src="../images/20170607001.png" alt="图片展示" />
-			        						</div>
-			        						<p class="p1">西铁城(CITIZEN)手表皮带夜光时尚潮流男士骚橙光动潮流男士骚橙光动</p>
-			        					</div>		        					
-			        				</a>
-			        				<p class="p2"><em>¥55.00</em><span>¥168.00</span></p>
-		        				</div>
-		        			</li>
-		        			<li>
-		        				<div class="sing_singbox">
-			        				<a href="javascript:;">
-			        					<div class="sing_list_og1">
-			        						<div class="sing_og1_img">
-			        							<img src="../images/20170607001.png" alt="图片展示" />
-			        						</div>
-			        						<p class="p1">西铁城(CITIZEN)手表皮带夜光时尚潮流男士骚橙光动潮流男士骚橙光动</p>
-			        					</div>		        					
-			        				</a>
-			        				<p class="p2"><em>¥55.00</em><span>¥168.00</span></p>
-		        				</div>
-		        				<span class="sing_box"></span>
-		        				<div class="sing_singbox">
-			        				<a href="javascript:;">
-			        					<div class="sing_list_og1">
-			        						<div class="sing_og1_img">
-			        							<img src="../images/20170607001.png" alt="图片展示" />
-			        						</div>
-			        						<p class="p1">西铁城(CITIZEN)手表皮带夜光时尚潮流男士骚橙光动潮流男士骚橙光动</p>
-			        					</div>		        					
-			        				</a>
-			        				<p class="p2"><em>¥55.00</em><span>¥168.00</span></p>
-		        				</div>
-		        			</li>
-		        			
-		        		</ul>
-		        	</div>
-		        	<div class="sing_banner">
-		        		<div class="sing_banner_list">
-		        			<ul class="clearfix">
-		        				<li>
-		        					<a href="javascript:;">
-		        						<img src="../images/20170607img001.png" alt="产品展示图"/>
-		        					</a>
-		        				</li>
-		        				<li>
-		        					<a href="javascript:;">
-		        						<img src="../images/20170607img002.png" alt="产品展示图"/>
-		        					</a>
-		        				</li>
-		        				<li>
-		        					<a href="javascript:;">
-		        						<img src="../images/20170607img001.png" alt="产品展示图"/>
-		        					</a>
-		        				</li>
-		        			</ul>
-		        		</div>
-		        	</div>
-		        </div>
-		        <!--精致潮装-->
-		        <div class="delicate">
-		        	<div class="delicate_zd common clearfix" style="background: #5270e1;">
-		        		<h3>精致潮装</h3>
-		        		<div class="del_zd_rt">
-		        			<ul>
-		        				<li><a href="javascript:;">女装</a></li>
-		        				<li><a href="javascript:;">男装</a></li>
-		        				<li><a href="javascript:;">鞋子</a></li>
-		        				<li><a href="javascript:;">户外</a></li>
-		        				<li><a href="javascript:;">健身器材</a></li>
-		        			</ul>
-		        		</div>
-		        	</div>
-		        	<div class="del_list clearfix">
-		        		<div class="del_list_lt">
-		        			<a href="javascript:;" class="gry_box">
-		        				<img src="../images/icon_chao.jpg"/>
-		        				<div class="gry_box_bg">
-		        					<div class="gay_bg_tab gry_color_64c333">
-		        						【送豪礼】送手环+支架+音乐会员
-		        					</div>
-		        				</div>
-		        				<div class="gry_box_title gry_bg_ef6363">
-		        					<p class="gay_box_p1" style="text-align: left;text-indent: 10px;">Beats豪礼大放惠</p>
-		        					<p class="gay_box_p2" style="text-align: left;text-indent: 10px;">好礼送不停</p>
-		        				</div>
-		        			</a>
-		        		</div>
-		        		<div class="del_list_cn">
-		        			<div id="">
-			        			<a href="javascript:;" class="del_cd">
-			        				<p class="del_cd_p1">笔记本平板特惠</p>
-			        				<p class="del_cd_p2">最高直降千元</p>
-			        				<div class="del_cd_img"><img src="../images/TB1W2SURpXXXXXeXpXXSutbFXXX.png"/></div>
-			        			</a>
-			        			<a href="javascript:;" class="del_cd">
-			        				<p class="del_cd_p1">笔记本平板特惠</p>
-			        				<p class="del_cd_p2">最高直降千元</p>
-			        				<div class="del_cd_img"><img src="../images/TB1W2SURpXXXXXeXpXXSutbFXXX.png"/></div>
-			        			</a>
-			        			<a href="javascript:;" class="del_cd">
-			        				<p class="del_cd_p1">笔记本平板特惠</p>
-			        				<p class="del_cd_p2">最高直降千元</p>
-			        				<div class="del_cd_img"><img src="../images/TB1W2SURpXXXXXeXpXXSutbFXXX.png"/></div>
-			        			</a>
-			        			<a href="javascript:;" class="del_cd">
-			        				<p class="del_cd_p1">笔记本平板特惠</p>
-			        				<p class="del_cd_p2">最高直降千元</p>
-			        				<div class="del_cd_img"><img src="../images/TB1W2SURpXXXXXeXpXXSutbFXXX.png"/></div>
-			        			</a>
-			        			<a href="javascript:;" class="del_cd">
-			        				<p class="del_cd_p1">笔记本平板特惠</p>
-			        				<p class="del_cd_p2">最高直降千元</p>
-			        				<div class="del_cd_img"><img src="../images/TB1W2SURpXXXXXeXpXXSutbFXXX.png"/></div>
-			        			</a>
-			        			<a href="javascript:;" class="del_cd">
-			        				<p class="del_cd_p1">笔记本平板特惠</p>
-			        				<p class="del_cd_p2">最高直降千元</p>
-			        				<div class="del_cd_img"><img src="../images/TB1W2SURpXXXXXeXpXXSutbFXXX.png"/></div>
-			        			</a>
-			        			<a href="javascript:;" class="del_cd">
-			        				<p class="del_cd_p1">笔记本平板特惠</p>
-			        				<p class="del_cd_p2">最高直降千元</p>
-			        				<div class="del_cd_img"><img src="../images/TB1W2SURpXXXXXeXpXXSutbFXXX.png"/></div>
-			        			</a>
-			        			<a href="javascript:;" class="del_cd">
-			        				<p class="del_cd_p1">笔记本平板特惠</p>
-			        				<p class="del_cd_p2">最高直降千元</p>
-			        				<div class="del_cd_img"><img src="../images/TB1W2SURpXXXXXeXpXXSutbFXXX.png"/></div>
-			        			</a>
-		        			</div>
-		        		</div>
-		        	</div>
-		        </div>
-		        
-		        <!--品质生活-->
-		        <div class="delicate">
-		        	<div class="delicate_zd common clearfix" style="background: #BB8545;">
-		        		<h3>精致潮装</h3>
-		        		<div class="del_zd_rt">
-		        			<ul>
-		        				<li><a href="javascript:;">女装</a></li>
-		        				<li><a href="javascript:;">男装</a></li>
-		        				<li><a href="javascript:;">鞋子</a></li>
-		        				<li><a href="javascript:;">户外</a></li>
-		        				<li><a href="javascript:;">健身器材</a></li>
-		        			</ul>
-		        		</div>
-		        	</div>
-		        	<div class="del_list clearfix">
-		        		<div class="del_list_lt">
-		        			<a href="javascript:;" class="gry_box">
-		        				<img src="../images/icon_chao.jpg"/>
-		        				<div class="gry_box_bg">
-		        					<div class="gay_bg_tab gry_color_64c333">
-		        						【送豪礼】送手环+支架+音乐会员
-		        					</div>
-		        				</div>
-		        				<div class="gry_box_title gry_bg_64c333">
-		        					<p class="gay_box_p1">健康好礼买一送一</p>
-			        					<p class="gay_box_p2">送给最爱的母亲</p>
-		        				</div>
-		        			</a>
-		        		</div>
-		        		<div class="life_bt_cn">
-		        			<a href="javascript:;" class="del_cd">
-		        				<p class="del_cd_p1">笔记本平板特惠</p>
-		        				<p class="del_cd_p2">最高直降千元</p>
-		        				<p class="del_cd_img"><img src="../images/TB1W2SURpXXXXXeXpXXSutbFXXX.png"/></p>
-		        			</a>
-		        			<a href="javascript:;" class="del_cd">
-		        				<p class="del_cd_p1">笔记本平板特惠</p>
-		        				<p class="del_cd_p2">最高直降千元</p>
-		        				<p class="del_cd_img"><img src="../images/TB1W2SURpXXXXXeXpXXSutbFXXX.png"/></p>
-		        			</a>
-		        			<a href="javascript:;" class="del_cd">
-		        				<p class="del_cd_p1">笔记本平板特惠</p>
-		        				<p class="del_cd_p2">最高直降千元</p>
-		        				<p class="del_cd_img"><img src="../images/TB1W2SURpXXXXXeXpXXSutbFXXX.png"/></p>
-		        			</a>
-		        			<a href="javascript:;" class="del_cd">
-		        				<p class="del_cd_p1">笔记本平板特惠</p>
-		        				<p class="del_cd_p2">最高直降千元</p>
-		        				<p class="del_cd_img"><img src="../images/TB1W2SURpXXXXXeXpXXSutbFXXX.png"/></p>
-		        			</a>
-		        			<a href="javascript:;" class="del_cd">
-		        				<p class="del_cd_p1">笔记本平板特惠</p>
-		        				<p class="del_cd_p2">最高直降千元</p>
-		        				<p class="del_cd_img"><img src="../images/TB1W2SURpXXXXXeXpXXSutbFXXX.png"/></p>
-		        			</a>
-		        			<a href="javascript:;" class="del_cd">
-		        				<p class="del_cd_p1">笔记本平板特惠</p>
-		        				<p class="del_cd_p2">最高直降千元</p>
-		        				<p class="del_cd_img"><img src="../images/TB1W2SURpXXXXXeXpXXSutbFXXX.png"/></p>
-		        			</a>
-		        			
-		        		</div>
-		        		<div class="life_bt_rt clearfix">
-		        			<div>
-		        				<a href="javascript:;" class="itme_box just_w_260">
-		        					<p class="just_box1">笔记本平板特惠</p>
-			        				<p class="just_box2">最高直降千元</p>
-			        				<div class="just_box_img">
-			        					<img src="../images/TB1W2SURpXXXXXeXpXXSutbFXXX.png"/>
-			        				</div>
-		        				</a>
-		        				<a href="javascript:;" class="itme_box just_w_260">
-		        					<p class="just_box1">笔记本平板特惠</p>
-			        				<p class="just_box2">最高直降千元</p>
-			        				<div class="just_box_img">
-			        					<img src="../images/TB1W2SURpXXXXXeXpXXSutbFXXX.png"/>
-			        				</div>
-		        				</a>
-		        				<a href="javascript:;" class="itme_box just_w_260">
-		        					<p class="just_box1">笔记本平板特惠</p>
-			        				<p class="just_box2">最高直降千元</p>
-			        				<div class="just_box_img">
-			        					<img src="../images/TB1W2SURpXXXXXeXpXXSutbFXXX.png"/>
-			        				</div>
-		        				</a>
-		        			</div>
-		        		</div>
-		        	</div>
-		        </div>
-		        <!--猜你喜欢-->
-		        <div class="like">
-		        	<h2 class="like_guess">
-		        		<span class="guess_title guess_six">
-		        			<i class="icon_heart"></i>
-		        			猜你喜欢
-		        		</span>
-		        	</h2>
-		        	<div class="guess_chanp">
-		        		<div class="guess_list">
-		        			<ul class="guess_ul  clearfix">
-		        				<li class="common_h_340">
-		        					<a href="javascript:;" class="guess_use">
-		        						<span class="itme_img">
-		        							<img src="../images/TB2dwJUrHJmpuFjSZFwXXaE4VXa-196993935.png_400x400q60.png"/>
-		        						</span>
-		        						<div class="itme_inli">
-		        							<span class="itme_intitle"><em>Amii[极简主义]2017春新大码休闲字母织带口袋拉链连衣裙</em></span>
-		        							<span class="itme_arr">
-		        								<i class="itme_rmb">¥</i>
-		        								<span class="itme_number">520</span>
-		        								<span class="">.00</span>
-		        							</span>
-		        						</div>
-		        					</a>
-		        				</li>
-		        				<li>
-		        					<a href="javascript:;" class="guess_use">
-		        						<span class="itme_img">
-		        							<img src="../images/TB2dwJUrHJmpuFjSZFwXXaE4VXa-196993935.png_400x400q60.png"/>
-		        						</span>
-		        						<div class="itme_inli">
-		        							<span class="itme_intitle"><em>Amii[极简主义]2017春新大码休闲字母织带口袋拉链连衣裙</em></span>
-		        							<span class="itme_arr">
-		        								<i class="itme_rmb">¥</i>
-		        								<span class="itme_number">520</span>
-		        								<span class="">.00</span>
-		        							</span>
-		        						</div>
-		        					</a>
-		        				</li>
-		        				<li>
-		        					<a href="javascript:;" class="guess_use">
-		        						<span class="itme_img">
-		        							<img src="../images/TB2dwJUrHJmpuFjSZFwXXaE4VXa-196993935.png_400x400q60.png"/>
-		        						</span>
-		        						<div class="itme_inli">
-		        							<span class="itme_intitle"><em>Amii[极简主义]2017春新大码休闲字母织带口袋拉链连衣裙</em></span>
-		        							<span class="itme_arr">
-		        								<i class="itme_rmb">¥</i>
-		        								<span class="itme_number">520</span>
-		        								<span class="">.00</span>
-		        							</span>
-		        						</div>
-		        					</a>
-		        				</li>
-		        				<li>
-		        					<a href="javascript:;" class="guess_use">
-		        						<span class="itme_img">
-		        							<img src="../images/TB2dwJUrHJmpuFjSZFwXXaE4VXa-196993935.png_400x400q60.png"/>
-		        						</span>
-		        						<div class="itme_inli">
-		        							<span class="itme_intitle"><em>Amii[极简主义]2017春新大码休闲字母织带口袋拉链连衣裙</em></span>
-		        							<span class="itme_arr">
-		        								<i class="itme_rmb">¥</i>
-		        								<span class="itme_number">520</span>
-		        								<span class="">.00</span>
-		        							</span>
-		        						</div>
-		        					</a>
-		        				</li>
-		        				<li>
-		        					<a href="javascript:;" class="guess_use">
-		        						<span class="itme_img">
-		        							<img src="../images/TB2dwJUrHJmpuFjSZFwXXaE4VXa-196993935.png_400x400q60.png"/>
-		        						</span>
-		        						<div class="itme_inli">
-		        							<span class="itme_intitle"><em>Amii[极简主义]2017春新大码休闲字母织带口袋拉链连衣裙</em></span>
-		        							<span class="itme_arr">
-		        								<i class="itme_rmb">¥</i>
-		        								<span class="itme_number">520</span>
-		        								<span class="">.00</span>
-		        							</span>
-		        						</div>
-		        					</a>
-		        				</li>
-		        				<li>
-		        					<a href="javascript:;" class="guess_use">
-		        						<span class="itme_img">
-		        							<img src="../images/icon_chao.jpg"/>
-		        						</span>
-		        						<div class="itme_inli">
-		        							<span class="itme_intitle"><em>Amii[极简主义]2017春新大码休闲字母织带口袋拉链连衣裙</em></span>
-		        							<span class="itme_arr">
-		        								<i class="itme_rmb">¥</i>
-		        								<span class="itme_number">520</span>
-		        								<span class="">.00</span>
-		        							</span>
-		        						</div>
-		        					</a>
-		        				</li>
-		        				<li>
-		        					<a href="javascript:;" class="guess_use">
-		        						<span class="itme_img">
-		        							<img src="../images/icon_chao.jpg"/>
-		        						</span>
-		        						<div class="itme_inli">
-		        							<span class="itme_intitle"><em>Amii[极简主义]2017春新大码休闲字母织带口袋拉链连衣裙</em></span>
-		        							<span class="itme_arr">
-		        								<i class="itme_rmb">¥</i>
-		        								<span class="itme_number">520</span>
-		        								<span class="">.00</span>
-		        							</span>
-		        						</div>
-		        					</a>
-		        				</li>
-		        				<li>
-		        					<a href="javascript:;" class="guess_use">
-		        						<span class="itme_img">
-		        							<img src="../images/icon_chao.jpg"/>
-		        						</span>
-		        						<div class="itme_inli">
-		        							<span class="itme_intitle"><em>Amii[极简主义]2017春新大码休闲字母织带口袋拉链连衣裙</em></span>
-		        							<span class="itme_arr">
-		        								<i class="itme_rmb">¥</i>
-		        								<span class="itme_number">520</span>
-		        								<span class="">.00</span>
-		        							</span>
-		        						</div>
-		        					</a>
-		        				</li>
-		        				<li>
-		        					<a href="javascript:;" class="guess_use">
-		        						<span class="itme_img">
-		        							<img src="../images/icon_chao.jpg"/>
-		        						</span>
-		        						<div class="itme_inli">
-		        							<span class="itme_intitle"><em>Amii[极简主义]2017春新大码休闲字母织带口袋拉链连衣裙</em></span>
-		        							<span class="itme_arr">
-		        								<i class="itme_rmb">¥</i>
-		        								<span class="itme_number">520</span>
-		        								<span class="">.00</span>
-		        							</span>
-		        						</div>
-		        					</a>
-		        				</li>
-		        				<li>
-		        					<a href="javascript:;" class="guess_use">
-		        						<span class="itme_img">
-		        							<img src="../images/icon_chao.jpg"/>
-		        						</span>
-		        						<div class="itme_inli">
-		        							<span class="itme_intitle"><em>Amii[极简主义]2017春新大码休闲字母织带口袋拉链连衣裙</em></span>
-		        							<span class="itme_arr">
-		        								<i class="itme_rmb">¥</i>
-		        								<span class="itme_number">520</span>
-		        								<span class="">.00</span>
-		        							</span>
-		        						</div>
-		        					</a>
-		        				</li>
-		        			</ul>
-		        		</div>
-		        	</div>
-		        	<h2 class="like_guess">
-		        		<span class="guess_span guess_six">
-		        			END
-		        		</span>
-		        	</h2>
-		        </div>
-		</div>
-		
-		
+				<div class="product_shade_cont">
+					<ul>
+						<li><p>新增收货地址</p><span>电话号码、手机号选填一项, 其余均为必填项</span></li>
+						<li>
+							<p>所在地区：</p>
+							<form action="info/type/add" method="post" id='info' style="margin:0px;" target="submitObj">
+								<select id="sheng" name="province">
+									<option selected="selected">中国大陆</option>
+									<option>日本</option>
+									<option>韩国</option>
+								</select>
+							
+								<select id="shi" name="city">
+							
+								</select>
+							
+								<select id="xian" name="country">
+							
+								</select>
+							
+								<select id="xiang" name="street">
+							
+								</select>
+							
+							</form>
+						</li>
+						<li class="product_shade_add">
+							<p>详细地址：</p>
+							<textarea placeholder="建议您如实填写详细收货地址，例如街道名称，门牌编号楼层和房间号"></textarea>
+						</li>
+						<li>
+							<p>邮政编码：</p>
+							<input type="text" placeholder="如果您不清楚邮递编号，请填写000000" />
+						</li>
+						<li>
+							<p>收货人姓名：</p>
+							<input type="text" placeholder="长度不超过25个字符" />
+						</li>
+						<li>
+							<p>手机号码：</p>
+							<select>
+								<option selected="selected">大陆 + 86</option>
+								<option>日本 + 81</option>
+								<option>韩国 + 82</option>
+							</select>
+							<input type="text" placeholder="请输入您的手机号码" />
+						</li>
+						<li>
+							<p>电话号码：</p>
+							<select>
+								<option selected="selected">大陆 + 86</option>
+								<option>日本 + 81</option>
+								<option>韩国 + 82</option>
+							</select>
+							<input type="text" placeholder="请输入您的电话号码" />
+						</li>
+						<li>
+							<p></p>
+							<input type="checkbox" class="checked"/><em>设置为默认收货地址</em>
+						</li>
+					</ul>
+						
+					<button>提交</button>
+				</div>
+	    	</div>
+	    </div>
 		<!--底部-->
 		<iframe src="../publicHtml/public_footer.html" width="100%" height="330px"></iframe>
 	</body>
-	<script type="text/javascript">
-		window.onload = function() {
-			 var mySwiper = new Swiper ('.swiper-container', {
-			    direction: 'horizontal',
-			    loop: true,
-			    autoplay: 3000,
-			    effect: 'fade',
-			    
-			    // 如果需要分页器
-			    pagination: '.swiper-pagination'
-			    
-			    
-			   
-			  })        
-		}
-	</script>
-
 </html>

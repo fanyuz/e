@@ -1,3 +1,4 @@
+/*****************首页**********************/
 /*首页  banner*/
 .home_banner {
   width: 100%;
@@ -863,6 +864,33 @@
   height: 18px;
   border: 1px solid #7F7F7F;
 }
+.details_main .detail_list_top .center_text_list .kucun .commodity_num span {
+  float: left;
+  font-size: 12px;
+  color: #747474;
+  line-height: 24px;
+}
+.details_main .detail_list_top .center_text_list .kucun .commodity_num i {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #DBDBDB;
+  background: #F2F2F2;
+  color: #333333;
+  float: left;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.details_main .detail_list_top .center_text_list .kucun .commodity_num i:nth-child(1) {
+  margin-left: 30px;
+}
+.details_main .detail_list_top .center_text_list .kucun .commodity_num .num {
+  width: 40px;
+  height: 22px;
+  border: 1px solid #B3B3B3;
+  float: left;
+  text-align: center;
+}
 .details_main .detail_list_top .center_text_list .detail_btn {
   width: 100%;
   height: 40px;
@@ -1309,7 +1337,1169 @@
 /**********************购物车***************************/
 .s_vehicle {
   width: 1200px;
-  height: 600px;
   overflow: hidden;
+  margin: 0 auto;
+}
+.s_vehicle .vehice_header {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
+.s_vehicle .vehice_header h4 {
+  float: left;
+  border-bottom: 2px solid #009646;
+  width: 130px;
+  text-indent: 14px;
+  font-size: 18px;
+  color: #333333;
+}
+.s_vehicle .vehice_header p {
+  float: right;
+  font-size: 14px;
+}
+.s_vehicle .vehice_header p span {
+  color: #009646;
+  margin: 0 5px;
+}
+.s_vehicle .vehice_header p button {
+  width: 52px;
+  height: 24px;
+  border: none;
+  background: #999999;
+  color: #ffffff;
+  margin-left: 10px;
+}
+.s_vehicle .vehice_list {
+  width: 100%;
+  overflow: hidden;
+}
+.s_vehicle .vehice_list ul {
+  width: 100%;
+  overflow: hidden;
+  border-top: 1px solid #DBDBDB;
+}
+.s_vehicle .vehice_list ul > li {
+  width: 100%;
+}
+.s_vehicle .vehice_list ul > li:nth-child(1) p {
+  line-height: 50px;
+  height: 50px;
+  float: left;
+  text-align: center;
+  width: 160px;
+}
+.s_vehicle .vehice_list ul > li:nth-child(1) p:nth-child(1) {
+  width: 60px;
+  text-align: center;
+}
+.s_vehicle .vehice_list ul > li:nth-child(1) p:nth-child(2) {
+  width: 480px;
+  text-align: left;
+}
+.s_vehicle .vehice_list ul > li:nth-child(1) p:nth-child(2) span {
+  margin-left: 100px;
+}
+.s_vehicle .vehice_list ul .store {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
+.s_vehicle .vehice_list ul .store p:nth-child(1) {
+  width: 60px;
+  text-align: center;
+  float: left;
+}
+.s_vehicle .vehice_list ul .store p:nth-child(2) {
+  width: 500px;
+  text-align: left;
+  float: left;
+}
+.s_vehicle .vehice_list ul .details_cont {
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.s_vehicle .vehice_list ul .details_cont ol {
+  padding-top: 20px;
+  border: 1px solid #DBDBDB;
+  overflow: hidden;
+}
+.s_vehicle .vehice_list ul .details_cont ol > li {
+  margin-bottom: 20px;
+  height: 80px;
+}
+.s_vehicle .vehice_list ul .details_cont ol > li div {
+  float: left;
+  text-align: center;
+  width: 160px;
+  height: 80px;
+}
+.s_vehicle .vehice_list ul .details_cont ol > li div:nth-child(2) {
+  width: 480px;
+  text-align: left;
+}
+.s_vehicle .vehice_list ul .details_cont ol > li div:nth-child(2) a {
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin-right: 12px;
+}
+.s_vehicle .vehice_list ul .details_cont ol > li div:nth-child(2) a img {
+  width: 100%;
+  height: 100%;
+}
+.s_vehicle .vehice_list ul .details_cont ol > li div:nth-child(2) section {
+  float: left;
+  font-size: 12px;
+  line-height: 18px;
+  width: 210px;
+}
+.s_vehicle .vehice_list ul .details_cont ol > li div p {
+  line-height: 24px;
+}
+.s_vehicle .vehice_list ul .details_cont ol > li div span {
+  line-height: 40px;
+}
+.s_vehicle .vehice_list ul .details_cont ol .commodity_num i {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #DBDBDB;
+  background: #F2F2F2;
+  color: #333333;
+  float: left;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.s_vehicle .vehice_list ul .details_cont ol .commodity_num i:nth-child(1) {
+  margin-left: 30px;
+}
+.s_vehicle .vehice_list ul .details_cont ol .commodity_num .num {
+  width: 40px;
+  height: 22px;
+  border: 1px solid #B3B3B3;
+  float: left;
+  text-align: center;
+}
+.s_vehicle .vehice_list ul .details_cont td {
+  text-align: center;
+  padding-top: 24px;
+}
+.s_vehicle .vehice_list ul .details_cont td:nth-child(2) {
+  text-align: left;
+  width: 300px;
+}
+.s_vehicle .vehice_list ul .details_cont td:nth-child(2) a {
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin-right: 12px;
+}
+.s_vehicle .vehice_list ul .details_cont td:nth-child(2) a img {
+  width: 100%;
+  height: 100%;
+}
+.s_vehicle .vehice_list ul .details_cont td:nth-child(2) p {
+  float: left;
+  font-size: 12px;
+  line-height: 18px;
+  width: 210px;
+}
+.s_vehicle .page_list {
+  width: 500px;
+  height: 30px;
+  margin: 40px auto;
+}
+.s_vehicle .page_list a {
+  display: block;
+  float: left;
+  padding: 0 8px;
+  line-height: 30px;
+  border: 1px solid #CCCCCC;
+  margin: 0 5px;
+  color: #999999;
+}
+.s_vehicle .page_list a:hover {
+  background: #009646;
+  color: #ffffff;
+}
+.s_vehicle .page_list span {
+  float: left;
+}
+.s_vehicle .page_list p {
+  color: #B4B4B4;
+  line-height: 30px;
+  font-size: 12px;
+  float: left;
+  margin: 0 5px;
+}
+.s_vehicle .page_list .tol_c {
+  color: #000;
+}
+.s_vehicle .page_list .tol_c input {
+  padding: 2px 2px;
+  border: 1px solid #CCCCCC;
+  margin: 0 2px;
+  display: inline-block;
+  text-align: center;
+  width: 14px;
+}
+.s_vehicle .page_list .que {
+  padding: 2px 4px;
+  border: 1px solid #CCCCCC;
+  margin: 0 2px;
+  line-height: 16px;
+  float: left;
+  margin-top: 4px;
+}
+.s_vehicle .details_footer {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background: #E6E6E6;
+  margin-bottom: 50px;
+}
+.s_vehicle .details_footer .left_bar {
+  width: 400px;
+  float: left;
+}
+.s_vehicle .details_footer .left_bar input {
+  margin-left: 20px;
+  margin-right: 40px;
+}
+.s_vehicle .details_footer .left_bar a {
+  font-size: 12px;
+  color: #666;
+  margin-left: 20px;
+}
+.s_vehicle .details_footer .right_bar {
+  width: 350px;
+  float: right;
+}
+.s_vehicle .details_footer .right_bar p {
+  float: left;
+  font-size: 12px;
+  color: #666;
+  margin-left: 2px;
+}
+.s_vehicle .details_footer .right_bar p i {
+  color: #009646;
+  margin: 0 4px;
+}
+.s_vehicle .details_footer .right_bar p span {
+  font-size: 18px;
+  color: #009646;
+  margin: 0 5px;
+}
+.s_vehicle .details_footer .right_bar button {
+  width: 105px;
+  height: 50px;
+  border: none;
+  background: #F18E00;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+}
+/**********购物车 - 空************/
+.shopping_car_null {
+  width: 1200px;
+  height: 360px;
+  border-top: 1px solid #E1E1E1;
+  margin: 20px auto;
+}
+.shopping_car_null .null_content {
+  width: 400px;
+  height: 60px;
+  margin: 80px auto 0;
+}
+.shopping_car_null .null_content img {
+  float: left;
+  width: 52px;
+  height: 52px;
+  margin: 4px 15px;
+}
+.shopping_car_null .null_content p {
+  line-height: 60px;
+  font-size: 14px;
+  color: #333333;
+  float: left;
+}
+.shopping_car_null .null_content a {
+  float: right;
+  width: 60px;
+  height: 30px;
+  margin-top: 15px;
+  background: #F18E00;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  line-height: 30px;
+}
+/**********商品列表页************/
+.shopping_list {
+  width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.shopping_list .top_classify {
+  width: 100%;
+  overflow: hidden;
+}
+.shopping_list .top_classify h4 {
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  color: #333;
+}
+.shopping_list .top_classify h4 > i {
+  margin: 0 6px;
+  font-size: 24px;
+}
+.shopping_list .top_classify h4 a {
+  height: 20px;
+  border: 1px solid #DDDDDD;
+  background: #F3F3F3;
+  color: #333333;
+  display: inline-block;
+  line-height: 20px;
+  padding: 0 4px;
+}
+.shopping_list .top_classify h4 a i {
+  line-height: 20px;
+  padding: 0 4px;
+  margin-left: 5px;
+}
+.shopping_list .top_classify h4 a:hover {
+  border: 1px solid #009646;
+}
+.shopping_list .top_classify h4 a:hover i {
+  background: #009646;
+  color: #ffffff;
+}
+.shopping_list .top_classify #classify_m {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box;
+  position: relative;
+}
+.shopping_list .top_classify #classify_m li {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+.shopping_list .top_classify #classify_m .classify_background {
+  width: 160px;
+  height: 100%;
+  background: #E6E6E6;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.shopping_list .top_classify #classify_m .classify_left {
+  width: 160px;
+  background: #E6E6E6;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.shopping_list .top_classify #classify_m .classify_left h3 {
+  line-height: 32px;
+  text-indent: 12px;
+  font-size: 14px;
+}
+.shopping_list .top_classify #classify_m .classify_cont {
+  width: 890px;
+  line-height: 32px;
+}
+.shopping_list .top_classify #classify_m .classify_cont a {
+  font-size: 12px;
+  margin-left: 35px;
+  float: left;
+  color: #333;
+}
+.shopping_list .top_classify #classify_m .classify_cont .classify_dis_none {
+  display: none;
+}
+.shopping_list .top_classify #classify_m .classify_right {
+  width: 140px;
+  line-height: 32px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.shopping_list .top_classify #classify_m .classify_right span {
+  margin-left: 10px;
+  cursor: pointer;
+  color: #3C3C3C;
+}
+.shopping_list .top_classify #classify_m .classify_right span:nth-child(1) {
+  padding: 3px 5px;
+  background: #E5E5E5;
+}
+.shopping_list .shopping_list_main {
+  width: 1200px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+.shopping_list .shopping_list_main .shopping_list_screen {
+  overflow: hidden;
+  border-left: 1px solid #CCCCCC;
+  border-top: 1px solid #CCCCCC;
+  float: left;
+  margin-top: 6px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+.shopping_list .shopping_list_main .shopping_list_screen a {
+  font-size: 12px;
+  color: #666666;
+  line-height: 24px;
+  padding: 0 10px;
+  border-right: 1px solid #CCCCCC;
+  border-bottom: 1px solid #cccccc;
+  float: left;
+}
+.shopping_list .shopping_list_main .shopping_list_screen a:hover {
+  background: #E5E5E5;
+}
+.shopping_list .shopping_list_main .shopping_list_screen img {
+  width: 7px;
+  height: 10px;
+  vertical-align: middle;
+  padding: 0 1px;
+  opacity: 0.6;
+}
+.shopping_list .shopping_list_main .shopping_list_screen .shopping_avtive {
+  background: #E5E5E5;
+}
+.shopping_list .shopping_list_main .commodity_list {
+  width: 100%;
+  overflow: hidden;
+}
+.shopping_list .shopping_list_main .commodity_list li {
+  width: 224px;
+  height: 342px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+.shopping_list .shopping_list_main .commodity_list li:hover {
+  border: 2px solid #009646;
+}
+.shopping_list .shopping_list_main .commodity_list li:nth-child(5n) {
+  margin-right: 0;
+}
+.shopping_list .shopping_list_main .commodity_list li .icon_foot {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+.shopping_list .shopping_list_main .commodity_list li span {
+  font-size: 14px;
+  color: #ED3F3F;
+  float: left;
+  margin-left: 6px;
+}
+.shopping_list .shopping_list_main .commodity_list li > a {
+  float: left;
+  padding: 4px 6px;
+  line-height: 20px;
+  color: #333;
+}
+.shopping_list .shopping_list_main .commodity_list li > a:hover {
+  color: #009646;
+}
+.shopping_list .shopping_list_main .commodity_list li div {
+  width: 100%;
+  float: left;
+}
+.shopping_list .shopping_list_main .commodity_list li div a {
+  float: left;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-top: 1px solid #E6E6E6;
+}
+.shopping_list .shopping_list_main .commodity_list li div a img {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.shopping_list .shopping_list_main .commodity_list li div button {
+  float: left;
+  width: 140px;
+  height: 32px;
+  background: #009646;
+  color: #ffffff;
+  border: none;
+  font-size: 12px;
+}
+.shopping_list .shopping_list_main .commodity_list li p {
+  font-size: 12px;
+  color: #666666;
+  float: right;
+  margin-right: 6px;
+  line-height: 18px;
+}
+.shopping_list .page_list {
+  width: 500px;
+  height: 30px;
+  margin: 40px auto;
+}
+.shopping_list .page_list a {
+  display: block;
+  float: left;
+  padding: 0 8px;
+  line-height: 30px;
+  border: 1px solid #CCCCCC;
+  margin: 0 5px;
+  color: #999999;
+}
+.shopping_list .page_list a:hover {
+  background: #009646;
+  color: #ffffff;
+}
+.shopping_list .page_list span {
+  float: left;
+}
+.shopping_list .page_list p {
+  color: #B4B4B4;
+  line-height: 30px;
+  font-size: 12px;
+  float: left;
+  margin: 0 5px;
+}
+.shopping_list .page_list .tol_c {
+  color: #000;
+}
+.shopping_list .page_list .tol_c input {
+  padding: 2px 2px;
+  border: 1px solid #CCCCCC;
+  margin: 0 2px;
+  display: inline-block;
+  text-align: center;
+  width: 14px;
+}
+.shopping_list .page_list .que {
+  padding: 2px 4px;
+  border: 1px solid #CCCCCC;
+  margin: 0 2px;
+  line-height: 16px;
+  float: left;
+  margin-top: 4px;
+}
+.shopping_list .footer_search {
+  width: 600px;
+  height: 34px;
+  margin: 40px auto;
+  border: 1px solid #666666;
+}
+.shopping_list .footer_search .footer_search_btn {
+  width: 90px;
+  height: 34px;
+  background: #666666;
+  border: none;
+  float: right;
+  font-size: 18px;
+  color: #FFF6F7;
+  letter-spacing: 2px;
+}
+.shopping_list .footer_search input {
+  width: 500px;
+  height: 30px;
+  float: left;
+  font-size: 16px;
+  color: #333333;
+  text-indent: 12px;
+  border: none;
+}
+.main_order_form {
+  margin-top: 80px;
+  width: 1200px;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.main_order_form .address {
+  width: 100%;
+  height: 250px;
+}
+.main_order_form .address h4 {
+  line-height: 32px;
+  font-size: 18px;
+  color: #333333;
+  text-indent: 20px;
+  margin-bottom: 10px;
+}
+.main_order_form .address .add_lise {
+  width: 100%;
+  height: 180px;
+}
+.main_order_form .address .add_lise .btn_left,
+.main_order_form .address .add_lise .btn_right {
+  width: 25px;
+  height: 64px;
+  float: left;
+  margin: 60px 25px 0;
+}
+.main_order_form .address .add_lise .add_cont {
+  width: 980px;
+  height: 132px;
+  float: left;
+  border: 1px solid #E6E6E6;
+  padding: 24px 30px;
+}
+.main_order_form .address .add_lise .add_cont ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.main_order_form .address .add_lise .add_cont ul li {
+  width: 230px;
+  height: 130px;
+  border: 1px solid #999999;
+  position: relative;
+  cursor: pointer;
+}
+.main_order_form .address .add_lise .add_cont ul li .background {
+  width: 100%;
+  height: 100%;
+  background: url(../images/kuang.jpg) no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+.main_order_form .address .add_lise .add_cont ul li .add_content {
+  width: 196px;
+  height: auto;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+.main_order_form .address .add_lise .add_cont ul li .add_content p {
+  font-size: 12px;
+  color: #333333;
+  padding: 4px 0;
+  line-height: 16px;
+}
+.main_order_form .address .add_lise .add_cont ul li .add_content p:nth-child(1) {
+  border-bottom: 1px solid #DBDBDB;
+}
+.main_order_form .address .add_lise .add_cont ul li .add_content h6 {
+  height: 20px;
+  width: 160px;
+  margin: 50px auto 0;
+  color: #999999;
+  font-size: 14px;
+  line-height: 20px;
+}
+.main_order_form .address .add_lise .add_cont ul li .add_content h6 img {
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin-right: 16px;
+}
+.main_order_form .address .add_lise .add_cont ul .show {
+  border: 1px solid #FFF;
+}
+.main_order_form .address .add_lise .add_cont ul .show .background {
+  display: block;
+}
+.main_order_form .payment_way {
+  width: 100%;
+  height: 120px;
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box;
+}
+.main_order_form .payment_way h4 {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #CCCCCC;
+  color: #333333;
+  font-size: 16px;
+  text-indent: 20px;
+  line-height: 54px;
+  font-weight: 600;
+  overflow: hidden;
+}
+.main_order_form .payment_way form {
+  width: 100%;
+  height: 70px;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+.main_order_form .payment_way form p {
+  line-height: 20px;
+  float: left;
+  margin-left: 70px;
+  color: #333;
+  font-size: 14px;
+}
+.main_order_form .payment_way form p input {
+  transform: scale(1.2);
+}
+.main_order_form .payment_way form p img {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin: 0 8px;
+  vertical-align: middle;
+}
+.main_order_form .order_form {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.main_order_form .order_form h4 {
+  line-height: 32px;
+  font-size: 18px;
+  color: #333333;
+  text-indent: 20px;
+  margin-bottom: 10px;
+}
+.main_order_form .order_form .order_form_cont {
+  width: 100%;
+  overflow: hidden;
+}
+.main_order_form .order_form .order_form_cont ul {
+  width: 100%;
+  height: 36px;
+  border-bottom: 2px solid #009646;
+  line-height: 36px;
+  text-align: center;
+}
+.main_order_form .order_form .order_form_cont ul .order_form_messoge {
+  width: 300px;
+}
+.main_order_form .order_form .order_form_cont ul li {
+  font-size: 12px;
+  color: #666666;
+  width: 150px;
+  float: left;
+}
+.main_order_form .order_form .order_form_cont ol {
+  width: 100%;
+  height: 125px;
+  text-align: center;
+}
+.main_order_form .order_form .order_form_cont ol .store_name {
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+}
+.main_order_form .order_form .order_form_cont ol .store_name input {
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border: 1px solid #DBDBDB;
+  float: left;
+  margin: 10px 10px 0 20px;
+}
+.main_order_form .order_form .order_form_cont ol .store_name p {
+  font-size: 12px;
+  color: #333333;
+  float: left;
+  margin-right: 28px;
+}
+.main_order_form .order_form .order_form_cont ol .store_name p:nth-child(3) {
+  margin-right: 0;
+}
+.main_order_form .order_form .order_form_cont ol .store_name select {
+  width: 160px;
+  height: 24px;
+  border: 1px solid #DBDBDB;
+  color: #333333;
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.main_order_form .order_form .order_form_cont ol li {
+  margin: 24px 0;
+  width: 150px;
+  float: left;
+}
+.main_order_form .order_form .order_form_cont ol li .checkbox {
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border: 1px solid #DBDBDB;
+  float: left;
+  margin: 30px 10px 0 20px;
+}
+.main_order_form .order_form .order_form_cont ol li img {
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin-right: 12px;
+}
+.main_order_form .order_form .order_form_cont ol li a {
+  width: 200px;
+  overflow: hidden;
+  display: block;
+  float: left;
+  color: #333333;
+  line-height: 20px;
+  text-align: left;
+}
+.main_order_form .order_form .order_form_cont ol li .yr_scj {
+  width: 100%;
+  display: block;
+  text-align: center;
+  line-height: 20px;
+}
+.main_order_form .order_form .order_form_cont ol li p {
+  color: #333333;
+}
+.main_order_form .order_form .order_form_cont ol li span {
+  color: #009646;
+}
+.main_order_form .order_form .order_form_cont ol li i {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #DBDBDB;
+  background: #F2F2F2;
+  color: #333333;
+  float: left;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.main_order_form .order_form .order_form_cont ol li i:nth-child(1) {
+  margin-left: 30px;
+}
+.main_order_form .order_form .order_form_cont ol li .num {
+  width: 40px;
+  height: 22px;
+  border: 1px solid #B3B3B3;
+  float: left;
+  text-align: center;
+}
+.main_order_form .order_form .order_form_cont ol .order_form_messoge {
+  width: 360px;
+  margin-left: -60px;
+}
+.main_order_form .order_form .order_form_cont .liuyan {
+  width: calc(100% - 40px);
+  height: 80px;
+  background: #F5F5F5;
+  padding: 10px 20px;
+  display: flex;
+}
+.main_order_form .order_form .order_form_cont .liuyan div {
+  flex: 1;
+}
+.main_order_form .order_form .order_form_cont .liuyan div p {
+  font-size: 12px;
+  color: #333333;
+  line-height: 22px;
+}
+.main_order_form .order_form .order_form_cont .liuyan div p input {
+  width: 238px;
+  height: 22px;
+  border: 1px solid #DBDBDB;
+  background: #ffffff;
+}
+.main_order_form .order_form .order_form_cont .liuyan div:nth-child(3) {
+  text-align: right;
+}
+.main_order_form .order_form .order_form_cont .liuyan div:nth-child(3) span {
+  color: #B0B0B0;
+  line-height: 20px;
+}
+.main_order_form .order_form .order_form_cont .liuyan div:nth-child(3) i {
+  color: #009646;
+}
+.main_order_form .order_form .order_form_cont .liuyan div:nth-child(3) p:nth-child(3) {
+  margin-top: 24px;
+}
+.main_order_form .order_form .order_form_cont .liuyan div:nth-child(3) p:nth-child(3) i {
+  font-size: 16px;
+}
+.main_order_form .order_form .order_form_cont .order_submin {
+  width: 364px;
+  height: 160px;
+  float: right;
+  margin: 20px 0 60px;
+}
+.main_order_form .order_form .order_form_cont .order_submin div {
+  width: 340px;
+  height: 106px;
+  border: 2px solid #F18E00;
+  text-align: right;
+  padding-right: 20px;
+}
+.main_order_form .order_form .order_form_cont .order_submin div p {
+  font-size: 19px;
+  line-height: 58px;
+  color: #009646;
+}
+.main_order_form .order_form .order_form_cont .order_submin div span {
+  font-size: 12px;
+  line-height: 18px;
+  color: #333333;
+}
+.main_order_form .order_form .order_form_cont .order_submin button {
+  width: 168px;
+  height: 40px;
+  background: #F18E00;
+  border: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  margin-top: 10px;
+  float: right;
+  cursor: pointer;
+}
+.shade_address_box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  display: none;
+}
+.shade_address_box .shade_address {
+  width: 860px;
+  height: 540px;
+  background: #FFFfff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.shade_address_box .shade_address .shade_head {
+  width: 100%;
+  height: 40px;
+  background: #F5F5F5;
+  line-height: 40px;
+}
+.shade_address_box .shade_address .shade_head p {
+  font-size: 14px;
+  color: #333333;
+  text-indent: 15px;
+  float: left;
+}
+.shade_address_box .shade_address .shade_head span {
+  padding: 4px;
+  height: 12px;
+  width: 12px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+.shade_address_box .shade_address .shade_head span img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.shade_address_box .shade_address .shade_head span:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+.shade_address_box .shade_address .product_shade_cont {
+  width: 700px;
+  height: auto;
+  overflow: hidden;
+  margin: 20px auto 0;
+}
+.shade_address_box .shade_address .product_shade_cont ul {
+  overflow: hidden;
+}
+.shade_address_box .shade_address .product_shade_cont li {
+  width: 100%;
+  height: 28px;
+  margin-bottom: 16px;
+  line-height: 26px;
+  float: left;
+}
+.shade_address_box .shade_address .product_shade_cont li select {
+  width: 86px;
+  height: 28px;
+  border: 1px solid #E6E6E6;
+}
+.shade_address_box .shade_address .product_shade_cont li .checked {
+  width: 16px !important;
+  height: 16px !important;
+  margin-right: 10px;
+  margin-left: 110px;
+}
+.shade_address_box .shade_address .product_shade_cont li p {
+  width: 100px;
+  line-height: 28px;
+  font-size: 12px;
+  color: #333333;
+  text-align: right;
+  margin-right: 10px;
+  float: left;
+}
+.shade_address_box .shade_address .product_shade_cont li input {
+  width: 280px;
+  height: 24px;
+  border: 1px solid #E6E6E6;
+  line-height: 24px;
+  text-indent: 8px;
+}
+.shade_address_box .shade_address .product_shade_cont li .shade_radio {
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+}
+.shade_address_box .shade_address .product_shade_add {
+  height: 80px !important;
+}
+.shade_address_box .shade_address .product_shade_cont .product_shade_add textarea {
+  width: 460px;
+  height: 80px;
+  border: 1px solid #CCCCCC;
+}
+.shade_address_box .shade_address .product_shade_cont button {
+  width: 100px;
+  height: 30px;
+  display: block;
+  border: none;
+  background: #009646;
+  color: #FFFFFF;
+  cursor: pointer;
+  margin-left: 110px;
+}
+/*****支付成功  *** 支付失败*******/
+.payment_logo {
+  width: 1200px;
+  height: 110px;
+  overflow: hidden;
+  margin: 0 auto !important;
+}
+.payment_logo a {
+  width: 222px;
+  height: 66px;
+  margin: 20px 0 0 8px;
+  float: left;
+}
+.payment_logo a img {
+  width: 100%;
+  height: 100%;
+}
+.payment_logo h2 {
+  font-size: 23px;
+  float: left;
+  line-height: 140px;
+  margin-left: 16px;
+}
+.payment_finish {
+  width: 1200px;
+  height: 280px;
+  margin: 0 auto 50px;
+}
+.payment_finish > h4 {
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  text-indent: 20px;
+  font-size: 18px;
+}
+.payment_finish .payment_finish_main {
+  width: 100%;
+  height: 240px;
+  background: #F5F5E1;
+}
+.payment_finish .payment_finish_main .zhifu_cg {
+  width: calc(100% - 90px);
+  height: 30px;
+  line-height: 30px;
+  font-size: 17px;
+  margin: 60px 0 30px 90px;
+  float: left;
+}
+.payment_finish .payment_finish_main .zhifu_cg img {
+  float: left;
+  width: 29px;
+  height: 29px;
+  margin-right: 20px;
+}
+.payment_finish .payment_finish_main .zhifu_cg span {
+  margin: 0 24px;
+  color: #009646;
+}
+.payment_finish .payment_finish_main .dingdanhao {
+  width: 100%;
+  height: 30px;
+  padding-left: 160px;
+  float: left;
+  box-sizing: border-box;
+}
+.payment_finish .payment_finish_main .dingdanhao p:nth-child(1) {
+  font-size: 17px;
+  color: #333333;
+  line-height: 30px;
+  float: left;
+}
+.payment_finish .payment_finish_main .dingdanhao p:nth-child(1) em {
+  margin: 0 30px;
+}
+.payment_finish .payment_finish_main .dingdanhao .look_dd {
+  width: 120px;
+  height: 30px;
+  background: #009646;
+  color: #fff;
+  float: left;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+}
+.payment_finish .payment_finish_main .tishi {
+  font-size: 12px;
+  line-height: 30px;
+  margin-left: 30px;
+  color: #666666;
+  float: left;
+  letter-spacing: 1px;
+}
+.payment_finish .payment_finish_main .tishi a {
+  color: #009646;
+  text-decoration: underline;
+}
+.payment_finish .payment_finish_main .tishi_main {
+  width: 100%;
+  height: 30px;
+  margin-top: -15px;
+  padding-left: 160px;
+  float: left;
+  box-sizing: border-box;
+}
+.payment_finish .payment_finish_main .start_again {
+  width: 120px;
+  height: 30px;
+  background: #009646;
+  color: #fff;
+  float: left;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  margin-left: 540px;
+  margin-top: 20px;
+}
+/**********订单支付页面************/
+.payment {
+  width: 1200px;
+  height: 280px;
+  margin: 0 auto 50px;
+}
+.payment > h4 {
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  text-indent: 20px;
+  font-size: 18px;
+  border-left: 2px solid #009646;
 }
 /*# sourceMappingURL=principal_part.css.map */

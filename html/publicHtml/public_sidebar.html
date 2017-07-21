@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>侧边栏</title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/svg/font.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+		<script src="../js/jquery-1.8.3.min.js"></script>
+	</head>
+	<body>
+		<div id="main_rightbar">
+			<div class="rightbar_nav">
+				<div class="icon-user">
+					<div class="rightbar_order_form">
+						<div class="user_missage">
+							<a href=""><img src="../images/头像.jpg"/></a>
+							<p>用户名：<span>123456</span></p>
+							<p>级&nbsp;&nbsp;别：<span>非会员</span></p>
+						</div>
+						<a href="" class="user_btn">订单中心</a>
+						<a href="" class="user_btn">账户中心</a>
+					</div>
+				</div>
+				<div class="shopping_cart onclick">
+					<i class="icon-cart"></i>
+					<p>购物车</p>
+					<span>0</span>
+				</div>
+				<div class="footprint onclick">
+					<i class="icon-history"></i>
+					<em class="reminder_k">我看过的</em>
+				</div>
+				<div class="attention">
+					<i class="icon-heart"></i>
+					<em class="reminder_k">关注的店铺</em>
+				</div>
+				<div class="enshrine">
+					<i class="icon-star-full"></i>
+					<em class="reminder_k">我的收藏</em>
+				</div>
+			</div>
+			<div class="rightbar_main">
+				<ul id="shopping_c">
+					<div class="shopping_cart_bom">
+						<div>
+							<p><span>2</span>件商品</p>
+							<p>共计：<span>&yen;64.00</span></p>
+						</div>
+						<a href="">去购物车结算</a>
+					</div>
+					<h4><p><i class="icon-cart"></i>购物车</p><span class="icon-cross"></span></h4>
+					<li>
+						<a href="" class="cart_img"><img src="../images/201706071125.png"/></a>
+						<div class="cart_text">
+							<a href="">xionger熊二</a>
+							<p><span>&yen;3300.00</span><i>*5</i></p>
+						</div>
+						<p class="cart_remove">删除</p>
+					</li>
+					<li>
+						<a href="" class="cart_img"><img src="../images/201706071125.png"/></a>
+						<div class="cart_text">
+							<a href="">xionger熊二</a>
+							<p><span>&yen;3300.00</span><i>*5</i></p>
+						</div>
+						<p class="cart_remove">删除</p>
+					</li>
+					<li>
+						<a href="" class="cart_img"><img src="../images/201706071125.png"/></a>
+						<div class="cart_text">
+							<a href="">xionger熊二</a>
+							<p><span>&yen;3300.00</span><i>*5</i></p>
+						</div>
+						<p class="cart_remove">删除</p>
+					</li>
+					
+				</ul>
+				<ul id="footprint_cont">
+					<h4><p><i class="icon-history"></i>我看过的</p><span class="icon-cross"></span></h4>
+					<li>
+						<a href=""><img src="../images/grab.png"/></a>
+						<p>&yen;3300.00</p>
+					</li>
+					<li>
+						<a href=""><img src="../images/grab.png"/></a>
+						<p>&yen;3300.00</p>
+					</li>
+					<li>
+						<a href=""><img src="../images/grab.png"/></a>
+						<p>&yen;3300.00</p>
+					</li>
+				</ul>
+			</div>	
+				
+		</div>
+	</body>
+	<script type="text/javascript">
+		var shopping_cart = false;
+		var footprint 	  = false;
+		$(document).on("click",".shopping_cart",function(){
+			if(shopping_cart)
+			{
+				shopping_cart = false;
+				$("#main_rightbar").removeClass("rightbar_show");
+				footprint = shopping_cart;
+			}
+			else
+			{
+				shopping_cart = true;
+				$("#main_rightbar").addClass("rightbar_show");
+				$(".rightbar_main").find("#shopping_c").addClass("shopping_show").siblings().removeClass("shopping_show");
+				footprint = false;
+			}
+		})
+		
+		$(document).on("click",".footprint",function(){
+			if(footprint)
+			{
+				footprint = false;
+				$("#main_rightbar").removeClass("rightbar_show");
+				shopping_cart = footprint;
+			}
+			else
+			{
+				footprint = true;
+				$("#main_rightbar").addClass("rightbar_show");
+				$(".rightbar_main").find("#footprint_cont").addClass("shopping_show").siblings().removeClass("shopping_show");
+				shopping_cart = false;
+			}
+		})
+		$(".icon-cross").click(function(){
+			$("#main_rightbar").removeClass("rightbar_show");
+			footprint = shopping_cart = false;
+		})
+		
+	</script>
+</html>

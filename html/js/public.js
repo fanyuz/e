@@ -61,6 +61,34 @@ $(function(){
 	$lis.mouseout(function(){
 		$(this).find(".prosmore").removeClass('hide');
 	});
-		
+	
+	
+	
+	//新增收货地址
+	$("#address_add").click(function(){
+		$(".shade_address_box").css("display","block")
+	})
+	$("#shade_span_end").click(function(){
+		$(".shade_address_box").css("display","none")
+	})
+	
+	
+	
+	// 商品数量加减
+	var _commodity = $(".commodity_num"),
+		_num = parseInt(_commodity.children(".num").val());
+		$(".num_add").click(function(){
+			_num ++;
+			$(this).prev().val(_num)
+		})
+		$(".minus").click(function(){
+			if(_num > 1){
+				_num --;
+			}else{
+				_num = 1;
+			}
+			$(this).next().val(_num)
+		})
+	
 	
 })

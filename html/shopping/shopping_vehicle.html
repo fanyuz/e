@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="renderer" content="webkit">
-		<title>商品详情</title>
+		<title>购物车</title>
 		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="../css/public.css" />
 		<link rel="stylesheet" type="text/css" href="../css/principal_part.css" />
@@ -20,7 +20,120 @@
 		<iframe src="../publicHtml/public_head.html" width="100%" height="160"></iframe>
 		<!--全部商品-->
 		<div class="s_vehicle">
+			<div class="vehice_header">
+				<h4>全部商品</h4>
+				<p>已选商品（不含运费）<span>0.00</span><button>结算</button></p>
+			</div>
+			<div class="vehice_list">
+				<ul>
+					<li>
+						<p><input type="checkbox" /></p>
+						<p>全选<span>商品信息</span></P>
+						<p>单价</p>
+						<p>数量</p>
+						<p>金额</p>
+						<p>操作</p>
+					</li>
+					
+					<li class="details_cont">
+						<div class="store">
+							<p class="details_header">
+								<input type="checkbox" checked="true"/>
+							</p>
+							<p><p>店铺：<i>佳润一家</i></p></p>
+						</div>
+						<ol>
+							<li>
+								<div style="width: 60px;"><input type="checkbox" checked="true" /></div>
+								<div>
+									<a href=""><img src="../images/list_icon.jpg"/></a>
+									<section>期刊论文发表降低重复率代发论文修改格式改重省级教育评职称发表</section>
+								</div>
+								<div><span>&yen;10.00</span></div>
+								<div class="commodity_num"><i class="minus">-</i><input type="text" value="1" class="num"/><i class="num_add">+</i></div>
+								<div><span>&yen;10.00</span></div>
+								<div>
+									<p>移入收藏夹</p>
+									<p>删除</p>
+								</div>
+							</li>
+							<li>
+								<div style="width: 60px;"><input type="checkbox" checked="true" /></div>
+								<div>
+									<a href=""><img src="../images/list_icon.jpg"/></a>
+									<section>期刊论文发表降低重复率代发论文修改格式改重省级教育评职称发表</section>
+								</div>
+								<div><span>&yen;10.00</span></div>
+								<div class="commodity_num"><i class="minus">-</i><input type="text" value="1" class="num"/><i class="num_add">+</i></div>
+								<div><span>&yen;10.00</span></div>
+								<div>
+									<p>移入收藏夹</p>
+									<p>删除</p>
+								</div>
+							</li>
+						</ol>
+						
+							
+					</li>
+					<li class="details_cont">
+						<div class="store">
+							<p class="details_header">
+								<input type="checkbox" />
+							</p>
+							<p><p>店铺：<i>佳润一家</i></p></p>
+						</div>
+						<ol>
+							<li>
+								<div style="width: 60px;"><input type="checkbox" /></div>
+								<div>
+									<a href=""><img src="../images/list_icon.jpg"/></a>
+									<section>期刊论文发表降低重复率代发论文修改格式改重省级教育评职称发表</section>
+								</div>
+								<div><span>&yen;10.00</span></div>
+								<div class="commodity_num"><i class="minus">-</i><input type="text" value="1" class="num"/><i class="num_add">+</i></div>
+								<div><span>&yen;10.00</span></div>
+								<div>
+									<p>移入收藏夹</p>
+									<p>删除</p>
+								</div>
+							</li>
+							
+						</ol>
+						
+							
+					</li>
+				</ul>
+			</div>
 			
+			<div class="page_list">
+				<a href=""> << 上一页 </a>
+				<a href=""> 1 </a>
+				<a href=""> 2 </a>
+				<a href=""> 3 </a>
+				<span>……</span>
+				<a href=""> 下一页 >> </a>
+				<p>共100页</p>
+				<p class="tol_c">到第<input type="text" value="3"/>页</p>
+				<a class="que" href="">确定</a>
+			</div>
+			<div class="details_footer">
+				<div class="left_bar">
+					<input type="checkbox" />
+					<a href="">删除</a>
+					<a href="">清除失效商品</a>
+					<a href="">添加到收藏</a>
+					<a href="">分享</a>
+				</div>
+				<div class="right_bar">
+					<p>已选商品<i>0</i>件</p>
+					<p>合计（不含运费）：<span>00.00</span></p>
+					<button>结算</button>
+				</div>
+			</div>
+			
+			
+			<!--猜你喜欢-->
+			<iframe src="../publicHtml/public_like.html" width="1200" height="400" style="margin-bottom: 30px;"></iframe>
 		</div>
 		
 		
