@@ -12,7 +12,7 @@ input{
     margin:20px auto 0;
 }
 //侧边栏
-.sidebar{
+.sidebar{/*侧边栏*/
     width: 200px;  
 }
 .bar-list{
@@ -51,7 +51,7 @@ input{
    }
 }
 //店铺信息
-.message{
+.message{/*店铺信息*/
     width: 980px;
     background-color:#fff;
     .mes-title{
@@ -117,7 +117,7 @@ input{
   
 }
 //订单管理
-.order{
+.order{/*订单管理*/
     background: #fff;
     width: 980px;
     .order-itme{
@@ -194,18 +194,40 @@ input{
         border: 1px solid #f5f5f5;
         border-bottom-color:transparent ;
     }
+    table{
+        width: 100%;
+    }
     tr.order-tr{
         border: 1px solid #f5f5f5;
         border-top-color: transparent;
         width: 938px;
         td.itme-td{
             width: 360px;
+            position: relative;
+            input[type="checkbox"]{
+                position: absolute;
+                left: 10px;
+                top: 50%;
+                margin-top: -6px;
+            }
         }
         td{
             text-align: center;
             vertical-align: middle;
         }
     }
+    tr.border-topcolor{
+        border-top-color: #f5f5f5;
+    }
+    .logue-boxsize{
+        width: 940px;
+        background-color:#f5f5f5 ;
+        height: 30px;
+        td{
+            vertical-align: middle;
+            text-align: center;
+        }
+}
     .td-img{
         width: 88px;
         height: 84px;
@@ -219,6 +241,10 @@ input{
             width: 100%;
             height: auto;
         }
+    }
+    .m-l-30{
+        margin-left: 30px;
+        _margin-left:15px;
     }
     .td-parameter{
         float: left;
@@ -247,6 +273,9 @@ input{
             color: #9e9e9e;;
         }
     }
+    .m-t-35{
+        margin-top: 35px;
+    }
     .td-number{
         display: inline-table;
         vertical-align: middle;
@@ -264,6 +293,13 @@ input{
         color: #f18e00;
         margin: 0 auto 5px;
     }
+    a.lugue-color:hover{
+        color: #F18E00;
+        text-decoration: underline;
+    }
+    .lugue-color{
+        color: #388be8;
+    }
 }
 .order-table{
     width: 940px;
@@ -280,7 +316,7 @@ input{
     }
 }
 //订单详情
-.order-pages{
+.order-pages{/*订单详情*/
     width: 980px;
     padding-top: 20px;
 }
@@ -408,7 +444,7 @@ input{
     
 }
 //评价管理
-.mate-box{
+.mate-box{/*评价管理*/
     //display: -webkit-flex;
     //display: flex;
 }
@@ -646,7 +682,7 @@ input{
     }
 }
 //分页
-.rate-paginator{
+.rate-paginator{ /*分页*/
     margin-top: 20px;
     text-align: right;
     padding: 20px 0 10px;
@@ -951,4 +987,1126 @@ input{
         text-align: center;
         margin: 30px auto 0;
     }
+}
+//商品管理
+.logue-order{
+    padding-left: 15px;
+    height: 22px;
+    line-height: 22px;
+    select{
+        width: 114px;
+        margin-right: 5px;
+        padding: 1px;
+        outline: medium;
+    }
+    input[type="text"]{
+        width: 38px;
+        padding: 2px;
+        border: none;
+        border:1px solid #ccc;
+        margin-right: 5px;
+    }
+    .logue-sep{
+        display: inline-block;
+        padding: 0 5px 0 0;
+    }
+    .logue-submit{
+        border: none;
+        background: none;
+        margin-left: 44px;
+        _magin-left:22px;
+        cursor: pointer;
+        white-space: nowrap;
+        border:1px solid #cccccc;
+    }
+}
+.cata-click{
+    display: inline-block;
+    width: 17px;
+    height: 13px;
+}
+.checkbg-true{
+    background: url(../images/checkbox000000000true.png) no-repeat;
+}
+.checkbg-false{
+    background: url(../images/checkbox0000000false.png) no-repeat;
+}
+//物流工具
+.stics{
+    width: 980px;
+    padding:10px 20px;
+    box-sizing: border-box;
+    background-color:#fff ;
+    position: relative;
+}
+.stics-itme{
+    h4{
+        padding-left: 10px;
+        font-size: 14px;
+        color: #333;
+        height: 20px;
+        line-height: 20px;
+        i{
+            display: inline-block;
+            height: 16px;
+            width: 2px;
+            background-color: #333 ;
+            margin-top: 2px;
+            margin-right: 5px;
+            float: left;
+        }
+    }
+}
+.stics-nav{
+    height: 23px;
+    border-bottom: 1px solid #ccc;
+    padding:0 20px;
+    margin-top: 20px;
+    .stics-a{
+        display: inline-block;
+        padding: 5px 6px 4px 6px;
+        font-size: 12px;
+        line-height: 12px;
+        color: #333;
+        background-color:#e5e5e5;
+        margin-right: 10px;
+        border: 1px solid transparent;
+    }
+    a:hover,.a-hover{
+       padding: 5px 6px 5px 6px;
+       border: 1px solid #ccc;
+       border-bottom-color: #fff; 
+       background: #fff;
+    }
+}
+.stics-itmebox{
+    ul{
+        padding: 18px 20px;
+        
+        li{
+            float: left;
+            height: 24px;
+            line-height: 24px;
+            .stics-selbox{
+                border: none;
+                border: 1px solid #ccc;
+                padding: 2px 20px;
+                margin-right: 30px;
+                width: 120px;
+            }
+        }
+    }
+}
+.button{
+    width: 46px;
+    height: 22px;
+    color: #333;
+    border: 1px solid #ccc;
+    line-height: 22px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.oga-ogz{
+    padding-left: 20px;
+    height: 24px;
+    line-height: 24px;
+    label{
+        float: left;
+        margin-right: 20px;
+    }
+    .oga-button{
+        float: left;
+        border: none;
+        background-color: #fff;
+        width: 100px;
+        height: 24px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+    }
+}
+.oga-table{
+    width: 100%;
+    margin-top: 10px;
+    tr{
+        border: 1px solid #ccc;
+        th{
+            height: 30px;
+            vertical-align: middle;
+            text-align: center;
+            background-color: #e6e6e6;
+        }
+        td{
+            vertical-align: middle;
+            text-align: center;
+        }
+    }
+    td.oga-pos{
+        position: relative;
+        padding: 25px 0 25px 20px;
+        height: 50px;
+        text-align: left;
+        width: 400px;
+    }
+    .oga-img{
+        display: inline-block;
+        width: 129px;
+        height: 49px;
+        border: 1px solid #ccc;
+        position: absolute;
+        top: 50%;
+        margin-top: -25px;
+    }
+    .oga-em{
+        display: inline-block;
+        margin-left: 140px;
+        color: #333;
+    }
+}
+.oga-block{
+    display: block;
+    margin-top: 5px;
+}
+.oga-color{
+    color: #388be8;
+}
+a.oga-link:hover{
+    color: #F18E00;
+    text-decoration: underline;
+}
+.display-box{
+    padding-bottom: 30px;
+    display: none;
+}
+.oga-submit{
+    display: inline-block;
+    width: 80px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    background-color: #F18E00;
+}
+//运费模板设置
+.oga-carriage{
+    width: 900px;
+    padding:0 20px;
+    margin-top: 30px;
+    table{
+        width: 100%;
+        border: 1px solid #ccc;
+        tr{
+            //border-bottom: 1px solid #ccc;
+            border-top: 1px solid #ccc;
+        }
+    }
+    th,td{
+        padding: 10px 0;
+        vertical-align: middle;
+        text-align: center;
+        border: 1px solid #ccc;
+        //border-top-color: transparent;
+        //border-bottom-color: transparent;
+    }
+    .oga-divbox{
+        width: 400px;
+        padding: 0 20px;
+        box-sizing: border-box;
+        text-align: left;
+    }
+}
+.oga-aga{
+    margin-bottom: 30px;
+    ul{
+        height: 30px;
+         background-color: #f5f5f5;  
+    }
+    li{
+        float: left;
+        line-height: 30px;
+        width: 80px;
+        text-align: center;
+    }
+    .w-600{
+        width: 740px;
+        text-align: center;
+    }
+    .aga-submit{
+        display: inline-block;
+        width: 40px;
+        height: 24px;
+        color: #388be8;
+    }
+}
+//修改
+.revamp{
+    width: 100%;
+    padding: 20px;
+    .amp-form{
+        padding: 0 20px;
+    }
+}
+.amp-itme{
+    margin-top: 14px;
+    label{
+        display: inline-block;
+        width: 70px;
+        height: 24px;
+        line-height: 24px;
+        font-size: 12px;
+        float: left;
+        text-align: right;
+    }
+    input[type="text"]{
+        border: none;
+        width: 170px;
+        padding: 0 5px;
+        height: 22px;
+        border: 1px solid #ccc;
+        outline: medium;
+        color: #666;
+    }
+    input.ogs-input{
+        width: 70px;
+    }
+    input[type="radio"]{
+        margin-top: -1px;
+    }
+    .amp-span{
+        display: inline-block;
+        height: 24px;
+        line-height: 24px;
+    }
+    input.oga-street{
+        width: 300px;
+        height: 50px;
+    }
+    .map-b{
+        color: #999;
+        margin-left: 10px;
+    }
+    .map-w-110{
+        width: 110px;
+    }
+    .map-w-80{
+        width: 80px;
+    }
+    .amp-itmebox{
+       padding-left: 70px; 
+    }
+    .amp-ul{
+        margin-top: 5px;
+        width: 500px;
+        background-color: #e6e6e6;
+        padding: 0 20px;  
+        box-sizing: border-box;
+        li:first-child{
+           margin-right: 40px;
+          // _margin-left:30px
+        }   
+        li{
+            height: 36px;
+            line-height: 36px;
+            float: left;
+            margin-right: 5px;
+            input[type="text"]{
+                width: 26px;
+                height: 22px;
+                border: none;
+                border: 1px solid #ccc;
+                margin-top: -2px;
+            }
+        }
+    }
+    .amp-oga{
+        width: 500px;
+        height: 35px;
+        line-height: 35px;
+        padding:0 16px;
+        font-size: 12px;
+        box-sizing: border-box;
+        a{
+            display: block;
+            color: #388be8;
+        }
+    }
+    .map-input{
+        position: relative;
+        width: 500px;
+        .map-tarea{
+            padding: 10px 20px;
+            width: 500px;
+            height: 80px;
+            border: none;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            outline: medium;
+            color: #666;
+        }
+        .map-ogo-submit{
+            position: absolute;
+            left: 50%;
+            margin-left: -24px;
+            top: 45px;
+        }
+    }
+    .amp-itme-sing{
+        width: 500px;
+        margin-left: 70px;
+        _margin-left:35px;
+        border-top:1px solid #ccc ;
+        box-sizing: border-box;
+        padding: 5px 0;
+        margin-top: 10px;
+        table{
+            width: 100%;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            th{
+                background-color: #e6e6e6;
+                height: 30px;
+                vertical-align: middle;
+                text-align: center;
+            }
+            td{
+                padding:10px ;
+                border: 1px solid #ccc;
+                vertical-align: middle;
+                text-align: center;
+            }
+            .map-sele{
+                select{
+                    width: 90px;
+                    padding:0 20px;
+                    border: none;
+                    border: 1px solid #ccc;
+                    height: 24px;
+                    text-align: center;
+                    box-sizing: border-box;
+                }
+            }
+            .map-rmb{
+                margin-top: 10px;
+                input[type="text"]{
+                    width: 38px;
+                    height: 22px;
+                    outline-color: #F18E00;
+                }
+            }
+        }
+    }
+    .map-ogo-box{
+        display: block;
+        width: 48px;
+        height: 24px;
+        background-color: #F18E00;
+        color: #fff;
+        line-height: 24px;
+        text-align: center;
+    }
+    .ogo-button{
+        display: block;
+        color: #388be8;
+    }
+}
+.map-ctal-c{
+    margin-top: 60px;
+    padding-left: 70px;
+    .map-button{
+        width: 72px;
+        height: 24px;
+        text-align: center;
+        line-height: 24px;
+        margin-right: 30px;
+        cursor: pointer;
+        border: none;
+        color: #333;
+    }
+    .map-botn{
+        background-color: #F18E00;
+        color: #fff;
+    }
+}
+.m-t-20{
+    margin-top: 20px;
+}
+//物流信息查询
+.oga-dem-form{
+    padding: 30px 0 30px 0;
+    input[type="text"]{
+        width: 160px;
+        height: 22px;
+        padding: 0 10px;
+        border: 1px solid #ccc;
+    }
+}
+.oga-h5{
+  
+}
+.oga-detais{
+    width: 940px;
+}
+.oga-select{
+    select{
+        width: 98px;
+        height: 24px;
+    }
+}
+.too-table{
+    width: 940px;
+    tr{
+        border: 1px solid #ccc;
+        th{
+            background-color: #e5e5e5;
+            height: 30px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        td{
+            padding: 10px 0;
+            text-align: center;
+            vertical-align: middle;
+        }
+    }
+}
+.tool-box{
+    display: block;
+}
+a.tool-link:hover{
+    color: #F18E00;
+    text-decoration: underline;
+}
+.tool-strong{
+    color: #666;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 20px;
+}
+.new-form{
+    width: 940px;
+}
+//新增商品
+.new-orm-l{
+    width: 50%;
+    padding-left: 18px;
+    box-sizing: border-box;
+}
+.new-orm-ul{
+    li{
+        float: left;
+        height: 24px;
+        line-height: 24px;
+        select{
+            height: 24px;
+            margin-right: 5px;
+            margin-top: -1px;
+        }
+    }
+}
+.m-t-15{
+    margin-top: 15px;
+}
+.new-orm-r{
+    width: 50%;
+    padding-left: 20px;
+    box-sizing: border-box;
+    //box-sizing: content-box;
+    .orm-r-box{
+        height: 24px;
+        line-height: 24px;
+        select{
+            height: 24px;
+            margin-right: 5px;
+            margin-top: -1px;
+        }
+        .orm-new-ly{
+            display: inline-block;
+            width: 90px;
+            height: 24px;
+            text-align: center;
+            line-height: 24px;
+            background-color: #F18E00;
+            color: #fff;
+            margin-right: 10px;
+        }
+        b{
+            color: #999;
+        }
+    }
+    li{
+        label{
+            display: inline-block;
+            width: 60px;
+            margin-right: 5px;
+            text-align: right;
+            float: left;
+            height: 24px;
+            line-height: 24px;
+        }
+    }
+    input,textarea{
+        border: 1px solid #ccc;
+        height: 24px;
+    }
+    input.orm-input-a{
+        width: 340px;
+    }
+    textarea.orm-input-b{
+        width: 340px;
+        height: 80px;
+    }
+    input.orm-input-c{
+        width: 64px;
+        margin-right: 10px;
+    }
+    .orm-input-d{
+        width: 380px;
+        border: 1px solid #ccc;
+        float: left;
+        display: none;
+    }
+    li.orm-pos-rel{
+        position: relative;
+    }
+}
+.orm-show{
+    width: 380px;
+    height: 100px;
+    text-align: center;
+    background-color: #ccc;
+    float: left;
+    a{
+        display: block;
+        width: 60px;
+        height: 24px;
+        background-color: #F18E00;
+        color: #fff;
+        text-align: center;
+        line-height: 24px;
+        margin: 20px auto 10px;
+    }
+    p{
+        color: #666;
+    }
+}
+.orm-p{
+   color: #666; 
+}
+.orm-upload-oga{
+    padding-left: 14px;
+}
+.orm-up-img{
+    width: 224px;
+    height: 238px;
+    border: 1px solid #ccc;
+    margin-left: 62px;
+    _margin-left:31px;
+    margin-top: 12px;
+    position: relative;
+}
+.orm-up-zbox{
+    float: left;
+    width: 800px;
+    height: 300px;
+    border: 1px solid #ccc;
+}
+.orm-up-file{
+    padding-left: 60px;
+}
+.orm-submit-box{
+    margin-left: 78px;
+    _margin-left:39px;
+    margin-top: 130px;
+    a{
+        display: inline-block;
+        width: 120px;
+        height: 44px;
+        text-align: center;
+        line-height: 44px;
+    }
+    a.orm-oga-submit{
+        background-color: #F18E00;
+        color: #fff;
+        font-size: 14px;
+        letter-spacing: 2px;
+        margin-right: 66px;
+        border: 1px solid #F18E00;
+    }
+    a.orm-oga-button{
+        border: 1px solid #ccc;
+        background-color: #e5e5e5;
+        color: #333;
+        font-size: 14px;
+    }
+}
+.orm-hidden{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background:rgba(0,0,0,.5);
+    z-index: 999;
+}
+.orm-hidebox{
+    width: 650px;
+    background-color: #fff;
+    margin: 200px auto 0;
+    h4{
+        background-color: #e5e5e5;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 10px;
+        box-sizing: border-box;
+        span{
+            float: right;
+            font-size: 18px;
+            cursor: pointer;
+            line-height: 30px;
+        }
+    }
+    .orm-tablebox{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        div{
+            line-height: 22px;
+            color: #666;
+            text-align: center;
+        }
+    }
+}
+.orm-table{
+    width: 100%;
+    .orm-tr{
+        border-bottom: 1px solid #ccc;
+        border-top: 1px solid #ccc;   
+    }
+       tr{
+        th{
+            padding: 10px 0;
+            width: 14%;
+            text-align: center;
+            vertical-align: middle;
+        }
+        input[type="text"]{
+            width: 42px;
+            height: 24px;
+            border: 1px solid #ccc;
+            padding: 0 2px;
+        }
+        td{
+            padding: 10px 0;
+            text-align: center;
+            vertical-align: middle;  
+        }
+    }
+    .orm-icon{
+        display: inline-block;
+        width: 10px;
+        height: 11px;
+        cursor: pointer;
+        margin-right: 5px;
+    }
+    .orm-icon-down{
+        background: url(../images/down0000000sanjiao.png) center no-repeat;
+    }
+    .orm-icon-close{
+        background: url(../images/checkbox0000000false.png) center no-repeat;
+    }
+    .orm-icon-up{
+        background: url(../images/up0000000000000000sanjiao.png) center no-repeat;
+    }
+}
+.ogo-add{
+    font-size: 12px;
+    color: #388be8;
+    margin-left: 20px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    width: 120px;
+}
+.orm-keep-op{
+    margin-left: 18px;
+    margin-top: 38px;
+    margin-bottom: 20px;
+}
+.orm-keep{
+    display: block;
+    width: 122px;
+    height: 30px;
+    background-color: #F18E00;
+    color: #fff;
+    font-size: 14px;
+    line-height: 30px;
+}
+#orm-images{
+    width: 224px;
+    height: 238px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+.orm-bg-bgbox{
+    width: 224px;
+    height: 238px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+//商品批量编辑
+.batch{
+    padding: 10px 40px 60px 40px;
+}
+.batch-itme{
+    label{
+        display: inline-block;
+        width: 72px;
+        height: 24px;
+        line-height: 24px;
+        text-align: right;
+        float: left;
+        margin-right: 10px;
+    }
+    select{
+        border: 1px solid #ccc;
+        height: 24px;
+        margin-right: 10px;
+        float: left;
+    }
+    .batch-boxitme{
+        display: block;
+        width: 88px;
+        height: 22px;
+        border: 1px solid #ccc;
+        line-height: 22px;
+        text-align: center;
+        color: #333;
+        margin-right: 10px;
+    }
+    span{
+        display: block;
+        float: left;
+        color: #ccc;
+        font-size: 12px;
+        height: 24px;
+        line-height: 24px;
+    }
+    input[type="text"]{
+        width: 118px;
+        height: 22px;
+        border: 1px solid #ccc;
+        margin-right: 10px;
+        float: left;
+        color: #333;
+        padding:0 5px;
+    }
+    span.batch-radio{
+        color: #333;
+        margin-right: 10px;
+        input[type="radio"]{
+            float: left;
+            margin-top: 7px;
+            margin-right: 5px;
+        }
+    }
+}
+.m-t-18{
+    margin-top: 18px;
+}
+.batch-itmezbx{
+    padding:20px 20px 0 20px;
+}
+.batch-box{
+    display: inline-block;
+    width: 96px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 12px;
+}
+.batch-submit{
+    color: #fff;
+    border: 1px solid #F18E03;
+    background-color: #F18E03;
+    margin-right: 60px;
+}
+.batch-subbox{
+    margin-top: 80px;
+    padding-left: 82px;
+}
+.batch-remove{
+    color: #333;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+//提现
+.deposit{
+    width: 980px;
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 10px 20px;
+    height: 500px;
+    position: relative;
+}
+.deposit-ogo-box{
+    padding-left: 10px;
+    li{
+        font-size: 12px;
+        color: #333;
+        margin-top: 18px;
+        input[type="text"]{
+            width: 136px;
+            height: 22px;
+            border: 1px solid #ccc;
+            padding: 0 5px;
+        }
+        input.deposit-rmb{
+            height: 30px;
+            width: 90px;
+        }
+    }
+    .m-t-30{
+        margin-top: 30px;
+    }
+}
+.deposit-submit{
+    display: block;
+    width: 90px;
+    height: 28px;
+    text-align: center;
+    color: #fff;
+    line-height: 28px;
+    font-size: 12px;
+    border: 1px solid #F18E03;
+    background-color: #F18E03;
+    margin-left: 10px;
+    margin-top: 50px;
+    _margin-left:5px;
+}
+.deposit-message{
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 20px;
+    td{
+        padding:10px 0;
+        text-align: center;
+        vertical-align: middle;
+        color: #333;
+        font-size: 12px;
+        span{
+            display: inline-block;
+            float: left;
+            margin-right: 5px;
+            height: 24px;
+            line-height: 24px;
+            vertical-align: middle;
+            img{
+                margin-top: 2px;
+            }
+            input[type="radio"]{
+                margin-top: -1px;
+            }
+        }
+        a.deposit-oga{
+            color: #388BE8;
+            font-size: 12px;
+        }
+    }
+}
+.deposit-alert{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+.alert-itmebox{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 420px;
+    height: 260px;
+    background-color: #fff;
+    h4{
+        height: 40px;
+        line-height: 40px;
+        padding: 0 10px;
+        background-color: #f5f5f5;
+        font-size: 12px;
+        color: #333;
+    }
+    .alert-displaybox{
+        padding: 20px;
+        input[type="text"]{
+            width: 138px;
+            height: 22px;
+            border: 1px solid #ccc;
+            padding: 0 10px;
+        }
+    }
+}
+.deposit-ogo{
+    display: block;
+    width: 60px;
+    height: 24px;
+    text-align: center;
+    color: #fff;
+    line-height: 24px;
+    font-size: 12px;
+    border: 1px solid #F18E03;
+    background-color: #F18E03;
+    margin-top: 30px;
+    margin-left: 20px;
+    _margin-left:10px;
+}
+//选择地区
+.logistics-alert{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: rgba(0,0,0,.5);
+    display: none;
+}
+.logistics-itmebox{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: #fff;
+    width: 620px;
+    height: 620px;
+    h4{
+        font-size: 14px;
+        color: #333;
+        background-color: #fff;
+        height: 45px;
+        line-height: 45px;
+        border-bottom: 1px solid #ccc;
+        padding: 0 10px;
+    }
+}
+.region-screen{
+    padding:0 18px;
+    margin-top: 20px;
+    display: inline-table;
+    width: 100%;
+    i.reg-checkbox{
+        display: inline-block;
+        width: 9px;
+        height: 9px;
+        border: 1px solid #ccc;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        float: left;
+        margin-top: 4px;
+        margin-right: 5px;
+    }
+    dt{
+        float: left;
+        width: 76px;
+        text-align: left;
+        font-size: 12px;
+        line-height: 16px;
+        min-height: 32px;
+        cursor: pointer;
+    }
+    dd{
+        float: left;
+        padding-right: 10px;        
+        height: 26px;
+        text-align: left;
+        min-width: 85px;
+        display: inline-block;
+        float: left;
+        cursor: pointer;
+        position: relative;
+        &:hover{
+            .reg-ogo-box{
+                display: block;
+            }        
+        }
+        div.reg-ogo-box{
+            display: none;
+            min-width: 250px;
+            padding: 10px;
+            box-sizing: border-box;
+            width: auto;
+            background-color: #fff;
+            position: absolute;
+            top: 26px;
+            border: 1px solid #ccc;
+            z-index: 999;
+            background-color: #fff;
+            div.itme-lilist{
+                width: 50%;
+                float: left;
+            }
+            label{
+                cursor: pointer;
+            }
+        }
+        b.regbox-heise{
+            display: block;
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 10px solid #ccc;
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            em.regbox-baise{
+                width: 0;
+                height: 0;
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+                border-bottom: 10px solid #fff;
+                position: absolute;
+                top: 2px;
+                left: -8px;
+                z-index: 999;
+            }
+        }
+    }
+}
+.checkall{
+    background: url(../images/vvvvvvvvvvvvvvvvvvvvvv.png) center no-repeat;
+}
+.checkoff{
+    background: url(../images/zzzzzzzzzzzzzzzzzzzz.png) center no-repeat;
+}
+.ogo-indexbox{
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+.ogo-og-a{
+    border: 1px solid #F18E00;
+    background-color: #F18E00;
+    color: #fff;
+}
+.ogo-og-b{
+    color: #333;
+    border: 1px solid #ccc;
 }

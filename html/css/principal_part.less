@@ -1,5 +1,63 @@
 
 /*****************首页**********************/
+/*******首页 吸顶条*********/
+#home_suctiontop{
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #009646;
+    background: #FFFFFF;
+    position: fixed;
+    top: -50px;
+    left: 0;
+    z-index: 99999;
+    .suction_1200{
+        width: 1200px;
+        height: 50px;
+        margin: 0 auto;
+        .suction_logo{
+            width: 170px;
+            height: 50px;
+            margin-right: 20px;
+            transform: scale(0.7);
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .suction_search{
+            width: 710px;
+            height: 30px;
+            border: 1px solid #009646;
+            margin: 8px 40px;
+            
+            input{
+                width: 610px;
+                height: 28px;
+                font-size: 14px;
+                text-indent: 12px;
+                float: left;
+                border: none;
+            }
+            button{
+                width: 100px;
+                height: 30px;
+                float: right;
+                background: #009646;
+                border: 2px solid #009646;
+                color: #fff;
+                font-size: 14px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.home_suction_show{
+    transition: all 0.5s !important;
+    transform: translateY(50px) !important;
+}
+    
+
 /*首页  banner*/
 .home_banner{
     width: 100%;
@@ -702,7 +760,6 @@
 .details_main{
     width: 1200px;
     height: auto;
-    overflow: hidden;
     margin: 20px auto 0;
     .detail_list_top{
         width: 100%;
@@ -935,11 +992,23 @@
                         border: 1px solid #009646;
                         color: #009646;
                         background: #ffffff;
+                        position: relative;
+                        
                         img{
                             width: 17px;
                             height: 18px;
                             vertical-align: middle;
                             margin: 0 5px;
+                        }
+                        i{
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            background: #00843E;
+                            display: none;
+                            position: absolute;
+                            top: 0;
+                            left: 15%;
                         }
                     }
                 }
@@ -1006,6 +1075,79 @@
             }
         }
     }
+    
+    .shop_recommend{/****店铺推荐****/
+        width: 100%;
+        height: 260px;
+        margin-top: 20px;
+        .recommend_nav{
+            width: 100%;
+            height: 40px;
+            background: #F7F7F7;
+            border-bottom: 1px solid #009646;
+            li{
+                font-size: 14px;
+                color: #FFFFFF;
+                width: 110px;
+                height: 40px;
+                background: #009646;
+                text-align: center;
+                line-height: 40px;
+                float: left;
+            }
+        }
+        .recommend_list{
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+            li{
+                width: 200px;
+                height: 220px;
+                float: left;
+                padding: 20px;
+                box-sizing: border-box;
+                a{
+                    width: 100%;
+                    height: 160px;
+                    display: block;
+                    overflow: hidden;
+                    position: relative;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                    }
+                    span{
+                       position: absolute;
+                       bottom: -36px;
+                       left: 0; 
+                       width: 100%;
+                       height: 36px;
+                       background: rgba(0,0,0,.6);
+                       line-height: 18px;
+                       color: #FFFFFF;
+                       padding: 0 8px;
+                       box-sizing: border-box;
+                    }
+                    &:hover{
+                        span{
+                            transition: all 0.2s;
+                            transform: translateY(-36px);
+                        }
+                            
+                    }
+                }
+                p{
+                    font-size: 14px;
+                    color: #009646;
+                    text-align: center;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+    
+    
     .detail_bottom{
         width: 100%;
         overflow: hidden;
@@ -1086,6 +1228,7 @@
             .detail_t{
                 width: 100%;
                 min-height: 240px;
+                display: none;
                 .right_cont_section{
                     width: 100%;
                     overflow: hidden;
@@ -1123,7 +1266,7 @@
             .detail_pl{
                 width: 100%;
                 overflow: hidden;
-                
+                display: none;
                 .detail_pl_top{
                     width: 100%;
                     overflow: hidden;
@@ -1271,7 +1414,9 @@
                 }
                 
             }
-                
+            .detail_cent_show{
+                display: block !important;
+            }   
                     
         }
     }
@@ -1750,6 +1895,9 @@
                 width: 100%;
                 overflow: hidden;
                 border-bottom: 1px solid #ccc;
+                &:last-child{
+                    border-bottom: none;
+                }
             }
             .classify_background{
                 width: 160px;
@@ -1848,6 +1996,7 @@
                 float: left;
                 margin-right: 20px;
                 margin-bottom: 20px;
+                background: #fff;
                 cursor: pointer;
                 box-sizing: border-box;
                 border: 2px solid rgba(0,0,0,0);
@@ -1904,6 +2053,7 @@
                         color: #ffffff;
                         border: none;
                         font-size: 12px;
+                        cursor: pointer;
                     }
                 }
                 p{
@@ -2583,19 +2733,126 @@
 }
 
 
-/**********订单支付页面************/
+/**********订单支付页面(微信二维码)************/
 
 .payment{
     width: 1200px;
-    height: 280px;
+    height: auto;
     margin: 0 auto 50px;
-    >h4{
+    .payment_header{
         width: 100%;
-        height: 36px;
-        line-height: 36px;
-        text-indent: 20px;
-        font-size: 18px;
-        border-left: 2px solid #009646;
+        height: 54px;
+        h4{
+            font-size: 18px;
+            border-left: 2px solid #333;
+            text-indent: 12px;
+            line-height: 24px;
+            float: left;
+        }
+        .jine{
+            float: right;
+            text-align: right;
+            p{
+                font-size: 14px;
+                color: #333333;
+                line-height: 24px;
+            }
+            a{
+                font-size: 12px;
+                line-height: 20px;
+                color: #009646;
+                img{
+                    width: 16px;
+                    height: 10px;
+                    margin-left: 4px;
+                }
+            }
+        }
+    }
+    .dd_particulars{
+        width: 100%;
+        height: 80px;
+        border-top: 1px solid #ccc;
+        display: none;
+        padding-top: 20px;
+        box-sizing: border-box;
+        p{
+            line-height: 30px;
+            color: #333333;
+            font-size: 14px;
+            text-indent: 25px;
+            
+        }
+    }
+    .payment_cont{
+        width: 100%;
+        height: 540px;
+        box-shadow: 0 0 10px 5px #E6E6E6;
+        box-sizing: border-box;
+        margin-top: 20px;
+        position: relative;
+        .weixin_erwm{
+            width: 250px;
+            height: 380px;
+            position: absolute;
+            top: 80px;
+            left: 230px;
+            .erweim{
+                width: 250px;
+                height: 250px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+            }
+            .erwm_btn{
+                width: 100%;
+                height: 60px;
+                background: #009646;
+                color: #FFFFFF;
+                padding: 13px 0;
+                box-sizing: border-box;
+                margin-top: 30px;
+                img{
+                    width: 36px;
+                    height: 34px;
+                    float: left;
+                    margin: 0 30px;
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 17px;
+                    float: left;
+                }
+            }
+        }
+        .mobile_phone{
+            width: 384px;
+            height: 450px;
+            position: absolute;
+            top: 40px;
+            right: 240px;
+            img{
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+        }
+        >a{
+            font-size: 14px;
+            line-height: 20px;
+            color: #009646;
+            position: absolute;
+            bottom: 40px;
+            left: 60px;
+            img{
+                width: 12px;
+                height: 20px;
+                float: left;
+                margin-right: 10px;
+            }
+        }
     }
 }
 

@@ -27,6 +27,24 @@ $(function(){
     	
     })
     
+    //首页吸顶条
+    $(document).ready(function(){
+		var time;
+		$(window).scroll(function(){
+			clearTimeout(time);
+			if ($(window).scrollTop() > 600) {
+				time = setTimeout(function(){
+					$("#home_suctiontop").addClass("home_suction_show");
+				})
+			} else{
+				time = setTimeout(function(){
+					$("#home_suctiontop").removeClass("home_suction_show");
+				})
+			}
+			//console.log($(window).scrollTop())
+		})
+	})
+    
     
     //首页二级菜单
     var $subblock = $(".con_text"), 

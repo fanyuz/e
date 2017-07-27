@@ -44,10 +44,10 @@ input:focus {
   display: inline-block;
 }
 .header_nav {
-  min-width: 792px;
+  min-width: 640px;
   float: right;
   line-height: 34px;
-  font-size: 14px;
+  font-size: 12px;
   text-align: right;
 }
 .header_nav span {
@@ -63,7 +63,7 @@ input:focus {
 }
 .header_nav ul li a {
   color: #999;
-  padding: 0 18px;
+  padding: 0 10px;
 }
 .header_nav ul li i {
   color: #999;
@@ -209,7 +209,7 @@ input:focus {
 	background: #E0E0E0;
 	position: absolute;
 	top: 100%;
-	z-index: 100000000;
+	z-index: 999;
 	margin-left: -12px;
 }
 .con_text ul li{
@@ -261,7 +261,7 @@ input:focus {
 }
 .prosmore .rightbar{
 	width: 200px;
-	height: 600px;
+	height: 480px;
 	background: #ffffff;
 	position: absolute;
 	right: 0;top: 0;
@@ -650,6 +650,7 @@ input:focus {
   color: #009646;
 }
 .rightbar_nav .footprint,
+.rightbar_nav .return_top,
 .rightbar_nav .attention,
 .rightbar_nav .enshrine {
   width: 100%;
@@ -660,6 +661,7 @@ input:focus {
   padding: 7px 0;
 }
 .rightbar_nav .footprint i,
+.rightbar_nav .return_top i,
 .rightbar_nav .attention i,
 .rightbar_nav .enshrine i {
   font-size: 22px;
@@ -673,6 +675,9 @@ input:focus {
 }
 .rightbar_nav .enshrine {
   top: 560px;
+}
+.rightbar_nav .return_top{
+  bottom: 0px;
 }
 .rightbar_main {
   width: 274px;
@@ -753,15 +758,16 @@ input:focus {
   margin-bottom: 10px;
   display: block;
 }
-.rightbar_main #shopping_c li .cart_text a:hover {
+#shopping_c li .cart_text a:hover {
   color: #009646;
 }
-.rightbar_main #shopping_c li .cart_text p {
+#shopping_c li .cart_text p {
   line-height: 20px;
   color: #333333;
 }
-.rightbar_cont #shopping_c li .cart_text p span {
+#shopping_c li .cart_text p span {
   color: #009646;
+  margin-right: 4px;
 }
 .rightbar_main #shopping_c li .cart_remove {
   font-size: 12px;
@@ -856,7 +862,7 @@ input:focus {
   line-height: 20px;
 }
 @keyframes reminder{
-	from{right: 46px;}
+	from{right: 56px;}
 	to{right: 28px;}
 }
 

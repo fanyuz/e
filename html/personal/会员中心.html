@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>会员中心</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/bass2.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/cityselect.css"/>
+		<script src="../js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/cityselect.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="yibaiyun">
+					<!--顶部-->
+			<div class="header clearfix">
+				<div class="header_place">
+					<img src="images/GPS.png"/><input class="sp1" class="cityinput" id="citySelect" value="北京市" readonly unselectable="on">
+					<em>Hi~欢迎来到亿佰云商城</em>
+				</div>
+				<script type="text/javascript">
+            		var test = new Vcity.CitySelector({input:'citySelect'});
+        		</script>
+        		<div class="header_nav clearfix">
+        			<span>请<a href="javascript:;">登录</a></span>
+        			<span>免费<a href="javascript:;">注册</a></span>
+        			<ul class="clearfix">
+        				<li>
+        					<i>丨</i>
+        					<a href="javascript:;">我的购物车</a>
+        					<i>丨</i>
+        				</li>
+        				<li><a href="javascript:;">我的收藏</a><i>丨</i></li>
+        				<li><a href="javascript:;">会员中心</a><i>丨</i></li>
+        				<li><a href="javascript:;">企业采购</a><i>丨</i></li>
+        				<li><a href="javascript:;">客户服务</a><i>丨</i></li>
+        				<li style="padding-right: 0;"><a href="javascript:;">手机网</a></li>
+        			</ul>
+        		</div>
+			</div>
+			<!--logo****搜索区域****导航-->
+			<div class="region clearfix">
+				<div class="min_1200">
+					<div class="region_logo">
+						<img src="images/logo.png"/>
+					</div>
+					<div class="region_search">
+						<form action="" method="post">
+							<input type="text" name="" id="" class="region_text"/>
+							<input type="submit" value="搜索" class="region_sub"/>
+						</form>
+						<div class="region_gouwu">
+							<a href="javascript:;">
+								<i class="icon_gouwuche"></i>
+								<span>我的购物车</span>
+								<em class="icon_tishi">5</em>
+							</a>
+						</div>
+						<div class="region_nav">
+							<ul class="clearfix">
+								<li><a href="javascript:;" style="margin-left: 0;">手机</a>|</li>
+								<li><a href="javascript:;">笔记本</a>|</li>
+								<li><a href="javascript:;">短袖</a>|</li>
+								<li><a href="javascript:;">运动鞋</a>|</li>
+								<li><a href="javascript:;">婴儿车</a>|</li>
+								<li><a href="javascript:;">手机</a>|</li>
+								<li><a href="javascript:;">手机</a>|</li>
+								<li><a href="javascript:;">双肩包</a>|</li>
+								<li><a href="javascript:;">手机</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--classification 产品分类-->
+			<div class="classification clearfix">
+				<div class="min_1200">
+					<div class="con_text">
+						<h3><i></i>商品分类</h3>
+					</div>
+					<div class="con_nav">
+						<ul>
+							<li><a href="javascript:;"style="margin-left: 10px;">会员专区</a></li>
+							<li><a href="javascript:;">品牌</a></li>
+							<li><a href="javascript:;">电器城</a></li>
+							<li><a href="javascript:;">潮流馆</a></li>
+							<li><a href="javascript:;">家具城</a></li>
+							<li><a href="javascript:;">零食铺</a></li>
+							<li><a href="javascript:;">生鲜快运</a></li>
+							<li><a href="javascript:;">酷玩街</a></li>
+							<li><a href="javascript:;">品质生活</a></li>
+							<li><a href="javascript:;">户外运动</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		<div class="min_1200">
+			<div class="member clearfix">
+				<div class="side_nav member_bg_fff">
+					<h3 class="member_title">会员中心</h3>
+					<div class="member_list">
+						<dl class="men_bens">
+							<dt class="member_jiaoyi">我的交易</dt>
+							<dd>
+								<a href="我的订单.html">我的订单</a>
+							</dd>
+							<dd>
+								<a href="拼团订单.html">拼团订单</a>
+							</dd>
+							<dd>
+								<a href="我的抽奖.html">我的抽奖</a>
+							</dd>
+						</dl>
+						<dl class="men_bens">
+							<dt class="member_jiaoyi">我的收藏</dt>
+							<dd>
+								<a href="商品收藏.html">商品收藏</a>
+							</dd>
+							<dd>
+								<a href="店铺收藏.html">店铺收藏</a>
+							</dd>
+						</dl>
+						<dl class="men_bens">
+							<dt class="member_jiaoyi">售后服务</dt>
+							<dd>
+								<a href="退换货查询-退换货状态.html">退换货查询</a>
+							</dd>
+						</dl>
+						<dl class="men_bens">
+							<dt class="member_jiaoyi">个人中心</dt>
+							<dd>
+								<a href="个人信息.html">个人信息</a>
+							</dd>
+							<dd>
+								<a href="修改密码-1验证身份.html">修改密码</a>
+							</dd>
+							<dd>
+								<a href="收货地址.html">收货地址</a>
+							</dd>
+							<dd>
+								<a href="我的积分.html">我的积分</a>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="member_box">
+					<div class="mem_box1">
+						<div class="men_box_top clearfix">
+							<!--上传头像区域-->
+							<div class="men_shangchuang">
+								<a href="javascript:;" class="men_touxiang">
+									<img src="images/2017shuangchuangtouxiang001.png"/>
+								</a>
+								<h3 class="men_name">等风也等你</h3>
+								<span class="men_rmb">
+									<em>佰云币：</em>
+									<i class="men_color_009646">1024</i>
+								</span>
+								<span class="men_rmb">
+									<em>积分：</em>
+									<i class="men_color_009646">1024</i>
+								</span>
+							</div>
+							<!--信息显示栏-->
+							<div class="men_information">
+								<ul class="">
+									<li>
+										<a href="javascript:;">
+											<img src="images/20170608000000SHOUHUO001.png" alt="待收货"/>
+											<p class="men_infor_p">待收货（<span class="men_color_b4cef4">0</span>）</p>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<img src="images/20170608000000FAHUO002.png" alt="待发货"/>
+											<p class="men_infor_p">待发货（<span class="men_color_b4cef4">0</span>）</p>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<img src="images/20170608000000SHOUKUAN003.png" alt="待付款"/>
+											<p class="men_infor_p">待付款（<span class="men_color_b4cef4">0</span>）</p>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<img src="images/20170608000000PINGJIA004.png" alt="待评价"/>
+											<p class="men_infor_p">待评价（<span class="men_color_b4cef4">0</span>）</p>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<img src="images/20170608000000KAIJIANG005.png" alt="待开奖"/>
+											<p class="men_infor_p">待开奖（<span class="men_color_b4cef4">0</span>）</p>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<img src="images/20170608000000TUAN006.png" alt="待成团"/>
+											<p class="men_infor_p">待成团（<span class="men_color_b4cef4">1110</span>）</p>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!--DINGDAN-->
+						<div class="men_dingdan">
+							<h3>我的订单<a href="javascript:;" class="men_dd_click">查看全部订单</a></h3>
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tbody>
+									<tr>
+										<td>
+											<div class="men_shangpinchanshi">
+												<a href="javascript:;">
+													<img src="images/XIE0000000000000.png" alt="SHANGPIN"/>
+												</a>
+												<a href="javascript:;" class="men_miaoshu">
+													热风小白鞋H4545热风小白鞋H4545热风小白鞋H4545热风小白鞋H4545热风小白鞋H4545
+												</a>
+											</div>
+										</td>
+										<td class="men_w_140px men_td">收货人</td>
+										<td class="men_w_140px men_td">99.00</td>
+										<td class="men_w_140px men_td">2017.06.08</td>
+										<td class="men_w_180px">
+											<a href="我的订单-查看详情.html" class="men_chankan">查看</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<table border="0" cellspacing="0" cellpadding="0" style="display: none;">
+								<tbody>
+									<tr>
+										<td>
+											<div class="men_shangpinchanshi">
+												<a href="javascript:;">
+													<img src="images/XIE0000000000000.png" alt="SHANGPIN"/>
+												</a>
+												<a href="javascript:;" class="men_miaoshu">
+													热风小白鞋H4545热风小白鞋H4545热风小白鞋H4545热风小白鞋H4545热风小白鞋H4545
+												</a>
+											</div>
+										</td>
+										<td class="men_w_140px men_td">收货人</td>
+										<td class="men_w_140px men_td">99.00</td>
+										<td class="men_w_140px men_td">2017.06.08</td>
+										<td class="men_w_180px">
+											<a href="javascript:;" class="men_chankan">查看</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="men_tuijian">
+							<h3>会员推荐<a href="javascript:;" class="men_dd_click">更多推荐</a></h3>
+							<div class="men_shonp clearfix">
+								<div class="float_lt men_margin_left_20 men_margin_lt men_border">
+									<a href="javascript:;" class="men_ltone">																
+										<dl>
+											<dt class="men_itme_img">
+												<img src="images/0000000000000000000SHANGPINTUIJIAN.png" alt="商品展示"/>
+											</dt>
+											<dd class="men_itme_rmb">
+												<span class="men_rmb_n">
+													<i>¥</i>
+													<span>88</span>
+													<span>.00</span>
+													<span class="men_rmm_hua">
+														<i>¥</i>
+														<span>99.00</span>
+													</span>
+												</span>
+											</dd>
+											<dd>
+												<span class="men_itme_wenzi">德国 施德楼 925 35 自动铅自动铅自动铅自动铅自动铅自动铅自动铅自动铅自动铅</span>
+											</dd>
+											<dd>
+												<span class="men_itme_xiaoliang">
+													<i>销量：</i>
+													<em>999</em>
+												</span>
+											</dd>
+										</dl>
+									</a>
+								</div>
+								<div class="float_lt men_margin_left_20 men_border">
+									<a href="javascript:;" class="men_ltone">																
+										<dl>
+											<dt class="men_itme_img">
+												<img src="images/0000000000000000000SHANGPINTUIJIAN.png" alt="商品展示"/>
+											</dt>
+											<dd class="men_itme_rmb">
+												<span class="men_rmb_n">
+													<i>¥</i>
+													<span>88</span>
+													<span>.00</span>
+													<span class="men_rmm_hua">
+														<i>¥</i>
+														<span>99.00</span>
+													</span>
+												</span>
+											</dd>
+											<dd>
+												<span class="men_itme_wenzi">德国 施德楼 925 35 自动铅自动铅自动铅自动铅自动铅自动铅自动铅自动铅自动铅</span>
+											</dd>
+											<dd>
+												<span class="men_itme_xiaoliang">
+													<i>销量：</i>
+													<em>999</em>
+												</span>
+											</dd>
+										</dl>
+									</a>
+								</div>
+								<div class="float_lt men_margin_left_20 men_border">
+									<a href="javascript:;" class="men_ltone">																
+										<dl>
+											<dt class="men_itme_img">
+												<img src="images/0000000000000000000SHANGPINTUIJIAN.png" alt="商品展示"/>
+											</dt>
+											<dd class="men_itme_rmb">
+												<span class="men_rmb_n">
+													<i>¥</i>
+													<span>88</span>
+													<span>.00</span>
+													<span class="men_rmm_hua">
+														<i>¥</i>
+														<span>99.00</span>
+													</span>
+												</span>
+											</dd>
+											<dd>
+												<span class="men_itme_wenzi">德国 施德楼 925 35 自动铅自动铅自动铅自动铅自动铅自动铅自动铅自动铅自动铅</span>
+											</dd>
+											<dd>
+												<span class="men_itme_xiaoliang">
+													<i>销量：</i>
+													<em>999</em>
+												</span>
+											</dd>
+										</dl>
+									</a>
+								</div>
+								<div class="float_lt men_margin_left_20 men_border">
+									<a href="javascript:;" class="men_ltone">																
+										<dl>
+											<dt class="men_itme_img">
+												<img src="images/0000000000000000000SHANGPINTUIJIAN.png" alt="商品展示"/>
+											</dt>
+											<dd class="men_itme_rmb">
+												<span class="men_rmb_n">
+													<i>¥</i>
+													<span>88</span>
+													<span>.00</span>
+													<span class="men_rmm_hua">
+														<i>¥</i>
+														<span>99.00</span>
+													</span>
+												</span>
+											</dd>
+											<dd>
+												<span class="men_itme_wenzi">德国 施德楼 925 35 自动铅自动铅自动铅自动铅自动铅自动铅自动铅自动铅自动铅</span>
+											</dd>
+											<dd>
+												<span class="men_itme_xiaoliang">
+													<i>销量：</i>
+													<em>999</em>
+												</span>
+											</dd>
+										</dl>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+							        <!--底部-->
+			        <div class="foot">
+			        	<div class="foot_tese clearfix">
+	        				<a href="javascript:;" class="foot_icon clearfix">
+	        					<i class="foot_icon_side icon_you1114"></i>
+	        					<span class="foot_itme">
+	        						<em class="foot_itme_jsk">品质保障</em>
+	        						<span class="foot_itme_dsk">品质护航，购物无忧</span>
+	        					</span>
+	        				</a>
+	        				<a href="javascript:;" class="foot_icon clearfix">
+	        					<i class="foot_icon_side icon_you1112"></i>
+	        					<span class="foot_itme">
+	        						<em class="foot_itme_jsk">七天无理由退换</em>
+	        						<span class="foot_itme_dsk">为您提供售后无忧保障</span>
+	        					</span>
+	        				</a>
+	        				<a href="javascript:;" class="foot_icon clearfix">
+	        					<i class="foot_icon_side icon_you1010"></i>
+	        					<span class="foot_itme">
+	        						<em class="foot_itme_jsk">特色服务体验</em>
+	        						<span class="foot_itme_dsk">为您呈现不一样的服务</span>
+	        					</span>
+	        				</a>
+	        				<a href="帮助中心.html" class="foot_icon clearfix">
+	        					<i class="foot_icon_side icon_you1108"></i>
+	        					<span class="foot_itme">
+	        						<em class="foot_itme_jsk">帮助中心</em>
+	        						<span class="foot_itme_dsk">您的购物指南</span>
+	        					</span>
+	        				</a>
+			        	</div>
+			        	<div class="foot_bt clearfix">
+			        		<div class="foot_bt_list clearfix">
+			        			<dl class="foot_ue_dl">
+			        				<dt>购物指南</dt>
+			        				<dd>
+			        					<a href="javascript:;">免费注册</a>
+			        				</dd>
+			        			</dl>
+			        			<dl class="foot_ue_dl">
+			        				<dt>平台保障</dt>
+			        				<dd>
+			        					<a href="javascript:;">发票保障</a>
+			        				</dd>
+			        				<dd>
+			        					<a href="javascript:;">发票保障</a>
+			        				</dd>
+			        				<dd>
+			        					<a href="javascript:;">发票保障</a>
+			        				</dd>
+			        			</dl>
+			        			<dl class="foot_ue_dl">
+			        				<dt>购物指南</dt>
+			        				<dd>
+			        					<a href="javascript:;">免费注册</a>
+			        				</dd>
+			        			</dl>
+			        			<dl class="foot_ue_dl">
+			        				<dt>购物指南</dt>
+			        				<dd>
+			        					<a href="javascript:;">免费注册</a>
+			        				</dd>
+			        			</dl>
+			        		</div>
+			        		<div class="foot_icons clearfix">
+			        			<dl class="foot_ue_de">
+			        				<dt>微信公众号</dt>
+			        				<dd>
+			        					<a href="javascript:;">
+			        						<img src="images/weixin.png"/>
+			        					</a>
+			        				</dd>
+			        			</dl>
+			        			<dl class="foot_ue_de">
+			        				<dt>手机商城</dt>
+			        				<dd>
+			        					<a href="javascript:;"><img src="images/weixin.png"/></a>
+			        				</dd>
+			        			</dl>
+			        		</div>
+			        	</div>
+			        </div>
+					</div>
+		       </div>
+	       </div>
+	    </div>
+	</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品列表</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="renderer" content="webkit">
+		<script src="../js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/alert.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<iframe src="../publicHtml/public_head.html" width="100%" height="160"></iframe>
+		<div class="w-1200 conment clearfix">
+			<iframe src="sidebar.html" width="200" height="500"></iframe>
+			<div class="stics fr">
+				<div class="stics-itme">
+					<h4><i></i>物流工具</h4>
+					<div class="stics-nav">
+						<a href="javascript:;" class="stics-a a-hover">服务商设置</a>
+						<a href="javascript:;" class="stics-a">运费模式设置</a>
+						<a href="javascript:;" class="stics-a">物流信息跟踪</a>
+						<a href="javascript:;" class="stics-a">地址库</a>
+					</div>
+				</div>
+				<div class="revamp">
+					<h4>新增运费模板</h4>
+					<div class="amp-form">
+						<form action="">
+							<div class="amp-itme">
+								<label for="">模板名称：</label>
+								<input type="text" name="" id="" />
+							</div>
+							<div class="amp-itme">
+								<label for="">宝贝地址：</label>
+								<input type="text" name="" id="" />
+							</div>
+							<div class="amp-itme">
+								<label for="">发货时间：</label>
+								<input type="text" name="" id="" />
+							</div>
+							<div class="amp-itme">
+								<label for="">是否包邮：</label>
+								<span class="amp-span map-w-110"><input type="radio" name="1" id="" />自定义运费</span>
+								<span class="amp-span map-w-110"><input type="radio" name="1" id="" />卖家承担运费</span>
+							</div>
+							<div class="amp-itme">
+								<label for="">计价方式：</label>
+								<span class="amp-span map-w-80"><input type="radio" name="1" id="" />按件数</span>
+								<span class="amp-span map-w-80"><input type="radio" name="1" id="" />按体积</span>
+								<span class="amp-span map-w-80"><input type="radio" name="1" id="" />按重量</span>
+							</div>
+							<div class="amp-itme">
+								<label for="">运送方式：</label>
+								<span class="amp-span"><input type="checkbox" name="" id="" />快递<b class="map-b">除指定地区外，其余地区的运费采用“默认运费”</b></span>
+								<div class="amp-itmebox">
+									<ul class="amp-ul clearfix">
+										<li>默认运费</li>
+										<li><input type="text" name="" id="" /> <i>件内</i> </li>
+										<li><input type="text" name="" id="" /> 元 </li>
+										<li> ，每增加&nbsp;<input type="text" name="" id="" /> <i>件</i> </li>
+										<li> ，增加运费&nbsp;<input type="text" name="" id="" /> 元 </li>
+									</ul>
+									<div class="amp-oga clearfix">
+										<a href="javascript:;" class="fl">为指定地区城市设置运费</a>
+										<a href="javascript:;" class="fr">删除</a>
+									</div>
+									<div class="map-ogo">
+										<ul class="amp-ul clearfix">
+											<li>运费城市</li>
+											<li><input type="text" name="" id="" /> <i>件内</i> </li>
+											<li><input type="text" name="" id="" /> 元 </li>
+											<li> ，每增加&nbsp;<input type="text" name="" id="" /> <i>件</i> </li>
+											<li> ，增加运费&nbsp;<input type="text" name="" id="" /> 元 </li>
+										</ul>
+										<div class="map-input">
+											<textarea name="" rows="" cols="" class="map-tarea" placeholder="" datafld=""></textarea>
+											<a href="javascript:;" class="map-ogo-submit map-ogo-box">编辑</a>
+										</div>
+									</div>
+								</div>
+								<div class="amp-itme-sing">
+									<span class="amp-span"><input type="checkbox" name="" id="" />指定条件包邮(可选)</span>
+									<a href="javascript:;" class="map-ogo-box fr">添加</a>
+									<table border="0" cellspacing="0" cellpadding="0">
+										<tr>
+											<th>选择地区</th>
+											<th>运送方式</th>
+											<th>设置包邮条件</th>
+											<th>操作</th>
+										</tr>
+										<tr>
+											<td width="160">河北省，福建省，广西省，山西省，山东省河北省，福建省，广西省，山西省，山东省河北省，福建省，广西省，山西省，山东省河北省，福建省，广西省，山西省，山东省</td>
+											<td>快递</td>
+											<td>
+												<div class="map-sele">
+													<select name="">
+														<option value="元">金额</option>
+														<option value="件">件</option>
+													</select>
+												</div>
+												<div class="map-rmb">
+													<span>满&nbsp;<input type="text" name="" id="" />&nbsp;<i></i>包邮</span>
+												</div>
+											</td>
+											<td>
+												<a href="javascript:;" class="ogo-button">编辑</a>
+												<a href="javascript:;" class="ogo-button">删除</a>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<div class="map-ctal-c">
+								<input type="button" value="保存" class="map-button map-botn"/>
+								<input type="button" value="取消" class="map-button"/>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+

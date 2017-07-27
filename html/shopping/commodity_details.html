@@ -684,6 +684,7 @@
 		
 		
 		<div class="details_main">
+			<!--购买商品信息-->
 			<div class="detail_list_top">
 				<div class="leftbar_img">
 					<ul class="det_img">
@@ -729,8 +730,6 @@
 							<li>XXL</li>
 							<li>XXXL</li>
 							<li>XXXXL</li>
-							
-							
 						</ul>
 					</div>
 					<div class="detail_color">
@@ -758,12 +757,11 @@
 							<i class="minus">-</i>
 							<input type="text" value="1" class="num"/>
 							<i class="num_add">+</i>
-							
 						</div>
 					</div>
 					<div class="detail_btn">
 						<button>立即购买</button>
-						<button><img src="../images/gouwuche.jpg"/>加入购物车</bottom>
+						<button class="join_car"><img src="../images/gouwuche.jpg"/>加入购物车<i></i></bottom>
 					</div>
 					<div class="detail_service">
 						<a href="">服务承诺</a>
@@ -794,6 +792,58 @@
 					<img src="../images/right_x.jpg" class="arrows_bottom">
 				</div>
 			</div>
+			<!--店铺推荐-->
+			<div class="shop_recommend">
+				<ul class="recommend_nav">
+					<li>店长推荐</li>
+				</ul>
+				<ul class="recommend_list">
+					<li>
+						<a href="">
+							<img src="../images/list_icon.jpg" alt="胜伟 床品家纺 纯棉套件  礼品装 活性全棉时尚大版花床单"/>
+							<span>胜伟 床品家纺 纯棉套件  礼品装 活性全棉时尚大版花床单</span>
+						</a>
+						<p>&yen;239.00</p>
+					</li>
+					<li>
+						<a href="">
+							<img src="../images/list_icon.jpg" alt="胜伟 床品家纺 纯棉套件  礼品装 活性全棉时尚大版花床单"/>
+							<span>胜伟 床品家纺 纯棉套件  礼品装 活性全棉时尚大版花床单</span>
+						</a>
+						<p>&yen;239.00</p>
+					</li>
+					<li>
+						<a href="">
+							<img src="../images/list_icon.jpg" alt="胜伟 床品家纺 纯棉套件  礼品装 活性全棉时尚大版花床单"/>
+							<span>胜伟 床品家纺 纯棉套件  礼品装 活性全棉时尚大版花床单</span>
+						</a>
+						<p>&yen;239.00</p>
+					</li>
+					<li>
+						<a href="">
+							<img src="../images/list_icon.jpg" alt="胜伟 床品家纺 纯棉套件  礼品装 活性全棉时尚大版花床单"/>
+							<span>胜伟 床品家纺 纯棉套件  礼品装 活性全棉时尚大版花床单</span>
+						</a>
+						<p>&yen;239.00</p>
+					</li>
+					<li>
+						<a href="">
+							<img src="../images/list_icon.jpg" alt="胜伟 床品家纺 纯棉套件  礼品装 活性全棉时尚大版花床单"/>
+							<span>胜伟 床品家纺 纯棉套件  礼品装 活性全棉时尚大版花床单</span>
+						</a>
+						<p>&yen;239.00</p>
+					</li>
+					<li>
+						<a href="">
+							<img src="../images/list_icon.jpg" alt="胜伟 床品家纺 纯棉套件  礼品装 活性全棉时尚大版花床单"/>
+							<span>胜伟 床品家纺 纯棉套件  礼品装 活性全棉时尚大版花床单</span>
+						</a>
+						<p>&yen;239.00</p>
+					</li>
+				</ul>
+			</div>
+			
+			<!--评论 **** 商品详情 **** 进入店铺-->
 			<div class="detail_bottom">
 				<div class="left_bar">
 					<h4>热销产品</h4>
@@ -816,7 +866,7 @@
 						<p>累计评价<span>522</span></p>
 					</div>
 					<div class="commodity_content">
-						<div class="detail_t" style="display: none;">
+						<div class="detail_t detail_cent_show">
 							<div class="right_cont_section">
 								<ul>
 									<h6>品牌名称：POSTBULL/驿站公牛</h6>
@@ -973,10 +1023,22 @@
 	</body>
 	<script>
 		$(document).ready(function(){
+			//商品尺码颜色
 			$(".remark img").click(function(){
 				$("#discuss .pingl_tan").css("display","block");
 				$(".remark img").eq($(this).index()).addClass("active_img").siblings().removeClass("active_img");
 				$(".pingl_tan ol img").hide().eq($(this).index()).show();
+			})
+			
+			$(".right_cont p").click(function(){
+				$(".right_cont p").eq($(this).index()).addClass("active").siblings().removeClass("active");
+				$(".commodity_content>div").eq($(this).index()).addClass("detail_cent_show").siblings().removeClass("detail_cent_show");
+			})
+			
+			
+			//加入购物车动画
+			$(".join_car").click(function(){
+				
 			})
 		})
 	</script>

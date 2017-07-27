@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的订单</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bass2.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base3.css"/>
+		<link rel="stylesheet" type="text/css" href="css/cityselect.css"/>
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cityselect.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.nicescroll.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/basemember.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="yibaiyun">
+					<!--顶部-->
+			<div class="header clearfix">
+				<div class="header_place">
+					<img src="images/GPS.png"/><input class="sp1" class="cityinput" id="citySelect" value="北京市" readonly unselectable="on">
+					<em>Hi~欢迎来到亿佰云商城</em>
+				</div>
+				<script type="text/javascript">
+            		var test = new Vcity.CitySelector({input:'citySelect'});
+        		</script>
+        		<div class="header_nav clearfix">
+        			<span>请<a href="javascript:;">登录</a></span>
+        			<span>免费<a href="javascript:;">注册</a></span>
+        			<ul class="clearfix">
+        				<li>
+        					<i>丨</i>
+        					<a href="javascript:;">我的购物车</a>
+        					<i>丨</i>
+        				</li>
+        				<li><a href="javascript:;">我的收藏</a><i>丨</i></li>
+        				<li><a href="javascript:;">会员中心</a><i>丨</i></li>
+        				<li><a href="javascript:;">企业采购</a><i>丨</i></li>
+        				<li><a href="javascript:;">客户服务</a><i>丨</i></li>
+        				<li style="padding-right: 0;"><a href="javascript:;">手机网</a></li>
+        			</ul>
+        		</div>
+			</div>
+			<!--logo****搜索区域****导航-->
+			<div class="region clearfix">
+				<div class="min_1200">
+					<div class="region_logo">
+						<img src="images/logo.png"/>
+					</div>
+					<div class="region_search">
+						<form action="" method="post">
+							<input type="text" name="" id="" class="region_text"/>
+							<input type="submit" value="搜索" class="region_sub"/>
+						</form>
+						<div class="region_gouwu">
+							<a href="javascript:;">
+								<i class="icon_gouwuche"></i>
+								<span>我的购物车</span>
+								<em class="icon_tishi">5</em>
+							</a>
+						</div>
+						<div class="region_nav">
+							<ul class="clearfix">
+								<li><a href="javascript:;" style="margin-left: 0;">手机</a>|</li>
+								<li><a href="javascript:;">笔记本</a>|</li>
+								<li><a href="javascript:;">短袖</a>|</li>
+								<li><a href="javascript:;">运动鞋</a>|</li>
+								<li><a href="javascript:;">婴儿车</a>|</li>
+								<li><a href="javascript:;">手机</a>|</li>
+								<li><a href="javascript:;">手机</a>|</li>
+								<li><a href="javascript:;">双肩包</a>|</li>
+								<li><a href="javascript:;">手机</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--classification 产品分类-->
+			<div class="classification clearfix">
+				<div class="min_1200">
+					<div class="con_text">
+						<h3><i></i>商品分类</h3>
+					</div>
+					<div class="con_nav">
+						<ul>
+							<li><a href="javascript:;"style="margin-left: 10px;">会员专区</a></li>
+							<li><a href="javascript:;">品牌</a></li>
+							<li><a href="javascript:;">电器城</a></li>
+							<li><a href="javascript:;">潮流馆</a></li>
+							<li><a href="javascript:;">家具城</a></li>
+							<li><a href="javascript:;">零食铺</a></li>
+							<li><a href="javascript:;">生鲜快运</a></li>
+							<li><a href="javascript:;">酷玩街</a></li>
+							<li><a href="javascript:;">品质生活</a></li>
+							<li><a href="javascript:;">户外运动</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="min_1200">
+				<div class="member clearfix">
+					<div class="side_nav member_bg_fff">
+						<h3 class="member_title">会员中心</h3>
+						<div class="member_list">
+							<dl class="men_bens">
+								<dt class="member_jiaoyi">我的交易</dt>
+								<dd>
+									<a href="javascript:;">我的订单</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">拼团订单</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">我的抽奖</a>
+								</dd>
+							</dl>
+							<dl class="men_bens">
+								<dt class="member_jiaoyi">我的收藏</dt>
+								<dd>
+									<a href="javascript:;">商品收藏</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">店铺收藏</a>
+								</dd>
+							</dl>
+							<dl class="men_bens">
+								<dt class="member_jiaoyi">售后服务</dt>
+								<dd>
+									<a href="javascript:;">退换货查询</a>
+								</dd>
+							</dl>
+							<dl class="men_bens">
+								<dt class="member_jiaoyi">个人中心</dt>
+								<dd>
+									<a href="javascript:;">个人信息</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">修改密码</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">收货地址</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">我的积分</a>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<!--拼团订单-->
+					<div class="member_box">
+						<div class="fightGroups"  style="background: #f5f5f5;">
+							<div class="fg_oups" style="padding-bottom: 0;">
+								<div class="fg_header clearfix">
+									<div class="fg_hd_nav" >
+										<a href="javascript:;" class="color_009646">订单详情</a>
+									</div>
+								</div>
+							</div>
+							<div class="survey">
+								<h3>订单概况</h3>
+								<div class="survey_list clearfix">
+									<div class="float_lt w_480">
+										<div>
+											<span class="margin_right_18">
+												<span>订单号</span>:
+												<em>123456789000</em>
+											</span>
+											<span>
+												<em>状态</em>：
+												<i class="suey00843e">待成团，差一人</i>
+											</span>
+										</div>
+										<div>
+											<span>定金金额：</span>
+											<i class="suey00843e">¥<em>1024</em></i>
+										</div>
+										<div>
+											<span>收货地址：</span>
+											<span>
+												<em>张三</em>,
+												<em>18200239876</em>,
+												<em>北京市 朝阳区 说啥街道 世界经济师</em>
+											</span>
+										</div>
+										<div>
+											<span>支付方式：</span>
+											<em>支付宝</em>
+										</div>
+										<div style="margin-bottom: 0;">
+											<span>配送方式：</span>
+											<em>暂无信息</em>
+										</div>	
+									</div>
+									<div class="float_rt w_330" style="margin-right: 88px;">
+										<div>
+											<span>发票信息：</span>
+											<em>个人发票</em>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modity clearfix">
+								<h3>商品信息</h3>
+								<div class="fg_boybox">
+									<table border="0" cellspacing="0" cellpadding="0" class="fg_table">
+										<tr>
+											<td class="fg_bg_f5f5f5" nowrap="nowrap" width="376px">商品</td>
+											<td class="fg_bg_f5f5f5" nowrap="nowrap" width="139px">单价</td>
+											<td class="fg_bg_f5f5f5" nowrap="nowrap" width="139px">数量</td>
+											<td class="fg_bg_f5f5f5" nowrap="nowrap" width="139px">优惠</td>
+											<td class="fg_bg_f5f5f5" nowrap="nowrap" width="139px">总金额</td>
+										</tr>
+									</table>
+									<dl class="clearfix border_bottom">
+										<dt class="clearfix">
+											<a href="javascript:;" class="fg_img">
+												<img src="images/XIE0000000000000.png"/>
+											</a>
+											<a href="" class="fg_p_guige">
+												<p class="p1">热风小白鞋H4545</p>
+												<p class="p2">规格<em></em></p>
+											</a>
+										</dt>
+										<dd>
+											<span>¥<i>99</i></span>
+										</dd>
+										<dd>
+											<em>1</em>
+										</dd>
+										<dd>
+											<span>¥<i>499</i></span>
+										</dd>
+										<dd>
+											<span class="suey00843e">¥<i>5</i></span>
+										</dd>
+									</dl>
+									<dl class="clearfix border_bottom">
+										<dt class="clearfix">
+											<a href="javascript:;" class="fg_img">
+												<img src="images/XIE0000000000000.png"/>
+											</a>
+											<a href="" class="fg_p_guige">
+												<p class="p1">热风小白鞋H4545</p>
+												<p class="p2">规格<em></em></p>
+											</a>
+										</dt>
+										<dd>
+											<span>¥<i>99</i></span>
+										</dd>
+										<dd>
+											<em>1</em>
+										</dd>
+										<dd>
+											<span>¥<i>499</i></span>
+										</dd>
+										<dd>
+											<span class="suey00843e">¥<i>5</i></span>
+										</dd>
+									</dl>
+								</div>
+								<div class="float_rt m_top_num">
+									<p><span>共<i>1</i>件商品，金额：</span><em>¥<i>5</i>.00</em></p>
+									<p><span>运费：</span><em>¥<i></i>.00</em></p>
+									<p><span>全部金额：</span><em  class="zz00843e">¥<i>5</i>.00</em></p>
+									<a href="javascript:;">立即支付</a>
+								</div>
+							</div>
+							<div class="wuliuxinxi modity">
+								<h3>物流信息</h3>
+								<div class="logistics clearfix">
+									<div class="log_lt clearfix">
+										<div class="log_lt_img">
+											<img src="images/XIE0000000000000.png"/>
+										</div>
+										<div class="log_rt_p">
+											<p>承运人：<em>顺丰快递</em></p>
+											<p>承运人电话：13052103202</p>
+											<p>货运单号：123456789</p>
+										</div>
+									</div>
+									<div class="log_details">
+										<div class="status-box">
+											<ul class="status-list" id="content">
+												<li>
+													<span class="data">2017-06-11/<em class="week">周日</em></span>												
+													<span class="time">10:00:00</span>
+													<span class="text">您的快件【<em>5341252595311</em>】已在<span>05-20</span> <span>13:38:05</span> 签收，派件网点朝阳，查询电话：<span>010-584565</span></span>
+												</li>
+												<li>
+													<span class="data"><em class="week"></em></span>												
+													<span class="time">10:00:00</span>
+													<span class="text">您的快件【<em>5341252595311</em>】已在<span>05-20</span> <span>13:38:05</span> 签收，派件网点朝阳，查询电话：<span>010-584565</span></span>
+												</li>
+												<li>
+													<span class="data">2017-06-11/<em class="week">周日</em></span>												
+													<span class="time">10:00:00</span>
+													<span class="text">您的快件【<em>5341252595311</em>】已在<span>05-20</span> <span>13:38:05</span> 签收，派件网点朝阳，查询电话：<span>010-584565</span></span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+					 <!--底部-->
+				<div class="foot">
+				        	<div class="foot_tese clearfix">
+		        				<a href="javascript:;" class="foot_icon clearfix">
+		        					<i class="foot_icon_side icon_you1114"></i>
+		        					<span class="foot_itme">
+		        						<em class="foot_itme_jsk">品质保障</em>
+		        						<span class="foot_itme_dsk">品质护航，购物无忧</span>
+		        					</span>
+		        				</a>
+		        				<a href="javascript:;" class="foot_icon clearfix">
+		        					<i class="foot_icon_side icon_you1112"></i>
+		        					<span class="foot_itme">
+		        						<em class="foot_itme_jsk">七天无理由退换</em>
+		        						<span class="foot_itme_dsk">为您提供售后无忧保障</span>
+		        					</span>
+		        				</a>
+		        				<a href="javascript:;" class="foot_icon clearfix">
+		        					<i class="foot_icon_side icon_you1010"></i>
+		        					<span class="foot_itme">
+		        						<em class="foot_itme_jsk">特色服务体验</em>
+		        						<span class="foot_itme_dsk">为您呈现不一样的服务</span>
+		        					</span>
+		        				</a>
+		        				<a href="javascript:;" class="foot_icon clearfix">
+		        					<i class="foot_icon_side icon_you1108"></i>
+		        					<span class="foot_itme">
+		        						<em class="foot_itme_jsk">帮助中心</em>
+		        						<span class="foot_itme_dsk">您的购物指南</span>
+		        					</span>
+		        				</a>
+				        	</div>
+				        	<div class="foot_bt clearfix">
+				        		<div class="foot_bt_list clearfix">
+				        			<dl class="foot_ue_dl">
+				        				<dt>购物指南</dt>
+				        				<dd>
+				        					<a href="javascript:;">免费注册</a>
+				        				</dd>
+				        			</dl>
+				        			<dl class="foot_ue_dl">
+				        				<dt>平台保障</dt>
+				        				<dd>
+				        					<a href="javascript:;">发票保障</a>
+				        				</dd>
+				        				<dd>
+				        					<a href="javascript:;">发票保障</a>
+				        				</dd>
+				        				<dd>
+				        					<a href="javascript:;">发票保障</a>
+				        				</dd>
+				        			</dl>
+				        			<dl class="foot_ue_dl">
+				        				<dt>购物指南</dt>
+				        				<dd>
+				        					<a href="javascript:;">免费注册</a>
+				        				</dd>
+				        			</dl>
+				        			<dl class="foot_ue_dl">
+				        				<dt>购物指南</dt>
+				        				<dd>
+				        					<a href="javascript:;">免费注册</a>
+				        				</dd>
+				        			</dl>
+				        		</div>
+				        		<div class="foot_icons clearfix">
+				        			<dl class="foot_ue_de">
+				        				<dt>微信公众号</dt>
+				        				<dd>
+				        					<a href="javascript:;">
+				        						<img src="images/weixin.png"/>
+				        					</a>
+				        				</dd>
+				        			</dl>
+				        			<dl class="foot_ue_de">
+				        				<dt>手机商城</dt>
+				        				<dd>
+				        					<a href="javascript:;"><img src="images/weixin.png"/></a>
+				        				</dd>
+				        			</dl>
+				        		</div>
+				        	</div>
+				        </div>
+			</div>
+	    </div>
+	</body>
+</html>
+
+
+
+
+

@@ -11,8 +11,8 @@ input {
   width: 1200px;
   margin: 20px auto 0;
 }
+/*侧边栏书写格式*/
 .sidebar {
-  /*侧边栏*/
   width: 200px;
 }
 .bar-list {
@@ -22,9 +22,12 @@ input {
 .bar-list .bar-title {
   width: 100%;
   height: 49px;
-  border-bottom: 1px solid #f18e00;
+  border-bottom: 1px solid #00843e;
   font: 700 16px/49px "微软雅黑";
   text-align: center;
+}
+.h-88{
+	height: 88px;
 }
 .bar-list .bar-itme .itme-hint {
   padding-left: 35px;
@@ -46,11 +49,11 @@ input {
 }
 .bar-list .bar-itme ul li.itme-box a.itme-rox:hover,
 .bar-list .bar-itme ul li.itme-box .itmehover {
-  color: #f2951f;
-  background-color: #fbebd7 ;
+  color: #00843e;
+  background-color: #daece3 ;
 }
+/*个人信息*/
 .message {
-  /*店铺信息*/
   width: 980px;
   background-color: #fff;
 }
@@ -62,9 +65,43 @@ input {
 }
 .message .mes-form {
   padding: 30px 20px;
+  width: 50%;
+  box-sizing: border-box;
 }
 .message .mes-form .mes-contbox {
   margin-top: 20px;
+  position: relative;
+}
+.mes-ogo-file{
+	width: 86px;
+	height: 86px;
+	border: 1px solid #ccc;
+	position: absolute; 
+	left: 90px;
+	top:0;
+	z-index: 3;
+	cursor: pointer;
+}
+.mes-contbox input[type="file"]{
+	width: 88px;
+	height: 88px;
+	position: absolute;
+	top: 0;
+	left: 90px;
+	z-index: 2;
+	opacity: 0;
+  filter: alpha(opacity=0);
+	overflow: hidden;
+}
+.mes-contbox img{
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
 }
 .message .mes-form .mes-contbox label {
   width: 70px;
@@ -74,6 +111,26 @@ input {
   display: block;
   float: left;
   margin-right: 20px;
+}
+.message .mes-form .mes-contbox span{
+	float: left;
+	margin-right: 10px;
+}
+.message .mes-form .mes-contbox input[type="radio"]{
+	float: left;
+}
+.message .mes-form .mes-contbox em{
+	display: inline-block;
+	height: 26px;
+	line-height: 26px;
+	margin-right: 10px;
+}
+.message .mes-form .mes-contbox a{
+	color: #00843E;
+}
+.message .mes-form .mes-contbox em i{
+	color: #666;
+	margin-right: 10px;
 }
 .message .mes-form .mes-contbox .mes-input {
   width: 190px;
@@ -99,12 +156,13 @@ input {
   display: block;
   width: 100px;
   height: 30px;
-  border: 1px solid #f18e00;
+  border: 1px solid #00843e;
   text-align: center;
   line-height: 30px;
-  color: #f2951f;
+  color: #00843e;
   margin-top: 24px;
   font-size: 12px;
+  background-color: #daece3;
 }
 .message .mes-form .mes-padding {
   padding-left: 90px;
@@ -113,8 +171,8 @@ input {
   padding: 0 20px 0px 20px;
   height: 600px;
 }
+/**/
 .order {
-  /*订单管理*/
   background: #fff;
   width: 980px;
 }
@@ -288,12 +346,12 @@ input {
 .order-itab .order-submit {
   width: 86px;
   height: 20px;
-  border: 1px solid #f18e00;
-  color: #f18e00;
+  border: 1px solid #00843e;
+  color: #00843e;
   margin: 0 auto 5px;
 }
 .order-itab a.lugue-color:hover {
-  color: #F18E00;
+  color: #00843e;
   text-decoration: underline;
 }
 .order-itab .lugue-color {
@@ -314,12 +372,11 @@ input {
   vertical-align: middle;
 }
 .order-pages {
-  /*订单详情*/
   width: 980px;
   padding-top: 20px;
 }
 .page-title {
-  color: #f18e00;
+  color: #00843e;
   font-size: 14px;
   padding-left: 20px;
 }
@@ -353,7 +410,7 @@ input {
   -webkit-line-clamp: 2;
 }
 .pagecolor {
-  color: #f18e00;
+  color: #00843e;
 }
 .page-itmeboxs {
   background: #fff;
@@ -377,8 +434,8 @@ input {
   display: block;
   width: 86px;
   height: 20px;
-  border: 1px solid #f18e00;
-  color: #f18e00;
+  border: 1px solid #00843e;
+  color: #00843e;
   text-align: center;
   margin-top: 10px;
   float: right;
@@ -439,9 +496,6 @@ input {
 .log_details .status-box ul li span.text {
   width: 340px;
   vertical-align: top;
-}
-.mate-box {
-  /*评价管理*/
 }
 .estimate {
   width: 980px;
@@ -587,7 +641,7 @@ input {
 .shop-trouble .ble-tag {
   font-size: 14px;
   height: 34px;
-  border-bottom: 2px solid #f18e00;
+  border-bottom: 2px solid #00843e;
 }
 .shop-trouble .ble-tag a {
   margin-right: 20px;
@@ -658,12 +712,12 @@ input {
   display: inline-block;
   width: 42px;
   height: 20px;
-  border: 1px solid #F18E00;
+  border: 1px solid #00843e;
   -webkit-border-radius: 2px ;
   border-radius: 2px;
   text-align: center;
   line-height: 20px;
-  color: #F18E00;
+  color: #00843e;
 }
 .shop-trouble .ble-box {
   position: relative;
@@ -678,7 +732,6 @@ input {
   color: #999;
 }
 .rate-paginator {
-  /*分页*/
   margin-top: 20px;
   text-align: right;
   padding: 20px 0 10px;
@@ -698,7 +751,7 @@ input {
 }
 .rate-paginator a.hover {
   color: #fff;
-  background-color: #f18e00 ;
+  background-color: #00843e ;
 }
 .rate-paginator em {
   display: inline-block;
@@ -768,7 +821,7 @@ input {
 .chant .we-table .we-deposit {
   display: inline-block;
   padding: 2px 10px;
-  background-color: #F18E00;
+  background-color: #00843e;
   color: #fff;
   margin-left: 5px;
 }
@@ -845,8 +898,8 @@ input {
   text-align: center;
   width: 86px;
   height: 20px;
-  border: 1px solid #f18e00;
-  color: #f18e00;
+  border: 1px solid #00843e;
+  color: #00843e;
   line-height: 20px;
 }
 .order-pos {
@@ -970,7 +1023,7 @@ input {
   line-height: 30px;
   font-size: 12px;
   color: #fff;
-  background-color: #f18e00;
+  background-color: #00843e;
   text-align: center;
   margin: 30px auto 0;
 }
@@ -1150,7 +1203,7 @@ input {
   color: #388be8;
 }
 a.oga-link:hover {
-  color: #F18E00;
+  color: #00843e;
   text-decoration: underline;
 }
 .display-box {
@@ -1165,7 +1218,7 @@ a.oga-link:hover {
   text-align: center;
   font-size: 12px;
   color: #fff;
-  background-color: #F18E00;
+  background-color: #00843e;
 }
 .oga-carriage {
   width: 900px;
@@ -1367,13 +1420,13 @@ a.oga-link:hover {
 .amp-itme .amp-itme-sing table .map-rmb input[type="text"] {
   width: 38px;
   height: 22px;
-  outline-color: #F18E00;
+  outline-color: #00843e;
 }
 .amp-itme .map-ogo-box {
   display: block;
   width: 48px;
   height: 24px;
-  background-color: #F18E00;
+  background-color: #00843e;
   color: #fff;
   line-height: 24px;
   text-align: center;
@@ -1397,7 +1450,7 @@ a.oga-link:hover {
   color: #333;
 }
 .map-ctal-c .map-botn {
-  background-color: #F18E00;
+  background-color: #00843e;
   color: #fff;
 }
 .m-t-20 {
@@ -1440,7 +1493,7 @@ a.oga-link:hover {
   display: block;
 }
 a.tool-link:hover {
-  color: #F18E00;
+  color: #00843e;
   text-decoration: underline;
 }
 .tool-strong {
@@ -1490,7 +1543,7 @@ a.tool-link:hover {
   height: 24px;
   text-align: center;
   line-height: 24px;
-  background-color: #F18E00;
+  background-color: #00843e;
   color: #fff;
   margin-right: 10px;
 }
@@ -1542,7 +1595,7 @@ a.tool-link:hover {
   display: block;
   width: 60px;
   height: 24px;
-  background-color: #F18E00;
+  background-color: #00843e;
   color: #fff;
   text-align: center;
   line-height: 24px;
@@ -1588,12 +1641,12 @@ a.tool-link:hover {
   line-height: 44px;
 }
 .orm-submit-box a.orm-oga-submit {
-  background-color: #F18E00;
+  background-color: #00843e;
   color: #fff;
   font-size: 14px;
   letter-spacing: 2px;
   margin-right: 66px;
-  border: 1px solid #F18E00;
+  border: 1px solid #00843e;
 }
 .orm-submit-box a.orm-oga-button {
   border: 1px solid #ccc;
@@ -1696,7 +1749,7 @@ a.tool-link:hover {
   display: block;
   width: 122px;
   height: 30px;
-  background-color: #F18E00;
+  background-color: #00843e;
   color: #fff;
   font-size: 14px;
   line-height: 30px;
@@ -2053,8 +2106,8 @@ a.tool-link:hover {
   margin-right: 10px;
 }
 .ogo-og-a {
-  border: 1px solid #F18E00;
-  background-color: #F18E00;
+  border: 1px solid #00843e;
+  background-color: #00843e;
   color: #fff;
 }
 .ogo-og-b {

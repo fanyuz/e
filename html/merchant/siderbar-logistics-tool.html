@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品列表</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="renderer" content="webkit">
+		<script src="../js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/alert.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/regional-choice.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<iframe src="../publicHtml/public_head.html" width="100%" height="160"></iframe>
+		<div class="w-1200 conment clearfix">
+			<iframe src="sidebar.html" width="200" height="500"></iframe>
+			<div class="stics fr">
+				<div class="stics-itme">
+					<h4><i></i>物流工具</h4>
+					<div class="stics-nav">
+						<a href="javascript:;" class="stics-a a-hover">服务商设置</a>
+						<a href="javascript:;" class="stics-a">运费模式设置</a>
+						<a href="javascript:;" class="stics-a">物流信息跟踪</a>
+						<a href="javascript:;" class="stics-a">地址库</a>
+					</div>
+				</div>
+				<!--服务商设置-->
+				<div class="display-box">
+					<div class="stics-itmebox">
+						<ul class="clearfix">
+							<li>
+								<span>物流公司：</span>
+								<select name="" class="stics-selbox">
+									<option value=""></option>
+								</select>
+							</li>
+							<li>
+								<span>物流服务：</span>
+								<select name="" class="stics-selbox">
+									<option value=""></option>
+								</select>
+							</li>
+							<li>
+								<input type="button" name="" id="" value="搜索" class="button" />
+							</li>
+						</ul>
+					</div>
+					<div class="stics-oga">
+						<div class="oga-ogz">
+							<label for=""><input type="checkbox" name="" id="" value="全选" />全选</label>
+							<input type="button" name="" id="" value="批量开通服务" class="oga-button" />
+						</div>
+					</div>
+					<table border="0" cellspacing="0" cellpadding="0" class="oga-table">
+						<tr>
+							<th align="">物流公司</th>
+							<th>开通的服务</th>
+							<th>操作</th>
+						</tr>
+						<tr class="oga-padding">
+							<td class="oga-pos">
+								<input type="checkbox" name="" id="" value="" />
+								<span class="oga-img">
+									<img src="../images/kuaidi00000000.png" alt="顺丰快递"/>
+								</span>
+								<em class="oga-em">顺丰快递</em>
+							</td>
+							<td>
+								<span class="oga-block">指定快递</span>
+								<span class="oga-block">到货承诺</span>
+							</td>
+							<td>
+								<span class="oga-block">已开通服务商</span>
+								<a href="javascript:;" class="oga-block oga-color">取消</a>
+								<a href="javascript:;" class="oga-block oga-color oga-link">设置服务商模板</a>
+							</td>
+						</tr>
+						<tr class="oga-padding">
+							<td class="oga-pos">
+								<input type="checkbox" name="" id="" value="" />
+								<span class="oga-img">
+									<img src="../images/kuaidi00000000.png" alt="顺丰快递"/>
+								</span>
+								<em class="oga-em">顺丰快递</em>
+							</td>
+							<td>
+								<span class="oga-block">指定快递</span>
+								<span class="oga-block">到货承诺</span>
+							</td>
+							<td>
+								<span class="oga-block">已开通服务商</span>
+								<a href="javascript:;" class="oga-block oga-color">取消</a>
+								<a href="javascript:;" class="oga-block oga-color oga-link">设置服务商模板</a>
+							</td>
+						</tr>
+						<tr class="oga-padding">
+							<td class="oga-pos">
+								<input type="checkbox" name="" id="" value="" />
+								<span class="oga-img">
+									<img src="../images/kuaidi00000000.png" alt="顺丰快递"/>
+								</span>
+								<em class="oga-em">顺丰快递</em>
+							</td>
+							<td>
+								<span class="oga-block">指定快递</span>
+								<span class="oga-block">到货承诺</span>
+							</td>
+							<td>
+								<a href="javascript:;" class="oga-submit">开通服务商</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<!--运费模式设置-->
+				<div class="display-box" style="position: relative;display: block;">
+					<div class="oga-carriage">
+						<div class="oga-aga">
+							<ul class="clearfix">
+								<li>普通模板</li>
+								<li class="w-600">
+									<span>最后编辑时间：<i>2017</i>-<i>07</i>-<i>20</i><em>10:24</em></span>
+								</li>
+								<li>
+									<a href="siderbar-logistics-revamp.html" class="aga-submit">修改</a>
+								</li>
+							</ul>
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<th>运送方式</th>
+									<th>运送到</th>
+									<th>首个(件)</th>
+									<th>运费(元)</th>
+									<th>续件(件)</th>
+									<th>运费(元)</th>
+								</tr>
+								<tr>
+									<td>快递</td>
+									<td width="400">
+										<div class="oga-divbox">
+											北京，上海，广州，深圳，香港，澳门，台湾，北京，上海，广州，深圳，香港，澳门，台湾，河北，北京，上海，广州，深圳，香港，澳门，台湾，河北，北京，上海
+										</div>
+									</td>
+									<td>1</td>
+									<td><span>6</span>.00</td>
+									<td>5</td>
+									<td><span>6</span>.00</td>
+								</tr>
+								<tr>
+									<td>快递</td>
+									<td width="400">
+										<div class="oga-divbox">
+											北京，上海，广州，深圳，香港，澳门，台湾，北京，上海，广州，深圳，香港，澳门，台湾，河北，
+										</div>
+									</td>
+									<td>1</td>
+									<td><span>6</span>.00</td>
+									<td>5</td>
+									<td><span>6</span>.00</td>
+								</tr>
+								<tr>
+									<td>快递</td>
+									<td width="400">
+										<div class="oga-divbox">
+											北京，上海，广州，深圳，香港，澳门，台湾，北京，
+										</div>
+									</td>
+									<td>1</td>
+									<td><span>6</span>.00</td>
+									<td>5</td>
+									<td><span>6</span>.00</td>
+								</tr>
+								<tr>
+									<td>快递</td>
+									<td width="400">
+										<div class="oga-divbox">
+											北京，上海，广州，深圳，香港，澳门，台湾，北京，
+										</div>
+									</td>
+									<td>1</td>
+									<td><span>6</span>.00</td>
+									<td>5</td>
+									<td><span>6</span>.00</td>
+								</tr>
+							</table>
+						</div>
+						<div class="oga-aga">
+							<ul class="clearfix">
+								<li>普通模板</li>
+								<li class="w-600">
+									<span>最后编辑时间：<i>2017</i>-<i>07</i>-<i>20</i><em>10:24</em></span>
+								</li>
+								<li>
+									<a href="siderbar-logistics-revamp.html" class="aga-submit">修改</a>
+								</li>
+							</ul>
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<th>运送方式</th>
+									<th>运送到</th>
+									<th>首个(件)</th>
+									<th>运费(元)</th>
+									<th>续件(件)</th>
+									<th>运费(元)</th>
+								</tr>
+								<tr>
+									<td>快递</td>
+									<td width="400">
+										<div class="oga-divbox">
+											北京，上海，广州，深圳，香港，澳门，台湾，北京，上海，广州，深圳，香港，澳门，台湾，河北，北京，上海，广州，深圳，香港，澳门，台湾，河北，北京，上海
+										</div>
+									</td>
+									<td>1</td>
+									<td><span>6</span>.00</td>
+									<td>5</td>
+									<td><span>6</span>.00</td>
+								</tr>
+								<tr>
+									<td>快递</td>
+									<td width="400">
+										<div class="oga-divbox">
+											北京，上海，广州，深圳，香港，澳门，台湾，北京，上海，广州，深圳，香港，澳门，台湾，河北，
+										</div>
+									</td>
+									<td>1</td>
+									<td><span>6</span>.00</td>
+									<td>5</td>
+									<td><span>6</span>.00</td>
+								</tr>
+								<tr>
+									<td>快递</td>
+									<td width="400">
+										<div class="oga-divbox">
+											北京，上海，广州，深圳，香港，澳门，台湾，北京，
+										</div>
+									</td>
+									<td>1</td>
+									<td><span>6</span>.00</td>
+									<td>5</td>
+									<td><span>6</span>.00</td>
+								</tr>
+								<tr>
+									<td>快递</td>
+									<td width="400">
+										<div class="oga-divbox">
+											北京，上海，广州，深圳，香港，澳门，台湾，北京，
+										</div>
+									</td>
+									<td>1</td>
+									<td><span>6</span>.00</td>
+									<td>5</td>
+									<td><span>6</span>.00</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="rate-page">
+						<div class="rate-paginator">
+							<span class="rate-page-prev">&lt;&lt;上一页</span>
+							<a href="javascript:;" class="hover">1</a>
+							<a href="javascript:;">2</a>
+							<a href="javascript:;">3</a>
+							<span class="rate-page-break">...</span>
+							<a data-page="2" href="javascript:;">下一页&gt;&gt;</a>
+							<em>共<i>1000</i>页</em>
+							<em>到第<input type="text" name="" id="" />页</em>
+							<a href="javascript:;" class="rate-submit">确定</a>
+						</div>
+					</div>
+				</div>
+				<!--物流信息查询-->
+				<div class="display-box">
+					<div class="oga-demand">
+						<form action="" method="post" class="oga-dem-form">
+							<label for="">订单编号：</label>
+							<input type="text" name="" id="" value="" />
+							<input type="submit" value="搜索"/>
+						</form>
+						<h5 class="oga-h5">查询结果：</h5>	
+					</div>
+					<div style="margin-left: -20px; " style="display: none;">
+						<div>
+							<div class="page-itmebox">
+								<div class="page-l">
+									<h4>订单概况</h4>
+									<ul class="page-itmeboxlist">
+										<li>
+											<span>订单号：<i class="pagecolor">12345678900</i></span>
+											<span>状态：<i class="pagecolor">未付款</i></span>
+										</li>
+										<li>
+											<span>订单金额：<i class="pagecolor">¥1024</i></span>
+										</li>
+										<li class="page-lineheight">
+											<span>收货信息：<i>张三，18212345678，北京市 朝阳区 说啥街道 世界经济师啥街道 世界经世界经济师啥街道 世界经世界经济师啥街道 世界经世界经济师啥街道 世界经世界经济师啥街道 世界经世界经济师啥街道 世界经济师啥街道 世界经济师啥街道 世界经济师啥街道 世界经济师</i></span>
+										</li>
+										<li>
+											<span>支付方式：<i>未付款</i></span>
+										</li>
+										<li>
+											<span>配送方式：<i>暂无信息</i></span>
+										</li>
+									</ul>											
+								</div>
+								<div class="page-l">
+									<h4>买家信息</h4>
+									<ul class="page-itmeboxlist">
+										<li>
+											<span>昵称：<i>张三</i></span>
+										</li>
+										<li>
+											<span>所在地区：<i>北京</i></span>
+										</li>
+										<li>
+											<span>联系电话：<i>12345678923</i></span>
+										</li>
+									</ul>											
+								</div>
+							</div>
+							<div class="page-itmeboxs clearfix">
+								<h4>商品信息</h4>
+								<div class="order-table">
+									<table border="0" cellspacing="0" cellpadding="0">
+										<tr>
+											<td width="360">商品</td>
+											<td>单价</td>
+											<td>数量</td>
+											<td>优惠</td>
+											<td>总价</td>
+										</tr>
+									</table>
+								</div>
+								<div class="order-itab">
+									<table border="" cellspacing="0" cellpadding="0">
+										<tr class="order-tr">
+											<td class="itme-td clearfix">
+												<div class="td-img">
+													<img src="../images/detail_s.jpg" alt="产品展示" />
+												</div>
+												<div class="td-parameter">
+													<a href="javascript:;">
+														<span class="order-referral">史迪奇公仔史迪仔超大号毛绒玩具情侣布娃娃结婚生日礼物男生女生</span>
+													</a>
+													<p class="order-canshu">
+														<span>
+															<span>颜色</span>
+															<span>：</span>
+															<span>白色</span>
+														</span>
+														<span>
+															<span>鞋码</span>
+															<span>：</span>
+															<span>42</span>
+														</span>
+													</p>
+												</div>
+												<span class="td-number">x <em>2</em></span>
+											</td>
+											<td width="145">
+												<span>¥90</span>
+											</td>
+											<td width="145">
+												x<span>1</span>
+											</td>
+											<td width="145">
+												----
+											</td>
+											<td width="145">
+												<span class="pagecolor">¥90</span>
+											</td>
+										</tr>
+									</table>
+									<table border="" cellspacing="0" cellpadding="0">
+										<tr class="order-tr">
+											<td class="itme-td clearfix">
+												<div class="td-img">
+													<img src="../images/detail_s.jpg" alt="产品展示" />
+												</div>
+												<div class="td-parameter">
+													<a href="javascript:;">
+														<span class="order-referral">史迪奇公仔史迪仔超大号毛绒玩具情侣布娃娃结婚生日礼物男生女生</span>
+													</a>
+													<p class="order-canshu">
+														<span>
+															<span>颜色</span>
+															<span>：</span>
+															<span>白色</span>
+														</span>
+														<span>
+															<span>鞋码</span>
+															<span>：</span>
+															<span>42</span>
+														</span>
+													</p>
+												</div>
+												<span class="td-number">x <em>2</em></span>
+											</td>
+											<td width="145">
+												<span>¥90</span>
+											</td>
+											<td width="145">
+												x<span>1</span>
+											</td>
+											<td width="145">
+												----
+											</td>
+											<td width="145">
+												<span class="pagecolor">¥90</span>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div class="pagr-rightbottome">
+									<table border="" cellspacing="" cellpadding="">
+										<tr>
+											<td>共<i class="pagecolor">2</i>件商品，金额：</td>
+											<td><span><em>2017</em>.00</span></td>
+										</tr>
+										<tr>
+											<td>运费：</td>
+											<td><em>2017</em>.00</span></td>
+										</tr>
+										<tr>
+											<td>全部金额：</td>
+											<td><span class="pagecolor"><em>2017</em>.00</span></td>
+										</tr>
+									</table>
+									<a href="javascript:;" class="pegebox-sit">立即支付</a>
+								</div>
+							</div>
+							<div class="page-itmeboxs">
+								<h4>物流信息</h4>
+								<div class="logistics clearfix oga-detais">
+									<div class="log_lt clearfix fl">
+										<div class="log_lt_img">
+											<img src="../images/detail_s.jpg"/>
+										</div>
+										<div class="log_rt_p">
+											<p>承运人：<em>顺丰快递</em></p>
+											<p>承运人电话：13052103202</p>
+											<p>货运单号：123456789</p>
+										</div>
+									</div>
+									<div class="log_details fr">
+										<div class="status-box">
+											<ul class="status-list" id="content">
+												<li>
+													<span class="data">2017-06-11/<em class="week">周日</em></span>												
+													<span class="time">10:00:00</span>
+													<span class="text">您的快件【<em>5341252595311</em>】已在<span>05-20</span> <span>13:38:05</span> 签收，派件网点朝阳，查询电话：<span>010-584565</span></span>
+												</li>
+												<li>
+													<span class="data"><em class="week"></em></span>												
+													<span class="time">10:00:00</span>
+													<span class="text">您的快件【<em>5341252595311</em>】已在<span>05-20</span> <span>13:38:05</span> 签收，派件网点朝阳，查询电话：<span>010-584565</span></span>
+												</li>
+												<li>
+													<span class="data">2017-06-11/<em class="week">周日</em></span>												
+													<span class="time">10:00:00</span>
+													<span class="text">您的快件【<em>5341252595311</em>】已在<span>05-20</span> <span>13:38:05</span> 签收，派件网点朝阳，查询电话：<span>010-584565</span></span>
+												</li>
+																								<li>
+													<span class="data">2017-06-11/<em class="week">周日</em></span>												
+													<span class="time">10:00:00</span>
+													<span class="text">您的快件【<em>5341252595311</em>】已在<span>05-20</span> <span>13:38:05</span> 签收，派件网点朝阳，查询电话：<span>010-584565</span></span>
+												</li>
+												<li>
+													<span class="data"><em class="week"></em></span>												
+													<span class="time">10:00:00</span>
+													<span class="text">您的快件【<em>5341252595311</em>】已在<span>05-20</span> <span>13:38:05</span> 签收，派件网点朝阳，查询电话：<span>010-584565</span></span>
+												</li>
+												<li>
+													<span class="data">2017-06-11/<em class="week">周日</em></span>												
+													<span class="time">10:00:00</span>
+													<span class="text">您的快件【<em>5341252595311</em>】已在<span>05-20</span> <span>13:38:05</span> 签收，派件网点朝阳，查询电话：<span>010-584565</span></span>
+												</li>
+																								<li>
+													<span class="data">2017-06-11/<em class="week">周日</em></span>												
+													<span class="time">10:00:00</span>
+													<span class="text">您的快件【<em>5341252595311</em>】已在<span>05-20</span> <span>13:38:05</span> 签收，派件网点朝阳，查询电话：<span>010-584565</span></span>
+												</li>
+												<li>
+													<span class="data"><em class="week"></em></span>												
+													<span class="time">10:00:00</span>
+													<span class="text">您的快件【<em>5341252595311</em>】已在<span>05-20</span> <span>13:38:05</span> 签收，派件网点朝阳，查询电话：<span>010-584565</span></span>
+												</li>
+												<li>
+													<span class="data">2017-06-11/<em class="week">周日</em></span>												
+													<span class="time">10:00:00</span>
+													<span class="text">您的快件【<em>5341252595311</em>】已在<span>05-20</span> <span>13:38:05</span> 签收，派件网点朝阳，查询电话：<span>010-584565</span></span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--地址库-->
+				<div class="display-box">
+					<div class="revamp" >
+						<h4>添加新地址：<i style="color: #999;">电话号码、手机号码选填一项，备注和公司名称为可填项，其余均为必填项</i></h4>
+						<div class="amp-form">
+							<form action="">								
+								<div class="amp-itme">
+									<label for="">联系人：</label>
+									<input type="text" name="" id="" />
+								</div>
+								<div class="amp-itme oga-select">
+									<label for="">所在地区：</label>
+									<select name="">
+										<option value="">中国</option>
+									</select>
+									<select name="">
+										<option value="">北京市</option>
+									</select>
+									<select name="">
+										<option value="">大兴区</option>
+									</select>
+								</div>
+								<div class="amp-itme">
+									<label for="">街道地址：</label>
+									<input type="text" name="" id="" value="" class="oga-street"/>
+								</div>
+								<div class="amp-itme">
+									<label for="">邮政编码：</label>
+									<input type="text" name="" id="" />
+								</div>
+								<div class="amp-itme">
+									<label for="">电话号码：</label>
+									<span class="amp-span"><input type="text" name="" id="" value="" class="ogs-input" /> - </span>
+									<span class="amp-span"><input type="text" name="" id="" value="" class="ogs-input" /> - </span>
+									<span class="amp-span"><input type="text" name="" id="" value="" class="ogs-input" /></span>
+									<span style="color: #999;">区号-电话-分机号码</span>
+								</div>
+								<div class="amp-itme">
+									<label for="">手机号码：</label>
+									<input type="text" name="" id="" />
+								</div>
+								<div class="amp-itme">
+									<label for="">公司名称：</label>
+									<input type="text" name="" id="" />
+								</div>
+								<div class="amp-itme">
+									<label for="">备注：</label>
+									<textarea name="" rows="" cols=""></textarea>
+								</div>
+								<div class="map-ctal-c m-t-20">
+									<input type="button" value="保存设置" class="map-button map-botn"/>
+								</div>
+							</form>
+						</div>
+					</div>
+					<table border="0" cellspacing="0" cellpadding="0" class="too-table">
+						<tr>
+							<th>&nbsp;</th>
+							<th>联系人</th>
+							<th>地址</th>
+							<th>邮政编码</th>
+							<th>电话号码</th>
+							<th>手机号码</th>
+							<th>公司名称</th>
+							<th>操作</th>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" name="" id=""/>
+								默认
+							</td>
+							<td>
+								
+								张三
+							</td>
+							<td>北京市大兴区西红门镇九龙山庄耀燕大厦</td>
+							<td>000000</td>
+							<td>010-3358361</td>
+							<td>189****0123</td>
+							<td>亿佰云****网络科技</td>
+							<td>
+								<a href="javascript:;" class="c388be8 tool-box tool-link">编辑</a>
+								<a href="javascript:;" class="c388be8 tool-box">删除</a>
+							</td>
+						</tr>
+					</table>
+					<strong class="tool-strong">用来保存自己的发货、退货地址，您最多可添加20条地址</strong>
+				</div>
+				<!--地区选择弹窗-->
+				<div class="logistics-alert">
+					<div class="logistics-itmebox">
+						<h4>选择区域</h4>
+						<form action="" method="post">						
+						<div class="ogo-ssg"></div>
+						<div id="" class="fr" style="margin-right:20px;">
+						<a href="javascript:;" class="ogo-indexbox ogo-og-a">确定</a>
+						<a href="javascript:;" class="ogo-indexbox ogo-og-b">取消</a>												
+						</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</body>
+</html>
+
+
