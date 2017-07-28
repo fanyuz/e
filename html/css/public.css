@@ -61,6 +61,9 @@ input:focus {
 .header_nav ul li {
   float: left;
 }
+.header_nav ul li:hover a{
+	color: #009646;
+}
 .header_nav ul li a {
   color: #999;
   padding: 0 10px;
@@ -626,8 +629,9 @@ input:focus {
   letter-spacing: 3px;
   color: #FFFFFF;
 }
-.rightbar_nav .shopping_cart i {
+.rightbar_nav .shopping_cart>a {
   font-size: 22px;
+  color: #fff;
   font-weight: normal;
 }
 .rightbar_nav .shopping_cart p {
@@ -660,10 +664,10 @@ input:focus {
   cursor: pointer;
   padding: 7px 0;
 }
-.rightbar_nav .footprint i,
-.rightbar_nav .return_top i,
-.rightbar_nav .attention i,
-.rightbar_nav .enshrine i {
+.rightbar_nav .footprint a,
+.rightbar_nav .return_top a,
+.rightbar_nav .attention a,
+.rightbar_nav .enshrine a {
   font-size: 22px;
   color: #FFF6F7;
 }

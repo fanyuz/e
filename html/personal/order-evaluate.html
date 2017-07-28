@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我要评价</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/basecss.css"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="renderer" content="webkit">
+		<script src="../js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/alert.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery.raty.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/imgUp.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<iframe src="../publicHtml/public_head.html" width="100%" height="160"></iframe>
+		<div class="w-1200 conment clearfix">
+			<iframe src="sidebar.html" width="200" height="500"></iframe>
+			<div class="order fr">
+				<div class="order-itme">
+					<h4 class="mes-title">商品评价</h4>
+					<form action="" method="post">
+						<div class="uate">						
+							<div class="uate-first clearfix">
+								<div class="uate-f-l clearfix fl">
+									<div class="uate-l-box">
+										<img src="../images/586ddf59Nf3f370344.jpg" alt="产品展示" />
+									</div>
+									<div class="uate-b-title">
+										<span class="uate-b-z">飓风小白鞋，时尚潮流不简单</span>
+										<div class="uate-spec">
+											<span>颜色：<b>白色</b></span>
+											<span>鞋码：<b>32</b></span>
+										</div>
+									</div>
+								</div>
+								<div class="uate-fr fr">
+									<div class="demo">
+										<div>宝贝与描述相符：</div>
+									    <div id="star" class="target-demo"></div>
+									    <div id="result" class="hint"></div>
+									</div>
+								    <div class="demo">
+								    	<div>卖家的服务态度：</div>
+								     	<div id="star1" class="target-demo"></div>
+								        <div id="result1" class="hint"></div>
+								  	</div>
+								  	<div class="demo">
+								  		<div>卖家的发货速度：</div>
+								     	<div id="star2" class="target-demo"></div>
+								        <div id="result2" class="hint"></div>
+								  	</div>
+								</div>
+							</div>
+							<div class="uate-list">
+								<textarea name="" rows="" cols="" placeholder="写写你的感受吧，一不小心就成了评论高手。" id="TextArea1" onkeyup="words_deal()"></textarea>
+								<p>还可输入<b class="textCount">500</b>字</p>
+							</div>
+							<div class="img-box full">
+								<section class=" img-section">
+									<div class="z_photo upimg-div clearfix" >
+										 <section class="z_file fl">
+											<img src="../images/imgadd.png" class="add-img">
+											<input type="file" name="file" id="file" class="file" value="" accept="image/jpg,image/jpeg,image/png,image/bmp" multiple />
+										 </section>
+										 <p>共<b class="pg-num">0</b>张，还可以上传<i class="pg-numc">10</i>张</p>
+									 </div>
+								 </section>
+							</div>
+							<div class="mask works-mask">
+								<div class="mask-content">
+									<p class="del-p ">您确定要删除图片吗？</p>
+									<p class="check-p"><span class="del-com wsdel-ok">确定</span><span class="wsdel-no">取消</span></p>
+								</div>
+							</div>
+							<div class="ogo-obsub">
+								<a href="javascript:;">提交</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			rat('star','result',1);
+			rat('star1','result1',1);
+			rat('star2','result2',1);
+			function rat(star,result,m){
+				star= '#' + star;
+				result= '#' + result;
+				$(star).raty({
+				  	number: 5,//多少个星星设置		
+					targetType: 'hint',//类型选择，number是数字值，hint，是设置的数组值
+			        path      : '../images',
+					hints     : ['非常不满意','不满意','一般','满意','非常满意'],
+			        cancelOff : 'cancel-off-big.png',
+			        cancelOn  : 'cancel-on-big.png',
+			        size      : 24,
+			        starHalf  : 'star-half-big.png',
+			        starOff   : 'star-off-big.png',
+			        starOn    : 'star-on-big.png',
+			        target    : result,
+			        cancel    : false,
+			        targetKeep: true,
+					targetText: '请选择评分',			
+			        click: function(score, evt) {
+			          //alert('ID: ' + $(this).attr('id') + "\nscore: " + score + "\nevent: " + evt.type);
+			          //alert('你的评分是'+score*m+'分');
+			        }
+			     }); 
+			}
+		})
+		function words_deal(){
+			   var curLength=$("#TextArea1").val().length;
+			   if(curLength>500){
+			        var num=$("#TextArea1").val().substr(0,500);
+			        $("#TextArea1").val(num);
+			        alert("超过字数限制，最多输入500个字符" );
+			   }else{
+			        $(".textCount").text(500-$("#TextArea1").val().length);
+			   }
+		}
+  </script>
+</html>
+

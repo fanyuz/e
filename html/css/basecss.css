@@ -7,6 +7,9 @@ body {
 input {
   outline: medium;
 }
+.m-t-0{
+	margin-top: 0px;
+}
 .w-1200 {
   width: 1200px;
   margin: 20px auto 0;
@@ -193,7 +196,7 @@ input {
 }
 .order .order-header .order-nav a.hover,
 .order .order-header .order-nav a:hover {
-  color: #f2951f;
+  color: #00843E;
   font-weight: 700;
 }
 .order .order-header .order-input {
@@ -2114,3 +2117,249 @@ a.tool-link:hover {
   color: #333;
   border: 1px solid #ccc;
 }
+/**************************/
+.order-itme h4{
+	font-size: 14px;
+	line-height: 14px;
+}
+.uate{
+	padding: 20px;
+	box-sizing: border-box;
+}
+.uate-f-l{
+	width: 259px;
+	padding: 25px 0;
+	border-right: 1px solid #f5f5f5;
+	box-sizing: border-box;
+}
+.uate .uate-l-box{
+	width: 86px;
+	height: 86px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	float: left;
+	margin-right: 10px;
+}
+.uate .uate-l-box img{
+	display: block;
+	height: 88px;
+	width: 88px;
+}
+.uate-b-title{
+	margin-top: 10px;
+	line-height: 14px;
+}
+.uate-b-title span.uate-b-z {
+	width: 160px;
+	color: #388be8;
+	font-size: 12px;
+	max-height: 28px;	
+	overflow:hidden; 
+	text-overflow:ellipsis;
+	display:-webkit-box; 
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:2;
+}
+.uate-spec{
+	margin-top: 10px;
+}
+.uate-spec span{
+	color: #999;
+	font-size: 12px;
+	margin-right: 5px;
+	line-height: 14px;
+}
+.uate-fr{
+	width: 640px;
+	padding-left: 38px;
+	box-sizing: border-box;
+}
+.demo {
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+}
+.demo div{
+	float: left;
+	margin-right: 20px;
+}
+.target-demo img{
+	vertical-align: middle;
+}
+.hint{
+	color: #d3d3d3;
+}
+.uate-list {
+	/*//position: relative;*/
+	margin-top: 20px;
+	position: relative;
+}
+.uate-list textarea{
+	width: 898px;
+	height: 108px;
+	border: 1px solid #ccc;
+	box-sizing: content-box;
+	padding: 5px;
+	color: #666;
+}
+.uate-list p{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	color: #ccc;
+}
+/*上传图片插件的样式*/
+.img-box .up-p{
+	margin-bottom: 20px;
+	font-size: 16px;
+	color: #555;
+}
+.z_photo{
+	padding: 5px 0;
+	/*border:2px dashed #E7E6E6;*/
+	/*padding: 18px;*/
+}
+.z_photo .z_file{
+	position: relative;
+}
+.z_file  .file{
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 100;
+}
+.z_photo .up-section{
+	position: relative;
+	margin-right: 10px;
+}
+.up-section .close-upimg{
+	position: absolute;
+	top:1px;
+	right: 1px;
+	display: none;
+	z-index: 10;
+	width: 15px;
+	height: 15px;
+}
+.upimg-div p{
+	line-height: 48px;
+}
+.up-section .up-span{
+	display: block;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 9;
+	background: rgba(0,0,0,.5);
+}
+.up-section:hover{
+	border: 1px solid #f15134;
+}
+.up-section:hover .close-upimg{
+	display: block;
+}
+.up-section:hover .up-span{
+	visibility: visible;
+}
+.z_photo .up-img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.loading{
+    border: 1px solid #D1D1D1;
+	background:url(../images/loading.gif) no-repeat center;
+}
+.up-opcity{
+	opacity: 0;
+}
+.img-name-p{
+	display: none;
+}
+.upimg-div .up-section {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #ccc;
+}
+.img-box .upimg-div .z_file {
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+}
+.z_file .add-img {
+    display: block;
+    width: 48px;
+    height: 48px;
+}
+/*遮罩层样式*/
+.mask{
+	z-index: 1000;
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.4);
+}
+.mask .mask-content{
+	 width: 500px;
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 margin-left: -250px;
+	 margin-top: -80px;
+	 background: white;
+	 height: 160px;
+	 text-align: center;
+}
+.mask .mask-content .del-p{
+	color: #555;
+	height: 94px;
+	line-height: 94px;
+	font-size: 18px;
+	border-bottom: 1px solid #D1D1D1;
+}
+.mask-content .check-p{
+	height: 66px;
+	line-height: 66px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+}
+.mask-content .check-p span{
+	width: 49%;
+	display:inline-block;
+	text-align: center;
+	color:#d4361d ;
+	font-size: 18px;
+}
+.check-p .del-com{
+	border-right: 1px solid #D1D1D1;
+}
+.ogo-obsub{
+	width: 120px;
+	height: 44px;
+	margin: 30px auto 0;
+}
+.ogo-obsub a{
+	display: block;
+	background-color: #F18E00;
+	color: #fff;
+	line-height: 44px;
+	text-align: center;
+	font-size: 12px;
+}
+
+
+
+
+
+

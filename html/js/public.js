@@ -10,11 +10,28 @@ $(function(){
     //详情页切换颜色、尺码
     $(document).ready(function(){
     	$(".detail_list_chima li").click(function(){
-    		$(".detail_list_chima li").eq($(this).index()).addClass("show").siblings().removeClass('show');
+    		$(this).addClass("show").siblings().removeClass('show');
     	})
     	$(".detail_list_color li").click(function(){
-    		$(".detail_list_color li").eq($(this).index()).addClass("show").siblings().removeClass('show');
+    		$(this).addClass("show").siblings().removeClass('show');
     	})
+    })
+    
+    //详情页商品分类
+    var classify = true;
+    $(".classify_box li").click(function(){
+    	$(this).addClass("classify_active").siblings().removeClass("classify_active");
+    	if (classify) {
+    		$(this).find("div").show();
+    		$(this).find("img").attr("src","../images/icon_jian.png");
+    		classify = !classify;
+    	} else{
+    		$(this).find("div").hide();
+    		$(this).find("img").attr("src","../images/icon_add_dp.png");
+    		classify = !classify;
+    	}
+    	
+    	
     })
     
     

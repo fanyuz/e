@@ -1,9 +1,23 @@
+body {
+  font: 12px/150% tahoma, arial, Microsoft YaHei, Hiragino Sans GB, "\u5b8b\u4f53", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  background: #f5f5f5;
+}
+.min_1200{
+	width: 1200px;
+	min-width: 1200px;
+	margin: 0 auto;
+}
 .member{
 	width: 1200px;
 	min-width: 1200px;
 	padding-top: 20px;
 	margin: 0 auto;
 	margin-bottom: 30px;
+}
+.m-t-20{
+	margin-top: 20px;
 }
 .side_nav{
 	width: 200px;
@@ -55,7 +69,6 @@
 }
 .member_box{
 	width: 980px;
-	float: left;
 }
 .member_box .men_box_top{
 	padding: 22px 0 22px 18px;
@@ -79,7 +92,7 @@
 	font-size: 16px;
 	color: #333333;
 	line-height: 24px;
-	margin-bottom: 28px;
+	margin-bottom: 8px;
 	overflow: hidden;
 }
 .men_shangchuang .men_rmb{
@@ -156,12 +169,18 @@
 	text-align: left;
 	width: 180px;
 	float: left;
+	margin-top: 10px;
+	overflow:hidden; 
+	text-overflow:ellipsis;
+	display:-webkit-box; 
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:2;
 }
 .men_w_140px{
 	width: 150px;
 }
 .men_w_180px{
-	width: 160px;
+	width: 180px;
 	text-align: right;
 	vertical-align: middle;
 	padding-right: 20px;
@@ -174,7 +193,7 @@
 	color: #333;
 }
 .men_dingdan table tbody{
-	border-bottom: 1px dotted #999;
+	/*border-bottom: 1px dotted #999;*/
 	margin-bottom: 5px;
 }
 /*HUIYUANTUIJIAN*/
@@ -252,6 +271,26 @@
 	width: 100%;
 	text-align: right;
 	color: #a9a9a9;
+}
+.ogo-zbzkkx{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	z-index: 10;
+	display: none;
+	cursor: pointer;
+}
+.ogo-checkflase{
+	background: rgba(0,0,0,.5) url(../images/checkfalse.png) center no-repeat; 
+}
+.ogo-checktrue{
+	background: rgba(0,0,0,.5) url(../images/checktrue.png) center no-repeat;
+}
+.obg-box-itme{
+	position: relative;
 }
 /*************帮助中心**************/
 .help h3{
@@ -345,8 +384,9 @@
 /****************个人信息*******************/
 .member_info{
 	width: 980px;
-	height: 800px;
+	min-height: 800px;
 	background: #fff;
+	padding-bottom: 20px;
 }
 .member_info .member_fo_pad{
 	padding: 0 20px;
@@ -397,6 +437,20 @@
 	padding: 5px 0 6px 4px;
 	float: left;
 	border: 1px solid #ccc;
+	font-size: 12px;
+	color: #666;
+}
+.menboy_input .mem_inputbox{
+	float: left;
+	margin-right: 5px;
+}
+.menboy_input .mem_inputbox input{
+	border: 1px solid #ccc;
+    padding: 3px;
+    width: 65px;
+    vertical-align: middle;
+    padding: 5px 0 6px 4px;
+    margin-right: 5px;
 }
 .menboy_input input.mem_input:focus {
     border: 1px solid #8caee5;
@@ -444,6 +498,7 @@
 .fightGroups{
 	width: 980px;
 	background: #fff;
+	min-height: 500px;
 }
 .fightGroups .fg_oups{
 	padding:16px 20px;
@@ -606,6 +661,9 @@
 	margin: 0 8px;
 	color: #a1a1a1;
 }
+.ogo-ionhide{
+	display: none;
+}
 .collection a.tion_piliang {
 	width: 60px;
 	height: 24px;
@@ -638,12 +696,11 @@
 	overflow: hidden;
 }
 .displayBox_hide{
-	display: none;
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 219px;
-	height: 30px;
+	overflow: hidden;
 }
 .commod_posleft00{
 	position: absolute;
@@ -718,12 +775,23 @@
 .m_tp_20{
 	margin-top: 20px;
 }
+.m-tp-10{
+	margin-top: 10px;
+}
+.oogoo{
+	width: 980px;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+.oogoo p{
+	margin-top: 30px;
+	margin-bottom: 10px;
+	color: #00843E;
+}
 .site_table{
-	margin-left: 20px;
-	*margin-left: 10px;
-	_margin-left: 10px;
-	width: 940px;
+	width: 100%;
 	border-collapse:collapse;
+	border: 1px solid #ccc;
 }
 .site_table tr.site_tr{
 	height: 30px;
@@ -732,19 +800,32 @@
 .site_table tr th,.site_table tr td{
 	vertical-align: middle;
 	text-align: center;
+	
 }
 .site_table tr td{
 	padding: 10px 0 0 0;
+	background-color: #fff;
+	
 }
 .site_table tr.sited{
-	background: #f5f5f5;
+	/*background: #f5f5f5;
 	border: 1px solid #e6e6e6;
-	
+	border: 1px solid #F18E00;*/		
+}
+.bg-f18e00{
+	border: 1px solid #F18E00;
+}
+.bg-f18e00 tr td{
+	background-color: #f5f5f5;
 }
 .site_table tr td div a{
 	display: block;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	color: #333;
+}
+.site_table tr td div a:hover{
+	color: #00843e;
+	text-decoration: underline;
 }
 /************************************/
 .w_330 {
@@ -1350,4 +1431,73 @@
 	height: 28px;
 	line-height: 28px;
 	text-align: center;
+}
+/*提示框*/
+.ogo-zz-bgo{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	background-color: rgba(0,0,0,.3);
+	display: none;
+}
+.bgo-sition{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+.bgo-title{
+	width: 350px;
+	height: 140px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+.bgo-title h4{
+    background: repeat-x scroll 0 0 #f5f5f5;
+    border-bottom: 1px solid #f5f5f5;
+    font-size: 14px;
+    font-weight: 700;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 0 0 18px;
+}
+.bgo-title .bgo-true{
+	padding: 10px 20px 0 20px;
+	box-sizing: border-box;
+}
+.bgo-true-ok{
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-size: 14px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+}
+.bgo-true-ok b{
+	font-size: 12px;
+	color: #ccc;
+}
+/*.bgo-true-ok i{
+	display: inline;
+    float: left;
+    width: 32px;
+    height: 32px;
+    background: url(../images/T1g3uoXdpQXXXXXXXX-60-280.png) no-repeat 100% -120px;
+    margin-right: 10px;
+}*/
+.del-dialog-actions{
+	width: 200px;
+	margin:15px auto;
+}
+.del-dialog-actions a{
+	margin-right: 10px;
+    padding: 5px 20px;
+    text-decoration: none;
+    background: #ccc;
+    color: #000;
 }
